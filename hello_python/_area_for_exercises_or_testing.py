@@ -1,9 +1,11 @@
 # # These are codes for little experiments
 # import random
 # import time
-a = 1
-b = 2
-print(a, b)
+dict_a = {"Alex": 35}
+dict_b = {"Kryzza": 27}
+dict_a.update(dict_b)
+print(dict_a)
+print(dict_b)
 
 # def swing_trading_email(file_input, file_output):
 #     with open(file_input, 'r') as trade_file:
