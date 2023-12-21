@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    // User input
+    char input_name[25]; //bytes
+    int input_age;
+
+    printf("\nWhat's your name? ");
+    // scanf("%s", &input_name); // this can't capture whitespace
+    fgets(input_name, sizeof(input_name), stdin); // this will capture \r newline though so
+    input_name[strlen(input_name) - 1] = '\0';
+
+    printf("How old are you? ");
+    scanf("%i", &input_age);
+
+    printf("\nHello %s, how are you? ", input_name);
+    printf("\nYou are %i years old.\n", input_age);
+
+    return 0;
+}

@@ -78,9 +78,5 @@ int main()
     printf("Item 2: $%8.2f\n", item2);
     printf("Item 3: $%8.2f\n", item3);
 
-
-    // User input
-
-    
     return 0;
 }
