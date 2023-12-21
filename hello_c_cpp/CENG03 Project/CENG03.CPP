@@ -9,8 +9,6 @@ Borland C++ IDE
 #include <string.h>
 #include <stdlib.h>
 #include <fstream.h>
-#define EQUAL !strcmp
-#define notEQUAL strcmp
 					
 typedef unsigned char BYT;
 const BYT specSIZE = 8;
