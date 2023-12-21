@@ -55,9 +55,32 @@ int main()
     printf("k: %u\n", k);
 
     long long int l = 9223372036854775807; // 8 bytes ( -9 quintillion to 9 quintillion) %lld
-    unsigned long long int m = 18446744073709551615; // 8 bytes (0 to 18 quintillion) %llu
+    unsigned long long int m = 18446744073709551615U; // 8 bytes (0 to 18 quintillion) %llu
     printf("l: %lld\n", l);
     printf("m: %llu\n", m);
 
+    // Format specifier % defines and formats a type of data to be displayed
+
+    // %c = character
+    // %s = string (array of characters)
+    // %f = float
+    // %lf = double
+    // %d = integer
+    // %.1 = decimal precision
+    // %1 = minimum field width
+    // %- = left align
+
+    float item1 = 5.75;
+    float item2 = 10.00;
+    float item3 = 100.99;
+
+    printf("Item 1: $%8.2f\n", item1);
+    printf("Item 2: $%8.2f\n", item2);
+    printf("Item 3: $%8.2f\n", item3);
+
+
+    // User input
+
+    
     return 0;
 }
