@@ -1,4 +1,8 @@
-// PC Buying Guide program by C++ Wizard of AMA Computer College.
+/* 
+PC Buying Guide 2006 program, CENG03 project by Alexander Daguob
+BS Computer Engineering, AMA Computer College - Bacolod.
+Borland C++ IDE
+*/
 #include <conio.h>
 #include <graphics.h>
 #include <dos.h>
@@ -7,7 +11,7 @@
 #include <fstream.h>
 #define EQUAL !strcmp
 #define notEQUAL strcmp
-					 //C++ WizarD
+					
 typedef unsigned char BYT;
 const BYT specSIZE = 8;
 enum BOOL {false, true};
