@@ -14,7 +14,7 @@ int main(void)
     
 }
 
-print_array(int arr[], int len)
+void print_array(int arr[], int len)
 {
     for (int i = 0; i < len; i++)
         printf("%i, ", arr[i]);
@@ -23,7 +23,7 @@ print_array(int arr[], int len)
 }
 
 // modify arrays from main function demo
-update_array(int arr[], int len)
+void update_array(int arr[], int len)
 {
 
     // arr[] is a different array name than arrNums[]

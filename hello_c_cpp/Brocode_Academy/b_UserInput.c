@@ -18,5 +18,13 @@ int main()
     printf("\nHello %s, how are you? ", input_name);
     printf("\nYou are %i years old.\n", input_age);
 
+    if (input_age == 0)
+        printf("Zero age, really?\n");
+    else if (input_age < 5)
+        printf("Less than five!\n");
+    else if (input_age > 5)
+        printf("Above five!\n");
+
+
     return 0;
 }
