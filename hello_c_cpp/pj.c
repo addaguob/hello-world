@@ -40,27 +40,35 @@ int main()
     return 0;
 }
 
-For i loop
-    swapped = false
-    For j loop
-        if pairs j pairs < j + 1
-        swap pairs j and pairs j + 1
-        swapped = true
-    if nothing swapped
-        break
+// For i loop
+//     swapped = false
+//     For j loop
+//         if pairs j pairs < j + 1
+//         swap pairs j and pairs j + 1
+//         swapped = true
+//     if nothing swapped
+//         break
 
-//that is bubble sort, and if you insert your vairiables tracking victory strength, that will become:
+// //that is bubble sort, and if you insert your vairiables tracking victory strength, that will become:
 
-For i loop
-    swapped = false
-    For j loop
-        int victory_1 = preferences[pairs j winner][j loser] - their reverse [j loser][j winner]
-        int victory_2 = preferences j+1 same above
+// For i loop
+//     swapped = false
+//     For j loop
+//         int victory_1 = preferences[pairs j winner][j loser] - their reverse [j loser][j winner]
+//         int victory_2 = preferences j+1 same above
 
-        if victory_1 < victory_2 // then victory_2 comes first than v1
-        pair tmp // create pair struct as tmp
-        swap pairs tmp, j and j+1
-        swapped = true
+//         if victory_1 < victory_2 // then victory_2 comes first than v1
+//         pair tmp // create pair struct as tmp
+//         swap pairs tmp, j and j+1
+//         swapped = true
 
-    if swapped false
-        break
+//     if swapped false
+//         break
+
+// win_count[i] += 0; // --> not necessary because you already initialized default to 0
+// win_count[j] += 0; // --> not necessary because you already initialized default to 0
+
+// block under comment // sorted the transferred array
+// sort the victory count contents but not the container (indices of pairs struct array) of those contents :(
+// I also thought that win_count can contain the victory strength and that you keep track of the index of the win_count as the rank index of the pair
+// but the value (not the index) will be overridden in the next iteration when the if statement is true. That is the bug, I think.
