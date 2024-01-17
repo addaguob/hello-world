@@ -1,10 +1,10 @@
 # # These are codes for little experiments
 # import random
 # import time
-n = 123 / 10
 
-print(n)
-print(int(n))
+sent = "I am Alex"
+for i in range(len(sent)):
+    print(sent[i])
 
 # def swing_trading_email(file_input, file_output):
 #     with open(file_input, 'r') as trade_file:
