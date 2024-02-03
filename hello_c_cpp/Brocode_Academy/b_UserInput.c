@@ -10,6 +10,8 @@ int main()
     printf("\nWhat's your name? ");
     // scanf("%s", &input_name); // this can't capture whitespace
     fgets(input_name, sizeof(input_name), stdin); // this will capture \r newline though so
+    int length = strlen(input_name);
+    printf("Length: %i\n", length);
     input_name[strlen(input_name) - 1] = '\0';
 
     printf("How old are you? ");
@@ -24,7 +26,6 @@ int main()
         printf("Less than five!\n");
     else if (input_age > 5)
         printf("Above five!\n");
-
 
     return 0;
 }
