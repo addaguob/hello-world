@@ -41,3 +41,13 @@ console.log(extraStudents);
 
 students += 1;
 console.log(students);
+
+// Operator precedence
+console.log("Operator precedence=========");
+console.log("1. Parenthesis ()");
+console.log("2. Exponents");
+console.log("3. ultiplication & Dvision");
+console.log("4. Addition & Subtraction");
+
+let result = 1 + 2 * (3 + 4);
+console.log(result);
