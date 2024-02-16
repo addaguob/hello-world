@@ -43,12 +43,12 @@ comment
 // students += 1;
 // console.log(students);
 
-// Operator precedence
-console.log("Operator precedence=========");
-console.log("1. Parenthesis ()");
-console.log("2. Exponents");
-console.log("3. Multiplication & Dvision");
-console.log("4. Addition & Subtraction");
+// // Operator precedence
+// console.log("Operator precedence=========");
+// console.log("1. Parenthesis ()");
+// console.log("2. Exponents");
+// console.log("3. Multiplication & Dvision");
+// console.log("4. Addition & Subtraction");
 
 // let result = 1 + 2 * (3 + 4);
 // console.log(result);
@@ -60,42 +60,55 @@ console.log("4. Addition & Subtraction");
 // let username = window.prompt("What's your name?")
 // console.log(username)
 // console.log("Difficult way user input with HTML textbox")
-let username;
-document.getElementById("mySubmit").onclick = function () {
-    username = document.getElementById("myText").value;
-    console.log(username)
-    document.getElementById("myH1").textContent = `Hello ${username}`;
-}
+// let username;
+// document.getElementById("mySubmit").onclick = function() {
+//     username = document.getElementById("myText").value;
+//     console.log(username)
+//     document.getElementById("myH1").textContent = `Hello ${username}`;
+// }
 
 // Type conversion
 // let age = window.prompt("How old are you?");
 // age = Number(age)
-age =19
-age += 1;
-console.log(age, typeof age);
+// age =19
+// age += 1;
+// console.log(age, typeof age);
 
-let x = "";
-let y = "";
-let z = "";
+// let x = "";
+// let y = "";
+// let z = "";
 
-x = Number(x);
-y = String(y);
-z = Boolean(z);
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z);
 
-console.log(x, typeof x);
-console.log(y, typeof y);
-console.log(z, typeof z);
-document.getElementById("p1").textContent = `x: ${x} is ${typeof x}`;
-document.getElementById("p2").textContent = `y: ${y} is ${typeof y}`;
-document.getElementById("p3").textContent = `z: ${z} is ${typeof z}`;
+// console.log(x, typeof x);
+// console.log(y, typeof y);
+// console.log(z, typeof z);
+// document.getElementById("p1").textContent = `x: ${x} is ${typeof x}`;
+// document.getElementById("p2").textContent = `y: ${y} is ${typeof y}`;
+// document.getElementById("p3").textContent = `z: ${z} is ${typeof z}`;
 
-const PI = 3.14159;
-let radius;
-let circumference;
+// const PI = 3.14159;
+// let radius;
+// let circumference;
 
 // radius = window.prompt("Enter the radius of a circle:");
-document.getElementById("mySubmit").onclick = function () {
-    radius = Number(document.getElementById("myText").value);
-    circumference = 2 * PI * radius;
-    document.getElementById("myH1").textContent = `The circumference is ${circumference}`;
+// document.getElementById("mySubmit").onclick = function() {
+//     radius = Number(document.getElementById("myText").value);
+//     circumference = 2 * PI * radius;
+//     document.getElementById("myH3").textContent = `The circumference is ${circumference}cm`;
+// }
+let n = 0;
+document.getElementById("decreaseBtn").onclick = function () {
+    n--;
+    document.getElementById("countLabel").textContent = n;
+}
+document.getElementById("resetBtn").onclick = function () {
+    n = 0;
+    document.getElementById("countLabel").textContent = n;
+}
+document.getElementById("increaseBtn").onclick = function () {
+    n++;
+    document.getElementById("countLabel").textContent = n;
 }
