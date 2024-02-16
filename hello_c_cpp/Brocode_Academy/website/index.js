@@ -60,3 +60,8 @@ console.log(result);
 // let username = window.prompt("What's your name?")
 // console.log(username)
 console.log("Difficult way user input with HTML textbox")
+let username;
+document.getElementById("mySubmit").onclick = function () {
+    username = document.getElementById("myText").value;
+    console.log(username)
+}
