@@ -31,6 +31,7 @@ document.getElementById("p3").innerHTML = "Enrolled: " + isstudent;
 
 // Arithmetic operators
 // + - * / %
+// ** is exponent operator
 
 let students = 20;
 let extraStudents = students % 2;
@@ -51,9 +52,11 @@ console.log("4. Addition & Subtraction");
 
 let result = 1 + 2 * (3 + 4);
 console.log(result);
+result++;
+console.log(result);
 
 // How to accept user input
-console.log("Easy way user input with a window prompt")
-let username = window.prompt("What's your name?")
-console.log(username)
+// console.log("Easy way user input with a window prompt")
+// let username = window.prompt("What's your name?")
+// console.log(username)
 console.log("Difficult way user input with HTML textbox")
