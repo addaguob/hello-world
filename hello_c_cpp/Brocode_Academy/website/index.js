@@ -51,3 +51,9 @@ console.log("4. Addition & Subtraction");
 
 let result = 1 + 2 * (3 + 4);
 console.log(result);
+
+// How to accept user input
+console.log("Easy way user input with a window prompt")
+let username = window.prompt("What's your name?")
+console.log(username)
+console.log("Difficult way user input with HTML textbox")
