@@ -44,11 +44,11 @@ comment
 // console.log(students);
 
 // Operator precedence
-// console.log("Operator precedence=========");
-// console.log("1. Parenthesis ()");
-// console.log("2. Exponents");
-// console.log("3. ultiplication & Dvision");
-// console.log("4. Addition & Subtraction");
+console.log("Operator precedence=========");
+console.log("1. Parenthesis ()");
+console.log("2. Exponents");
+console.log("3. Multiplication & Dvision");
+console.log("4. Addition & Subtraction");
 
 // let result = 1 + 2 * (3 + 4);
 // console.log(result);
@@ -69,9 +69,10 @@ document.getElementById("mySubmit").onclick = function () {
 
 // Type conversion
 // let age = window.prompt("How old are you?");
-// // age = Number(age)
-// age += 1;
-// console.log(age, typeof age);
+// age = Number(age)
+age =19
+age += 1;
+console.log(age, typeof age);
 
 let x = "";
 let y = "";
@@ -84,6 +85,17 @@ z = Boolean(z);
 console.log(x, typeof x);
 console.log(y, typeof y);
 console.log(z, typeof z);
-document.getElementById("p1").textContent = `x:${x} is ${typeof x}`;
-document.getElementById("p2").textContent = `y:${y} is ${typeof y}`;
-document.getElementById("p3").textContent = `z:${z} is ${typeof z}`;
+document.getElementById("p1").textContent = `x: ${x} is ${typeof x}`;
+document.getElementById("p2").textContent = `y: ${y} is ${typeof y}`;
+document.getElementById("p3").textContent = `z: ${z} is ${typeof z}`;
+
+const PI = 3.14159;
+let radius;
+let circumference;
+
+// radius = window.prompt("Enter the radius of a circle:");
+document.getElementById("mySubmit").onclick = function () {
+    radius = Number(document.getElementById("myText").value);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH1").textContent = `The circumference is ${circumference}`;
+}
