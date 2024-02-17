@@ -99,16 +99,37 @@ comment
 //     circumference = 2 * PI * radius;
 //     document.getElementById("myH3").textContent = `The circumference is ${circumference}cm`;
 // }
-let n = 0;
-document.getElementById("decreaseBtn").onclick = function () {
-    n--;
-    document.getElementById("countLabel").textContent = n;
-}
-document.getElementById("resetBtn").onclick = function () {
-    n = 0;
-    document.getElementById("countLabel").textContent = n;
-}
-document.getElementById("increaseBtn").onclick = function () {
-    n++;
-    document.getElementById("countLabel").textContent = n;
-}
+// const countLabel = document.getElementById("countLabel");
+// const resetBtn = document.getElementById("resetBtn");
+// const decreaseBtn = document.getElementById("decreaseBtn");
+// const increaseBtn = document.getElementById("increaseBtn");
+
+// let n = 0;
+
+// resetBtn.onclick = function() {
+//     n = 0;
+//     countLabel.textContent = n;
+// }
+
+// decreaseBtn.onclick = function() {
+//     n--;
+//     countLabel.textContent = n;
+// }
+
+// increaseBtn.onclick = function() {
+//     n++;
+//     countLabel.textContent = n;
+// }
+
+//Math
+
+console.log(Math.PI)
+console.log(Math.E)
+let x = 3.50;
+let y = 2;
+let z;
+
+// z = Math.round(x)
+// z = Math.floor(x)
+z = Math.ceil(x)
+console.log(z)
