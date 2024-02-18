@@ -127,7 +127,7 @@ increaseBtn.onclick = function() {
 
 console.log(Math.PI)
 console.log(Math.E)
-let x = 3;
+let x = 10;
 let y = 2;
 let z;
 
@@ -135,5 +135,6 @@ let z;
 // z = Math.floor(x)
 // z = Math.ceil(x)
 // z = Math.trunc(x)
-z = Math.pow(x, y)
+// z = Math.pow(x, y)
+z = Math.log(x)
 console.log(z)
