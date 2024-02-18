@@ -99,27 +99,29 @@ comment
 //     circumference = 2 * PI * radius;
 //     document.getElementById("myH3").textContent = `The circumference is ${circumference}cm`;
 // }
-// const countLabel = document.getElementById("countLabel");
-// const resetBtn = document.getElementById("resetBtn");
-// const decreaseBtn = document.getElementById("decreaseBtn");
-// const increaseBtn = document.getElementById("increaseBtn");
 
-// let n = 0;
+// Counter app
+const countLabel = document.getElementById("countLabel");
+const resetBtn = document.getElementById("resetBtn");
+const decreaseBtn = document.getElementById("decreaseBtn");
+const increaseBtn = document.getElementById("increaseBtn");
 
-// resetBtn.onclick = function() {
-//     n = 0;
-//     countLabel.textContent = n;
-// }
+let n = 0;
 
-// decreaseBtn.onclick = function() {
-//     n--;
-//     countLabel.textContent = n;
-// }
+resetBtn.onclick = function() {
+    n = 0;
+    countLabel.textContent = n;
+}
 
-// increaseBtn.onclick = function() {
-//     n++;
-//     countLabel.textContent = n;
-// }
+decreaseBtn.onclick = function() {
+    n = n - 1;
+    countLabel.textContent = n;
+}
+
+increaseBtn.onclick = function() {
+    n = n + 2;
+    countLabel.textContent = n;
+}
 
 //Math
 
