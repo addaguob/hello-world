@@ -129,8 +129,8 @@ console.log(Math.PI)
 console.log(Math.E)
 
 let x = 45;
-let y = 2;
-let z;
+let y = 10;
+let z = 1;
 
 // z = Math.round(x)
 // z = Math.floor(x)
@@ -138,5 +138,17 @@ let z;
 // z = Math.trunc(x)
 // z = Math.pow(x, y)
 // z = Math.log(x)
-z = Math.sin(x)
-console.log(z)
+// z = Math.sin(x)
+// z = Math.cos(x)
+// z = Math.tan(x)
+// z = Math.abs(x)
+// z = Math.sign(x)
+// z = Math.max(x, y, z, 100, 4)
+// z = Math.min(x, y, z, 100, 4)
+
+
+// Random number generator
+const min = 50;
+const max = 100;
+let randomNum = Math.floor(Math.random() * max) + min;
+console.log(randomNum)
