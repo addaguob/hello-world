@@ -148,7 +148,18 @@ let z = 1;
 
 
 // Random number generator
-const min = 50;
-const max = 100;
-let randomNum = Math.floor(Math.random() * max) + min;
-console.log(randomNum)
+// const min = 50;
+// const max = 100;
+// let randomNum = Math.floor(Math.random() * (max - min)) + min;
+// console.log(randomNum)
+
+// Roll button
+const rollButton = document.getElementById("rollButton");
+const rollResult = document.getElementById("rollResult");
+const min = 1;
+const max = 6;
+let rolled = 0;
+rollButton.onclick = function () {
+    rolled = Math.floor(Math.random() * max) + min;
+    rollResult.textContent = rolled;
+}
