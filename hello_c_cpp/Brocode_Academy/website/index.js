@@ -170,19 +170,33 @@ rollButton.onclick = function () {
     rollResult3.textContent = rolled;
 }
 
-let age = 15;
+let age = 0;
+let remarks = ''
 let hasLicense = false;
 
-if (age >= 16) {
-    console.log("You are old enough to drive");
+document.getElementById("ageSubmit").onclick = function() {
+    age = document.getElementById("ageInput");
+    age = Number(age);
+    
+    remarks = document.getElementById("ageRemarks");
 
-    if (hasLicense) {
-        console.log("You have your license!")
+    if (age > 99) {
+        remarks.textContent = "Your are to old for this!";
+    }
+    else if (age >= 16) {
+        remarks.textContent = "You are old enough to drive";
+    
+        if (hasLicense) {
+            remarks.textContent = "You have your license!";
+        }
+        else {
+            remarks.textContent = "You do not have your license yet";
+        }
+    }
+    else if (age <= 0) {
+        remarks.textContent = "Your age can't be below zero";
     }
     else {
-        console.log("You do not have your license")
+        remarks.textContent = "You must be at least 16 to have a license";
     }
-}
-else {
-    console.log("You must be at least 16 to have a license");
 }
