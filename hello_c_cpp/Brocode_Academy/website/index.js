@@ -119,7 +119,7 @@ decreaseBtn.onclick = function() {
 }
 
 increaseBtn.onclick = function() {
-    n = n + 2;
+    n = n + 1;
     countLabel.textContent = n;
 }
 
@@ -127,7 +127,8 @@ increaseBtn.onclick = function() {
 
 console.log(Math.PI)
 console.log(Math.E)
-let x = 10;
+
+let x = 45;
 let y = 2;
 let z;
 
@@ -136,5 +137,6 @@ let z;
 // z = Math.ceil(x)
 // z = Math.trunc(x)
 // z = Math.pow(x, y)
-z = Math.log(x)
+// z = Math.log(x)
+z = Math.sin(x)
 console.log(z)
