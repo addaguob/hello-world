@@ -155,11 +155,26 @@ let z = 1;
 
 // Roll button
 const rollButton = document.getElementById("rollButton");
-const rollResult = document.getElementById("rollResult");
+const rollResult1 = document.getElementById("rollResult1");
+const rollResult2 = document.getElementById("rollResult2");
+const rollResult3 = document.getElementById("rollResult3");
 const min = 1;
 const max = 6;
 let rolled = 0;
 rollButton.onclick = function () {
     rolled = Math.floor(Math.random() * max) + min;
-    rollResult.textContent = rolled;
+    rollResult1.textContent = rolled;
+    rolled = Math.floor(Math.random() * max) + min;
+    rollResult2.textContent = rolled;
+    rolled = Math.floor(Math.random() * max) + min;
+    rollResult3.textContent = rolled;
+}
+
+let x01 = 18;
+
+if (x01 >= 18) {
+    console.log("Pass");
+}
+else {
+    console.log("Fail");
 }

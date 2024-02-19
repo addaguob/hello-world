@@ -34,6 +34,6 @@ body {
     border-radius: 5px
 }
 
-#rollResult {
+.rollResult {
     font-size: 3em;
 }
