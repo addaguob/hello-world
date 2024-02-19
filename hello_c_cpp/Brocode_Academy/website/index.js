@@ -170,11 +170,19 @@ rollButton.onclick = function () {
     rollResult3.textContent = rolled;
 }
 
-let x01 = 18;
+let age = 15;
+let hasLicense = false;
 
-if (x01 >= 18) {
-    console.log("Pass");
+if (age >= 16) {
+    console.log("You are old enough to drive");
+
+    if (hasLicense) {
+        console.log("You have your license!")
+    }
+    else {
+        console.log("You do not have your license")
+    }
 }
 else {
-    console.log("Fail");
+    console.log("You must be at least 16 to have a license");
 }
