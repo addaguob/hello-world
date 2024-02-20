@@ -269,3 +269,13 @@ switch (day) {
         console.log(`${day} is not a day`);
 
 }
+
+let userName = "  Alexander  ";
+console.log(userName.charAt(3));
+console.log(userName.indexOf("e"));
+console.log(userName.lastIndexOf("e"));
+console.log(userName.length)
+console.log(userName.trim())
+console.log(userName.toUpperCase())
+console.log(userName.toLowerCase())
+console.log(userName.repeat(2))
