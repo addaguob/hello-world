@@ -175,7 +175,7 @@ let remarks = ''
 let hasLicense = false;
 
 document.getElementById("ageSubmit").onclick = function() {
-    age = document.getElementById("ageInput");
+    age = document.getElementById("ageInput").value;
     age = Number(age);
     
     remarks = document.getElementById("ageRemarks");
@@ -197,6 +197,6 @@ document.getElementById("ageSubmit").onclick = function() {
         remarks.textContent = "Your age can't be below zero";
     }
     else {
-        remarks.textContent = "You must be at least 16 to have a license";
+        remarks.textContent = `Your age (${age}) must be at least 16 to have a license`;
     }
 }
