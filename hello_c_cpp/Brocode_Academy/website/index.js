@@ -101,36 +101,36 @@ comment
 // }
 
 // Counter app
-const countLabel = document.getElementById("countLabel");
-const resetBtn = document.getElementById("resetBtn");
-const decreaseBtn = document.getElementById("decreaseBtn");
-const increaseBtn = document.getElementById("increaseBtn");
+// const countLabel = document.getElementById("countLabel");
+// const resetBtn = document.getElementById("resetBtn");
+// const decreaseBtn = document.getElementById("decreaseBtn");
+// const increaseBtn = document.getElementById("increaseBtn");
 
-let n = 0;
+// let n = 0;
 
-resetBtn.onclick = function() {
-    n = 0;
-    countLabel.textContent = n;
-}
+// resetBtn.onclick = function() {
+//     n = 0;
+//     countLabel.textContent = n;
+// }
 
-decreaseBtn.onclick = function() {
-    n = n - 1;
-    countLabel.textContent = n;
-}
+// decreaseBtn.onclick = function() {
+//     n = n - 1;
+//     countLabel.textContent = n;
+// }
 
-increaseBtn.onclick = function() {
-    n = n + 1;
-    countLabel.textContent = n;
-}
+// increaseBtn.onclick = function() {
+//     n = n + 1;
+//     countLabel.textContent = n;
+// }
 
-//Math
+// //Math
 
-console.log(Math.PI)
-console.log(Math.E)
+// console.log(Math.PI)
+// console.log(Math.E)
 
-let x = 45;
-let y = 10;
-let z = 1;
+// let x = 45;
+// let y = 10;
+// let z = 1;
 
 // z = Math.round(x)
 // z = Math.floor(x)
@@ -154,49 +154,84 @@ let z = 1;
 // console.log(randomNum)
 
 // Roll button
-const rollButton = document.getElementById("rollButton");
-const rollResult1 = document.getElementById("rollResult1");
-const rollResult2 = document.getElementById("rollResult2");
-const rollResult3 = document.getElementById("rollResult3");
-const min = 1;
-const max = 6;
-let rolled = 0;
-rollButton.onclick = function () {
-    rolled = Math.floor(Math.random() * max) + min;
-    rollResult1.textContent = rolled;
-    rolled = Math.floor(Math.random() * max) + min;
-    rollResult2.textContent = rolled;
-    rolled = Math.floor(Math.random() * max) + min;
-    rollResult3.textContent = rolled;
-}
+// const rollButton = document.getElementById("rollButton");
+// const rollResult1 = document.getElementById("rollResult1");
+// const rollResult2 = document.getElementById("rollResult2");
+// const rollResult3 = document.getElementById("rollResult3");
+// const min = 1;
+// const max = 6;
+// let rolled = 0;
+// rollButton.onclick = function () {
+//     rolled = Math.floor(Math.random() * max) + min;
+//     rollResult1.textContent = rolled;
+//     rolled = Math.floor(Math.random() * max) + min;
+//     rollResult2.textContent = rolled;
+//     rolled = Math.floor(Math.random() * max) + min;
+//     rollResult3.textContent = rolled;
+// }
 
-let age = 0;
-let remarks = ''
-let hasLicense = false;
+// let age = 0;
+// let remarks = ''
+// let hasLicense = false;
 
-document.getElementById("ageSubmit").onclick = function() {
-    age = document.getElementById("ageInput").value;
-    age = Number(age);
+// document.getElementById("ageSubmit").onclick = function() {
+//     age = document.getElementById("ageInput").value;
+//     age = Number(age);
     
-    remarks = document.getElementById("ageRemarks");
+//     remarks = document.getElementById("ageRemarks");
 
-    if (age > 99) {
-        remarks.textContent = "Your are to old for this!";
-    }
-    else if (age >= 16) {
-        remarks.textContent = "You are old enough to drive";
+//     if (age > 99) {
+//         remarks.textContent = "Your are to old for this!";
+//     }
+//     else if (age >= 16) {
+//         remarks.textContent = "You are old enough to drive";
     
-        if (hasLicense) {
-            remarks.textContent = "You have your license!";
-        }
-        else {
-            remarks.textContent = "You do not have your license yet";
-        }
-    }
-    else if (age <= 0) {
-        remarks.textContent = "Your age can't be below zero";
+//         if (hasLicense) {
+//             remarks.textContent = "You have your license!";
+//         }
+//         else {
+//             remarks.textContent = "You do not have your license yet";
+//         }
+//     }
+//     else if (age <= 0) {
+//         remarks.textContent = "Your age can't be below zero";
+//     }
+//     else {
+//         remarks.textContent = `Your age (${age}) must be at least 16 to have a license`;
+//     }
+// }
+
+const myCheckbox = document.getElementById("myCheckbox");
+const visaBtn = document.getElementById("visaBtn");
+const mastercardBtn = document.getElementById("mastercardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mySubmit = document.getElementById("mySubmit");
+const submitResult = document.getElementById("submitResult");
+const paymentResult = document.getElementById("paymentResult");
+
+mySubmit.onclick = function () {
+    if (myCheckbox.checked) {
+        submitResult.textContent = `You are subscribed!`;
     }
     else {
-        remarks.textContent = `Your age (${age}) must be at least 16 to have a license`;
+        submitResult.textContent = `You are not subscribed!`;
+    }
+
+    if (visaBtn.checked) {
+        paymentResult.textContent = `You are paying with Visa`;
+    }
+    else if (mastercardBtn.checked) {
+        paymentResult.textContent = `You are paying with MasterCard`;
+    }
+    else if (paypalBtn.checked) {
+        paymentResult.textContent = `You are paying with PayPal`;
+    }
+    else {
+        paymentResult.textContent = `You must select a payment type`;
     }
 }
+
+let age = 21;
+
+let message = age >= 18 ? "You're an adult" : "You're a minor";
+console.log(message);

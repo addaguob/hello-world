@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label id="countLabel">0</label><br>
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox">Subscribe</label><br><br>
+
+    <input id="visaBtn" name="card" type="radio">
+    <label for="visaBtn">Visa</label><br>
+    <input id="mastercardBtn" name="card" type="radio">
+    <label for="mastercardBtn">MasterCard</label><br>
+    <input id="paypalBtn" name="card" type="radio">
+    <label for="paypalBtn">PayPal</label><br><br>
+    <button id="mySubmit" type="submit">Submit</button>
+    <p id="submitResult"></p>
+    <p id="paymentResult"></p>
+    <!-- <label id="countLabel">0</label><br>
     <div id="btnContainer">
         <button class="buttons" id="decreaseBtn">-</button>
         <button class="buttons" id="resetBtn">reset</button>
@@ -24,7 +36,7 @@
         <input id="ageInput" type="text">
         <button id="ageSubmit" type="submit">Submit</button>
         <p id="ageRemarks"></p>
-    </div>
+    </div> -->
     <script src="index.js"></script>
 </body>
 </html>

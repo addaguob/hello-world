@@ -1,4 +1,4 @@
-#countLabel {
+/* #countLabel {
     display: block;
     text-align: center;
     font-size: 5em;
@@ -23,11 +23,6 @@
     background-color: hsl(218, 88%, 61%);
 }
 
-body {
-    font-family: Verdana;
-    text-align: center;
-}
-
 #rollButton {
     font-size: 3em;
     padding: 5px 25px;
@@ -36,4 +31,13 @@ body {
 
 .rollResult {
     font-size: 3em;
+} */
+
+body {
+    font-family: Verdana;
+    text-align: left;
+}
+
+#mySubmit {
+    font-size: 1em;
 }
