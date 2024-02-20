@@ -235,3 +235,37 @@ let age = 21;
 
 let message = age >= 18 ? "You're an adult" : "You're a minor";
 console.log(message);
+
+let purchaseAmount = 99;
+let discount = purchaseAmount >= 100 ? 10 : 0;
+console.log(`Discount: ${purchaseAmount * discount / 100}`);
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`)
+
+let day = 2;
+
+switch (day) {
+    case 1:
+        console.log("It is Monday");
+        break;
+    case 2:
+        console.log("It is Tuesday");
+        break;
+    case 3:
+        console.log("It is Wednesday");
+        break;
+    case 4:
+        console.log("It is Thursday");
+        break;
+    case 5:
+        console.log("It is Friday");
+        break;
+    case 6:
+        console.log("It is Saturday");
+        break;
+    case 7:
+        console.log("It is Sunday");
+        break;
+    default:
+        console.log(`${day} is not a day`);
+
+}
