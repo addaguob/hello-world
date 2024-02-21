@@ -279,3 +279,9 @@ console.log(userName.trim())
 console.log(userName.toUpperCase())
 console.log(userName.toLowerCase())
 console.log(userName.repeat(2))
+console.log(userName.startsWith(" "))
+
+let phoneNumber = "123-456-7890";
+// phoneNumber = phoneNumber.replaceAll("-", "/");
+phoneNumber = phoneNumber.padStart(15, "0");
+console.log(phoneNumber);
