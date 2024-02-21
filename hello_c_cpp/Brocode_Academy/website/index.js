@@ -302,42 +302,47 @@ comment
 // userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
 // console.log(userName);
 
-console.log("Logical operators: &&, ||, and !");
-const temp = 200;
-if (temp > 0 && temp <= 30) {
-    console.log("The weather is good!");
-}
-else {
-    console.log("The weather is bad.");
-}
+// console.log("Logical operators: &&, ||, and !");
+// const temp = 200;
+// if (temp > 0 && temp <= 30) {
+//     console.log("The weather is good!");
+// }
+// else {
+//     console.log("The weather is bad.");
+// }
 
-const isSunny = false;
+// const isSunny = false;
 
-if (!isSunny) {
-    console.log("It is sunny.");
-}
-else {
-    console.log("It is not sunny.")
-}
+// if (!isSunny) {
+//     console.log("It is sunny.");
+// }
+// else {
+//     console.log("It is not sunny.")
+// }
 
-const PI = 3.14;
-if (PI !== "3.14") {
-    console.log("That is not PI.");
-}
-else {
-    console.log("That is PI.")
-}
+// const PI = 3.14;
+// if (PI !== "3.14") {
+//     console.log("That is not PI.");
+// }
+// else {
+//     console.log("That is PI.")
+// }
 
-let userName = "";
-while (userName === "" || userName === null) {
-    userName = window.prompt("Enter your name: ");
-}
+// let userName = "";
+// while (userName === "" || userName === null) {
+//     userName = window.prompt("Enter your name: ");
+// }
 
-console.log(`Hello ${userName}`);
+// console.log(`Hello ${userName}`);
 
-do {
-    userName = window.prompt("Enter your name: ");
+// do {
+//     userName = window.prompt("Enter your name: ");
     
-} while (userName === "" || userName === null);
+// } while (userName === "" || userName === null);
 
-console.log(`Hello ${userName}`);
+// console.log(`Hello ${userName}`);
+
+for (let i = 1; i <= 20; i++) {
+    if (i == 13) continue;
+    console.log(i);
+}
