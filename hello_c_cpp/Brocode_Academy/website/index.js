@@ -201,103 +201,121 @@ comment
 //     }
 // }
 
-const myCheckbox = document.getElementById("myCheckbox");
-const visaBtn = document.getElementById("visaBtn");
-const mastercardBtn = document.getElementById("mastercardBtn");
-const paypalBtn = document.getElementById("paypalBtn");
-const mySubmit = document.getElementById("mySubmit");
-const submitResult = document.getElementById("submitResult");
-const paymentResult = document.getElementById("paymentResult");
+// const myCheckbox = document.getElementById("myCheckbox");
+// const visaBtn = document.getElementById("visaBtn");
+// const mastercardBtn = document.getElementById("mastercardBtn");
+// const paypalBtn = document.getElementById("paypalBtn");
+// const mySubmit = document.getElementById("mySubmit");
+// const submitResult = document.getElementById("submitResult");
+// const paymentResult = document.getElementById("paymentResult");
 
-mySubmit.onclick = function () {
-    if (myCheckbox.checked) {
-        submitResult.textContent = `You are subscribed!`;
-    }
-    else {
-        submitResult.textContent = `You are not subscribed!`;
-    }
+// mySubmit.onclick = function () {
+//     if (myCheckbox.checked) {
+//         submitResult.textContent = `You are subscribed!`;
+//     }
+//     else {
+//         submitResult.textContent = `You are not subscribed!`;
+//     }
 
-    if (visaBtn.checked) {
-        paymentResult.textContent = `You are paying with Visa`;
-    }
-    else if (mastercardBtn.checked) {
-        paymentResult.textContent = `You are paying with MasterCard`;
-    }
-    else if (paypalBtn.checked) {
-        paymentResult.textContent = `You are paying with PayPal`;
-    }
-    else {
-        paymentResult.textContent = `You must select a payment type`;
-    }
+//     if (visaBtn.checked) {
+//         paymentResult.textContent = `You are paying with Visa`;
+//     }
+//     else if (mastercardBtn.checked) {
+//         paymentResult.textContent = `You are paying with MasterCard`;
+//     }
+//     else if (paypalBtn.checked) {
+//         paymentResult.textContent = `You are paying with PayPal`;
+//     }
+//     else {
+//         paymentResult.textContent = `You must select a payment type`;
+//     }
+// }
+
+// let age = 21;
+
+// let message = age >= 18 ? "You're an adult" : "You're a minor";
+// console.log(message);
+
+// let purchaseAmount = 99;
+// let discount = purchaseAmount >= 100 ? 10 : 0;
+// console.log(`Discount: ${purchaseAmount * discount / 100}`);
+// console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`)
+
+// let day = 2;
+
+// switch (day) {
+//     case 1:
+//         console.log("It is Monday");
+//         break;
+//     case 2:
+//         console.log("It is Tuesday");
+//         break;
+//     case 3:
+//         console.log("It is Wednesday");
+//         break;
+//     case 4:
+//         console.log("It is Thursday");
+//         break;
+//     case 5:
+//         console.log("It is Friday");
+//         break;
+//     case 6:
+//         console.log("It is Saturday");
+//         break;
+//     case 7:
+//         console.log("It is Sunday");
+//         break;
+//     default:
+//         console.log(`${day} is not a day`);
+
+// }
+
+// let userName = "  Alexander  ";
+// console.log(userName.charAt(3));
+// console.log(userName.indexOf("e"));
+// console.log(userName.lastIndexOf("e"));
+// console.log(userName.length)
+// console.log(userName.trim())
+// console.log(userName.toUpperCase())
+// console.log(userName.toLowerCase())
+// console.log(userName.repeat(2))
+// console.log(userName.startsWith(" "))
+
+// let phoneNumber = "123-456-7890";
+// // phoneNumber = phoneNumber.replaceAll("-", "/");
+// phoneNumber = phoneNumber.padStart(15, "0");
+// console.log(phoneNumber);
+
+// // string slicing
+// const fullName = "Bro Code";
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// // // let lastName = fullName.slice(4, fullName.length);
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+// console.log(firstName);
+// console.log(lastName);
+
+// const email = "alex88@gmail.com"
+// userName = email.slice(0, email.indexOf("@"));
+// console.log("username:", userName);
+
+// userName = window.prompt("Enter your username: ").trim();
+// userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+// console.log(userName);
+
+console.log("Logical operators: &&, ||, and !");
+const temp = 200;
+if (temp > 0 && temp <= 30) {
+    console.log("The weather is good!");
+}
+else {
+    console.log("The weather is bad.");
 }
 
-let age = 21;
+const isSunny = false;
 
-let message = age >= 18 ? "You're an adult" : "You're a minor";
-console.log(message);
-
-let purchaseAmount = 99;
-let discount = purchaseAmount >= 100 ? 10 : 0;
-console.log(`Discount: ${purchaseAmount * discount / 100}`);
-console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount / 100)}`)
-
-let day = 2;
-
-switch (day) {
-    case 1:
-        console.log("It is Monday");
-        break;
-    case 2:
-        console.log("It is Tuesday");
-        break;
-    case 3:
-        console.log("It is Wednesday");
-        break;
-    case 4:
-        console.log("It is Thursday");
-        break;
-    case 5:
-        console.log("It is Friday");
-        break;
-    case 6:
-        console.log("It is Saturday");
-        break;
-    case 7:
-        console.log("It is Sunday");
-        break;
-    default:
-        console.log(`${day} is not a day`);
-
+if (!isSunny) {
+    console.log("It is sunny.");
 }
-
-let userName = "  Alexander  ";
-console.log(userName.charAt(3));
-console.log(userName.indexOf("e"));
-console.log(userName.lastIndexOf("e"));
-console.log(userName.length)
-console.log(userName.trim())
-console.log(userName.toUpperCase())
-console.log(userName.toLowerCase())
-console.log(userName.repeat(2))
-console.log(userName.startsWith(" "))
-
-let phoneNumber = "123-456-7890";
-// phoneNumber = phoneNumber.replaceAll("-", "/");
-phoneNumber = phoneNumber.padStart(15, "0");
-console.log(phoneNumber);
-
-// string slicing
-const fullName = "Bro Code";
-let firstName = fullName.slice(0, fullName.indexOf(" "));
-// // let lastName = fullName.slice(4, fullName.length);
-let lastName = fullName.slice(fullName.indexOf(" ") + 1);
-console.log(firstName);
-console.log(lastName);
-
-const email = "alex88@gmail.com"
-userName = email.slice(0, email.indexOf("@"));
-console.log("username:", userName);
-
-userName = window.prompt("Enter your username: ").trim();
-userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
-console.log(userName);
+else {
+    console.log("It is not sunny.")
+}
