@@ -288,7 +288,16 @@ console.log(phoneNumber);
 
 // string slicing
 const fullName = "Bro Code";
-let firstName = fullName.slice(0, 3);
-let lastName = fullName.slice(4, fullName.length);
+let firstName = fullName.slice(0, fullName.indexOf(" "));
+// // let lastName = fullName.slice(4, fullName.length);
+let lastName = fullName.slice(fullName.indexOf(" ") + 1);
 console.log(firstName);
 console.log(lastName);
+
+const email = "alex88@gmail.com"
+userName = email.slice(0, email.indexOf("@"));
+console.log("username:", userName);
+
+userName = window.prompt("Enter your username: ").trim();
+userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+console.log(userName);
