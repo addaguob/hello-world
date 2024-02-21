@@ -327,3 +327,17 @@ if (PI !== "3.14") {
 else {
     console.log("That is PI.")
 }
+
+let userName = "";
+while (userName === "" || userName === null) {
+    userName = window.prompt("Enter your name: ");
+}
+
+console.log(`Hello ${userName}`);
+
+do {
+    userName = window.prompt("Enter your name: ");
+    
+} while (userName === "" || userName === null);
+
+console.log(`Hello ${userName}`);
