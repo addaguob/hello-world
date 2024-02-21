@@ -319,3 +319,11 @@ if (!isSunny) {
 else {
     console.log("It is not sunny.")
 }
+
+const PI = 3.14;
+if (PI !== "3.14") {
+    console.log("That is not PI.");
+}
+else {
+    console.log("That is PI.")
+}
