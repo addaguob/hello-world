@@ -285,3 +285,10 @@ let phoneNumber = "123-456-7890";
 // phoneNumber = phoneNumber.replaceAll("-", "/");
 phoneNumber = phoneNumber.padStart(15, "0");
 console.log(phoneNumber);
+
+// string slicing
+const fullName = "Bro Code";
+let firstName = fullName.slice(0, 3);
+let lastName = fullName.slice(4, fullName.length);
+console.log(firstName);
+console.log(lastName);
