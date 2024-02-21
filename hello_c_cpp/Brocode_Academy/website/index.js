@@ -342,7 +342,36 @@ comment
 
 // console.log(`Hello ${userName}`);
 
-for (let i = 1; i <= 20; i++) {
-    if (i == 13) continue;
-    console.log(i);
+// // For-loop
+// for (let i = 1; i <= 20; i++) {
+//     if (i == 13) continue;
+//     console.log(i);
+// }
+
+console.log("Number guessing game: ")
+const minNum = 1;
+const maxNum = 100;
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1));
+let attempts = 0;
+let guess;
+let running = true;
+
+console.log(answer);
+
+while (running) {
+    guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`);
+    guess = Number(guess);
+    if (guess == answer)
+    {
+        console.log(`Your guess of ${guess} matches the answer of ${answer}`);
+        running = false;
+    }
+    else if (guess > answer)
+    {
+        console.log(`That's higher than the secret number.`);
+    }
+    else {
+        console.log(`That's lower than the secret number.`);
+    }
 }
+console.log("Correct!");
