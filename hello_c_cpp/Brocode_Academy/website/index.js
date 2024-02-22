@@ -395,3 +395,25 @@ function happyBirthday(username, age) {
 
 happyBirthday("Alexander", 35);
 happyBirthday("Kryzzabel", 27);
+
+function add(x, y) {
+    return x + y;
+}
+
+function isEven(number) {
+    return number % 2 === 0 ? true : false;
+}
+
+function isValidEmail(email) {
+    if (email.includes("@")) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+console.log(add(2, -3)); 
+console.log(isEven(5)); 
+let email = "alex@kryzza.com";
+console.log(`${email} as an email is ${isValidEmail(email)}`);
