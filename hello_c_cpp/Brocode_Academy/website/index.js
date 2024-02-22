@@ -361,17 +361,26 @@ console.log(answer);
 while (running) {
     guess = window.prompt(`Guess a number between ${minNum} - ${maxNum}`);
     guess = Number(guess);
-    if (guess == answer)
-    {
-        console.log(`Your guess of ${guess} matches the answer of ${answer}`);
-        running = false;
+    console.log(typeof guess, guess);
+    if (isNaN(guess)) {
+        window.alert(`Please enter a valid number`);
     }
-    else if (guess > answer)
-    {
-        console.log(`That's higher than the secret number.`);
+    else if (guess < minNum || guess > maxNum) {
+        window.alert(`Please enter a number between the specified range`);
+
     }
     else {
-        console.log(`That's lower than the secret number.`);
+        attempts++;
+        if (guess == answer) {
+            window.alert(`Correct! The answer is ${answer}. Total attempts: ${attempts}`);
+            running = false;
+        }
+        else if (guess > answer) {
+            window.alert(`That's higher than the secret number.`);
+        }
+        else {
+            window.alert(`That's lower than the secret number.`);
+        }
     }
 }
-console.log("Correct!");
+
