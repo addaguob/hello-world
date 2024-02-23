@@ -418,14 +418,38 @@ comment
 // let email = "alex@kryzza.com";
 // console.log(`${email} as an email is ${isValidEmail(email)}`);
 
-func1();
-func2();
+// Global and local variables
+// func1();
+// func2();
 
-function func1() {
-    let x = 1;
-    console.log(x);
-}
-function func2() {
-    let x = 2;
-    console.log(x);
+// function func1() {
+//     let x = 1;
+//     console.log(x);
+// }
+// function func2() {
+//     let x = 2;
+//     console.log(x);
+// }
+
+//Temperature conversion program
+const textBox = document.getElementById("textBox");
+const toFarhenheit = document.getElementById("toFarhenheit");
+const toCelsius = document.getElementById("toCelsius");
+const result = document.getElementById("result");
+let temp;
+
+function convert() {
+    if (toFarhenheit.checked) {
+        temp = Number(textBox.value);
+        temp = temp * 9 / 5 + 32;
+        result.textContent = temp.toFixed(1) + "°F";
+    }
+    else if (toCelsius.checked) {
+        temp = Number(textBox.value);
+        temp = (temp - 32) * 5 / 9;
+        result.textContent = temp.toFixed(1) + "°F";
+    }
+    else {
+        result.textContent = `Select a unit`;
+    }
 }
