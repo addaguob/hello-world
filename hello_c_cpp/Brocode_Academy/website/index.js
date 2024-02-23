@@ -384,36 +384,48 @@ comment
 //     }
 // }
 
-console.log("A function is a section of reusable code");
-function happyBirthday(username, age) {
-    console.log("Happy birthday to you!");
-    console.log("Happy birthday to you!");
-    console.log(`Happy birthday dear ${username}!`);
-    console.log("Happy birthday to you!");
-    console.log(`You are ${age} years old!`);
+// console.log("A function is a section of reusable code");
+// function happyBirthday(username, age) {
+//     console.log("Happy birthday to you!");
+//     console.log("Happy birthday to you!");
+//     console.log(`Happy birthday dear ${username}!`);
+//     console.log("Happy birthday to you!");
+//     console.log(`You are ${age} years old!`);
+// }
+
+// happyBirthday("Alexander", 35);
+// happyBirthday("Kryzzabel", 27);
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+// function isEven(number) {
+//     return number % 2 === 0 ? true : false;
+// }
+
+// function isValidEmail(email) {
+//     if (email.includes("@")) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// }
+
+// console.log(add(2, -3));
+// console.log(isEven(5));
+// let email = "alex@kryzza.com";
+// console.log(`${email} as an email is ${isValidEmail(email)}`);
+
+func1();
+func2();
+
+function func1() {
+    let x = 1;
+    console.log(x);
 }
-
-happyBirthday("Alexander", 35);
-happyBirthday("Kryzzabel", 27);
-
-function add(x, y) {
-    return x + y;
+function func2() {
+    let x = 2;
+    console.log(x);
 }
-
-function isEven(number) {
-    return number % 2 === 0 ? true : false;
-}
-
-function isValidEmail(email) {
-    if (email.includes("@")) {
-        return true;
-    }
-    else {
-        return false;
-    }
-}
-
-console.log(add(2, -3)); 
-console.log(isEven(5)); 
-let email = "alex@kryzza.com";
-console.log(`${email} as an email is ${isValidEmail(email)}`);
