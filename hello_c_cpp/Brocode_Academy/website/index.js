@@ -453,3 +453,25 @@ function convert() {
         result.textContent = `Select a unit`;
     }
 }
+
+console.log("Array = a variable like structure that  can hold more than 1 value");
+let fruits = ["apple", "orange", "banana"];
+// console.log(fruits, typeof fruits);
+// fruits[1] = "coconut";
+fruits.push("coconut");
+fruits.pop("coconut");
+fruits.unshift("mango");
+fruits.unshift("guava");
+fruits.shift();
+
+// console.log(fruits)
+// console.log(fruits.length);
+// console.log(fruits[fruits.length - 1]);
+
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(fruits[i])
+// }
+fruits.sort().reverse();
+for (let fruit of fruits) {
+    console.log(fruit);
+}
