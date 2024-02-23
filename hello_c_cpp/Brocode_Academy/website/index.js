@@ -432,46 +432,64 @@ comment
 // }
 
 //Temperature conversion program
-const textBox = document.getElementById("textBox");
-const toFarhenheit = document.getElementById("toFarhenheit");
-const toCelsius = document.getElementById("toCelsius");
-const result = document.getElementById("result");
-let temp;
+// const textBox = document.getElementById("textBox");
+// const toFarhenheit = document.getElementById("toFarhenheit");
+// const toCelsius = document.getElementById("toCelsius");
+// const result = document.getElementById("result");
+// let temp;
 
-function convert() {
-    if (toFarhenheit.checked) {
-        temp = Number(textBox.value);
-        temp = temp * 9 / 5 + 32;
-        result.textContent = temp.toFixed(1) + "°F";
-    }
-    else if (toCelsius.checked) {
-        temp = Number(textBox.value);
-        temp = (temp - 32) * 5 / 9;
-        result.textContent = temp.toFixed(1) + "°F";
-    }
-    else {
-        result.textContent = `Select a unit`;
-    }
-}
-
-console.log("Array = a variable like structure that  can hold more than 1 value");
-let fruits = ["apple", "orange", "banana"];
-// console.log(fruits, typeof fruits);
-// fruits[1] = "coconut";
-fruits.push("coconut");
-fruits.pop("coconut");
-fruits.unshift("mango");
-fruits.unshift("guava");
-fruits.shift();
-
-// console.log(fruits)
-// console.log(fruits.length);
-// console.log(fruits[fruits.length - 1]);
-
-// for (let i = 0; i < fruits.length; i++) {
-//     console.log(fruits[i])
+// function convert() {
+//     if (toFarhenheit.checked) {
+//         temp = Number(textBox.value);
+//         temp = temp * 9 / 5 + 32;
+//         result.textContent = temp.toFixed(1) + "°F";
+//     }
+//     else if (toCelsius.checked) {
+//         temp = Number(textBox.value);
+//         temp = (temp - 32) * 5 / 9;
+//         result.textContent = temp.toFixed(1) + "°F";
+//     }
+//     else {
+//         result.textContent = `Select a unit`;
+//     }
 // }
-fruits.sort().reverse();
-for (let fruit of fruits) {
-    console.log(fruit);
+
+// console.log("Array = a variable like structure that  can hold more than 1 value");
+// let fruits = ["apple", "orange", "banana"];
+// // console.log(fruits, typeof fruits);
+// // fruits[1] = "coconut";
+// fruits.push("coconut");
+// fruits.pop("coconut");
+// fruits.unshift("mango");
+// fruits.unshift("guava");
+// fruits.shift();
+
+// // console.log(fruits)
+// // console.log(fruits.length);
+// // console.log(fruits[fruits.length - 1]);
+
+// // for (let i = 0; i < fruits.length; i++) {
+// //     console.log(fruits[i])
+// // }
+// fruits.sort().reverse();
+// for (let fruit of fruits) {
+//     console.log(fruit);
+// }
+
+console.log("Spread operator = '...'");
+let numbers = [1, 2, 3, 4, 5];
+console.log(numbers);
+let maxNumber = Math.max(...numbers)
+console.log(maxNumber);
+
+console.log("Spread operator on strings:");
+let myName = "Alexander";
+console.log(myName.length)
+let letters = [...myName].join("-");
+console.log(letters.length)
+
+console.log(letters);
+
+for (byte of letters) {
+    console.log(byte)
 }
