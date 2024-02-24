@@ -8,11 +8,12 @@
     </head>
     <body>
         <div id="container">
+            <h3>Generate a 12-character password</h1>
             <input type="checkbox" id="withLetters"> Include letters<br>
             <input type="checkbox" id="withUppercase"> Include uppercase<br>
             <input type="checkbox" id="withNumbers"> Include numbers<br>
             <input type="checkbox" id="withSymbols"> Include symbols<br>
-            <button onclick="generatePassword()">Generate password</button>
+            <button onclick="generatePassword()" id="button">Generate password</button>
             <input id="result" value="" width="15"><br>
             <label id="remark"></label>
         </div>
