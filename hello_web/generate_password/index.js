@@ -4,7 +4,7 @@ let letters = "abcdefghijklmnopqrstuvwxyz";
 let lUppercase = letters.toUpperCase();
 let numbers = "1234567890";
 let symbols = "!@3$%^&*()-_+=/";
-let password = "No password";
+let password = "";
 
 function generatePassword() {
     let withLetters = document.getElementById("withLetters").checked ? true : false;
