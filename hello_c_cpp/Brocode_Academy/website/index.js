@@ -493,3 +493,8 @@ console.log(letters);
 for (byte of letters) {
     console.log(byte)
 }
+
+// Doesn't support multi-assignments in a line
+// let abc = "abc";
+// let a, b, c = 1, 2, 0;
+// console.log(a,b,c)
