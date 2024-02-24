@@ -4,9 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Generate Passoword</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button>Generate password</button>
+        <div id="container">
+            <input type="checkbox" id="withLetters"> Include letters<br>
+            <input type="checkbox" id="withUppercase"> Include uppercase<br>
+            <input type="checkbox" id="withNumbers"> Include numbers<br>
+            <input type="checkbox" id="withSymbols"> Include symbols<br>
+            <button onclick="generatePassword()">Generate password</button>
+            <input id="result" value="" width="15"><br>
+            <label id="remark"></label>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
