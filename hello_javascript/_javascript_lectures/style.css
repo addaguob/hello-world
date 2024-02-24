@@ -86,7 +86,7 @@ button:hover {
     font-weight: bold;
 } */
 
-#container {
+/* #container {
     font-family: Arial, sans-serif;
     text-align: center;
     font-size: 2rem;
@@ -120,7 +120,7 @@ input {
 }
 
 img {
-    /* width: 20%; */
+    width: 20%;
     border: 2px solid;
     border-radius: 15px;
     padding: 5px;
@@ -132,4 +132,5 @@ img {
 #diceImages img {
     width: 50px;
     margin: 5px;
-}
+} */
+

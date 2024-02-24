@@ -511,20 +511,36 @@ comment
 // let prutas = combine(fruit1, fruit2, fruit3, fruit4);
 // console.log(prutas);
 
-console.log("Dice Roller Program");
+// console.log("Dice Roller Program");
 
-function rollDice() {
-    const numOfDice = document.getElementById("numOfDice").value;
-    const diceResult = document.getElementById("diceResult");
-    const diceImages = document.getElementById("diceImages");
-    const values = [];
-    const images = [];
+// function rollDice() {
+//     const numOfDice = document.getElementById("numOfDice").value;
+//     const diceResult = document.getElementById("diceResult");
+//     const diceImages = document.getElementById("diceImages");
+//     const values = [];
+//     const images = [];
 
-    for (let i = 0; i < numOfDice; i++) {
-        const val = Math.floor(Math.random() * 6) + 1;
-        values.push(val);
-        images.push(`<img src="dice/dice${val}.jpg" alt="dice${val}">`);
-    }
-    diceResult.textContent = `Dice: ${values.join(", ")}`;
-    diceImages.innerHTML = images.join("");
+//     for (let i = 0; i < numOfDice; i++) {
+//         const val = Math.floor(Math.random() * 6) + 1;
+//         values.push(val);
+//         images.push(`<img src="dice/dice${val}.jpg" alt="dice${val}">`);
+//     }
+//     diceResult.textContent = `Dice: ${values.join(", ")}`;
+//     diceImages.innerHTML = images.join("");
+// }
+
+console.log("Exploring callback function parameter")
+
+hello(goodbye);
+
+function hello(callback) {
+    // Example of delaying an execution
+    setTimeout(function () {
+        console.log("Hello!");
+    }, 3000); // Goodbye still goes first even with callback
+    callback(); // maybe I'll dig more into this later
+}
+
+function goodbye() {
+    console.log("Goodbye!")
 }
