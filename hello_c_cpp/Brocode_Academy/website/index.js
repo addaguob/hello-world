@@ -476,25 +476,37 @@ comment
 //     console.log(fruit);
 // }
 
-console.log("Spread operator = '...'");
-let numbers = [1, 2, 3, 4, 5];
-console.log(numbers);
-let maxNumber = Math.max(...numbers)
-console.log(maxNumber);
+// console.log("Spread operator = '...'");
+// let numbers = [1, 2, 3, 4, 5];
+// console.log(numbers);
+// let maxNumber = Math.max(...numbers)
+// console.log(maxNumber);
 
-console.log("Spread operator on strings:");
-let myName = "Alexander";
-console.log(myName.length)
-let letters = [...myName].join("-");
-console.log(letters.length)
+// console.log("Spread operator on strings:");
+// let myName = "Alexander";
+// console.log(myName.length)
+// let letters = [...myName].join("-");
+// console.log(letters.length)
 
-console.log(letters);
+// console.log(letters);
 
-for (byte of letters) {
-    console.log(byte)
-}
+// for (byte of letters) {
+//     console.log(byte)
+// }
 
 // Doesn't support multi-assignments in a line
 // let abc = "abc";
 // let a, b, c = 1, 2, 0;
 // console.log(a,b,c)
+
+let fruit1 = "mango";
+let fruit2 = "melon";
+let fruit3 = "guava";
+let fruit4 = "lemon";
+
+function combine(...fruits) {
+    return fruits;
+}
+
+let prutas = combine(fruit1, fruit2, fruit3, fruit4);
+console.log(prutas);
