@@ -529,7 +529,7 @@ comment
 //     diceImages.innerHTML = images.join("");
 // }
 
-console.log("Exploring callback function parameter")
+// console.log("Exploring callback function parameter")
 
 // hello(goodbye);
 
@@ -544,17 +544,39 @@ console.log("Exploring callback function parameter")
 // function goodbye() {
 //     console.log("Goodbye!")
 // }
-sum(displayPage, 1, 2);
+// sum(displayPage, 1, 2);
 
-function sum(callback, x, y) {
-    let z = x + y;
-    return callback(z);
-}
+// function sum(callback, x, y) {
+//     let z = x + y;
+//     return callback(z);
+// }
 
-function displayConsole(result) {
-    console.log(result);
-}
+// function displayConsole(result) {
+//     console.log(result);
+// }
 
-function displayPage(result) {
-    document.getElementById("myH1").textContent = result;
+// function displayPage(result) {
+//     document.getElementById("myH1").textContent = result;
+// }
+
+console.log("forEach() method exercise")
+// let numbers = [1, 5, 3, 2, 4];
+
+// numbers.forEach(double);
+// numbers.forEach(display);
+
+// function double(element, index, array) {
+//     array[index] = element * 2;
+// }
+
+// function display(element) {
+//     console.log(element);
+// }
+
+let fruits = ["apple", "mango", "banana"];
+fruits.forEach(displayFruitsInUppercase);
+
+function displayFruitsInUppercase(element, index, array) {
+    array[index] = element.toUpperCase();
+    console.log(element, index, array);
 }
