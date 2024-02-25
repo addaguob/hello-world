@@ -587,3 +587,6 @@ function capitalize(element, index, array) {
     + element.slice(1);
     console.log(element, index, array);
 }
+
+console.log("map")
+// TODO JavaScript map and callbacks
