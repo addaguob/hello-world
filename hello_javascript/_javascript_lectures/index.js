@@ -574,9 +574,16 @@ console.log("forEach() method exercise")
 // }
 
 let fruits = ["apple", "mango", "banana"];
-fruits.forEach(displayFruitsInUppercase);
+fruits.forEach(displayFruits);
+fruits.forEach(capitalize);
 
-function displayFruitsInUppercase(element, index, array) {
-    array[index] = element.toUpperCase();
+function displayFruits(element, index, array) {
+    // array[index] = element.toUpperCase();
+    console.log(element, index, array);
+}
+
+function capitalize(element, index, array) {
+    array[index] = element.charAt(0).toUpperCase()
+    + element.slice(1);
     console.log(element, index, array);
 }
