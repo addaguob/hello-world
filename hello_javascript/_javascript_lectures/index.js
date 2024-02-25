@@ -531,16 +531,30 @@ comment
 
 console.log("Exploring callback function parameter")
 
-hello(goodbye);
+// hello(goodbye);
 
-function hello(callback) {
-    // Example of delaying an execution
-    setTimeout(function () {
-        console.log("Hello!");
-    }, 3000); // Goodbye still goes first even with callback
-    callback(); // maybe I'll dig more into this later
+// function hello(callback) {
+//     // Example of delaying an execution
+//     setTimeout(function () {
+//         console.log("Hello!");
+//     }, 3000); // Goodbye still goes first even with callback
+//     callback(); // maybe I'll dig more into this later
+// }
+
+// function goodbye() {
+//     console.log("Goodbye!")
+// }
+sum(displayPage, 1, 2);
+
+function sum(callback, x, y) {
+    let z = x + y;
+    return callback(z);
 }
 
-function goodbye() {
-    console.log("Goodbye!")
+function displayConsole(result) {
+    console.log(result);
+}
+
+function displayPage(result) {
+    document.getElementById("myH1").textContent = result;
 }
