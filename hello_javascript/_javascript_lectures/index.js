@@ -559,7 +559,7 @@ comment
 //     document.getElementById("myH1").textContent = result;
 // }
 
-console.log("forEach() method exercise that changes array contents")
+// console.log("forEach() method exercise that changes array contents")
 // let numbers = [1, 5, 3, 2, 4];
 
 // numbers.forEach(double);
@@ -573,33 +573,34 @@ console.log("forEach() method exercise that changes array contents")
 //     console.log(element);
 // }
 
-let fruits = ["apple", "mango", "banana"];
-fruits.forEach(displayFruits);
-fruits.forEach(capitalize);
+// let fruits = ["apple", "mango", "banana"];
+// fruits.forEach(displayFruits);
+// fruits.forEach(capitalize);
 
-function displayFruits(element, index, array) {
-    // array[index] = element.toUpperCase();
-    console.log(element, index, array);
-}
+// function displayFruits(element, index, array) {
+//     // array[index] = element.toUpperCase();
+//     console.log(element, index, array);
+// }
 
-function capitalize(element, index, array) {
-    array[index] = element.charAt(0).toUpperCase()
-    + element.slice(1);
-    console.log(element, index, array);
-}
+// function capitalize(element, index, array) {
+//     array[index] = element.charAt(0).toUpperCase()
+//     + element.slice(1);
+//     console.log(element, index, array);
+// }
 
-console.log(".map() that accepts a callback but returns a new array")
-const numbers = [1, 2, 3, 4];
-const doubledNumbers = numbers.map(cube);
-function cube(element) {
-    return element * 3;
-}
-console.log(doubledNumbers);
+// console.log(".map() that accepts a callback but returns a new array")
+// const numbers = [1, 2, 3, 4];
+// const doubledNumbers = numbers.map(cube);
+// function cube(element) {
+//     return element * 3;
+// }
+// console.log(doubledNumbers);
 
-const students = ["Alex", "Kryzza", "Erum"];
-const upperizedStudents = students.map(upperized);
+// const students = ["Alex", "Kryzza", "Erum"];
+// const upperizedStudents = students.map(upperized);
 
-function upperized(element) {
-    return element.toUpperCase();
-}
-console.log(students, upperizedStudents)
+// function upperized(element) {
+//     return element.toUpperCase();
+// }
+// console.log(students, upperizedStudents)
+console.log("filter method");
