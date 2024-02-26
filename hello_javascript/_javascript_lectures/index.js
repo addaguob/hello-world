@@ -655,8 +655,12 @@ console.log(total)
 console.log("function expression vs function declaration:");
 console.log("the former defines functions as values or variables");
 
-const greet = function greetings() {
+const greet = function () {
     console.log("Hello")
 }
 
-greet();
+setTimeout(greet, 3000);
+
+setTimeout(function () {
+    console.log("Hi")
+}, 3000);
