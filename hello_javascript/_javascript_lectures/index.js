@@ -559,7 +559,7 @@ comment
 //     document.getElementById("myH1").textContent = result;
 // }
 
-console.log("forEach() method exercise")
+console.log("forEach() method exercise that changes array contents")
 // let numbers = [1, 5, 3, 2, 4];
 
 // numbers.forEach(double);
@@ -588,5 +588,18 @@ function capitalize(element, index, array) {
     console.log(element, index, array);
 }
 
-console.log("map")
-// TODO JavaScript map and callbacks
+console.log(".map() that accepts a callback but returns a new array")
+const numbers = [1, 2, 3, 4];
+const doubledNumbers = numbers.map(cube);
+function cube(element) {
+    return element * 3;
+}
+console.log(doubledNumbers);
+
+const students = ["Alex", "Kryzza", "Erum"];
+const upperizedStudents = students.map(upperized);
+
+function upperized(element) {
+    return element.toUpperCase();
+}
+console.log(students, upperizedStudents)
