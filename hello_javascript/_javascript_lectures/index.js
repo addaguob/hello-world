@@ -603,33 +603,33 @@ comment
 //     return element.toUpperCase();
 // }
 // console.log(students, upperizedStudents)
-console.log("filter method creates a new array by filtering out elements");
-const names = ["Alex", "Alexander", "Lex", "Alexthunder", "Xander"];
-const shortNames = names.filter(getShortNames);
-const longNames = names.filter(getLongNames);
+// console.log("filter method creates a new array by filtering out elements");
+// const names = ["Alex", "Alexander", "Lex", "Alexthunder", "Xander", "Xan"];
+// const shortNames = names.filter(getShortNames);
+// const longNames = names.filter(getLongNames);
 
-console.log(shortNames);
-console.log(longNames);
+// console.log(shortNames);
+// console.log(longNames);
 
-function getShortNames(element) {
-    return element.length <= 6;
-}
+// function getShortNames(element) {
+//     return element.length <= 6;
+// }
 
-function getLongNames(element) {
-    return element.length > 6;
-}
+// function getLongNames(element) {
+//     return element.length > 6;
+// }
 // console.log("but for now, let's test the 'quirkiness' of Javascript:");
-// console.log(null > 0) // false 
+// console.log(null > 0) // false
 
-// console.log(null == 0) // false 
+// console.log(null == 0) // false
 
-// console.log(null < 0) // false 
+// console.log(null < 0) // false
 
 // console.log(null >= 0) // true. Like WTF ????????????
 
 // // https://www.quora.com/Why-is-JavaScript-so-hated
 
-// console.log(typeof (NaN)) // "number" 
+// console.log(typeof (NaN)) // "number"
 
 // console.log(typeof (null)) // "object"
 
@@ -641,3 +641,13 @@ function getLongNames(element) {
 //     }
 //     console.log("-----");
 // }
+
+console.log(".reduce() the elements of an array to a single value");
+let nums = [1, 2, 3];
+let total = nums.reduce(sumNums);
+
+function sumNums(accumulator, element) {
+    return accumulator + element;
+}
+
+console.log(total)
