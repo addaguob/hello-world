@@ -651,3 +651,12 @@ function sumNums(accumulator, element) {
 }
 
 console.log(total)
+
+console.log("function expression vs function declaration:");
+console.log("the former defines functions as values or variables");
+
+const greet = function greetings() {
+    console.log("Hello")
+}
+
+greet();
