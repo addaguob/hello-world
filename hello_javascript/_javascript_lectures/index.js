@@ -642,35 +642,43 @@ comment
 //     console.log("-----");
 // }
 
-console.log(".reduce() the elements of an array to a single value");
-let nums = [1, 2, 3];
-let total = nums.reduce(sumNums);
+// console.log(".reduce() the elements of an array to a single value");
+// let nums = [1, 2, 3];
+// let total = nums.reduce(sumNums);
 
-function sumNums(accumulator, element) {
-    return accumulator + element;
+// function sumNums(accumulator, element) {
+//     return accumulator + element;
+// }
+
+// console.log(total.toFixed(2)) // toFixed formats decimal points
+
+// let grades = [86, 90, 95];
+// let len = grades.length;
+// console.log(`Get average of grades: ${grades}`);
+// console.log((grades.reduce(
+//     function (prev, element) {
+//         return prev + element;
+//     }) / len ).toFixed(2)
+// );
+
+// console.log("function expression vs function declaration:");
+// console.log("the former defines functions as values or variables");
+
+// const greet = function () {
+//     console.log("Hello")
+// }
+
+// setTimeout(greet, 3000);
+
+// setTimeout(function () {
+//     console.log("Hi")
+// }, 3000);
+
+const numbers = [1, 2, 3, 4, 5];
+const squares = numbers.map(square);
+console.log(squares);
+
+function square(element) {
+    return Math.pow(element, 2);
 }
-
-console.log(total.toFixed(2)) // toFixed formats decimal points
-
-let grades = [86, 90, 95];
-let len = grades.length;
-console.log(`Get average of grades: ${grades}`);
-console.log((grades.reduce(
-    function (prev, element) {
-        return prev + element;
-    }) / len ).toFixed(2)
-);
-
-console.log("function expression vs function declaration:");
-console.log("the former defines functions as values or variables");
-
-const greet = function () {
-    console.log("Hello")
-}
-
-setTimeout(greet, 3000);
-
-setTimeout(function () {
-    console.log("Hi")
-}, 3000);
 
