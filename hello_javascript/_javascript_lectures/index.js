@@ -675,10 +675,27 @@ comment
 // }, 3000);
 
 const numbers = [1, 2, 3, 4];
+console.log("Numbers: " + numbers);
+
 const squares = numbers.map(function(element) {
     return Math.pow(element, 2);
 });
-console.log(squares);
+console.log("Squares: " + squares);
 
+const cubes = numbers.map(function (element) {
+    return Math.pow(element, 3);
+});
+console.log("Cubes: " + cubes)
 
+const evenNums = numbers.filter(function (element) {
+    return element % 2 === 0;
+});
+console.log("Even numbers: " + evenNums);
 
+console.log("Total: " +
+    numbers.reduce(function (prevElement, nextElement) {
+        return prevElement + nextElement;
+    }),
+    typeof numbers.reduce(function (prevElement, nextElement) {
+        return prevElement + nextElement;
+    }));
