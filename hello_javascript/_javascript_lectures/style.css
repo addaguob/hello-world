@@ -31,18 +31,22 @@
 
 .rollResult {
     font-size: 3em;
-} */
+}
 
-/* body {
+ body {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 94%);
+}*/
+
+#myH1 {
+    color: red;
 }
 
 h1 {
-    color: hsl(223, 100%, 64%);
+    color: blue;
 }
 
-form {
+/*form {
     background-color: hsl(0, 0%, 100%);
     text-align: center;
     max-width: 350px;
