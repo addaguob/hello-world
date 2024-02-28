@@ -650,7 +650,16 @@ function sumNums(accumulator, element) {
     return accumulator + element;
 }
 
-console.log(total)
+console.log(total.toFixed(2)) // toFixed formats decimal points
+
+let grades = [86, 90, 95];
+let len = grades.length;
+console.log(`Get average of grades: ${grades}`);
+console.log((grades.reduce(
+    function (prev, element) {
+        return prev + element;
+    }) / len ).toFixed(2)
+);
 
 console.log("function expression vs function declaration:");
 console.log("the former defines functions as values or variables");
