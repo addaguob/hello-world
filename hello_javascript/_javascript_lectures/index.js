@@ -692,7 +692,7 @@ const evenNums = numbers.filter(function (element) {
 });
 console.log("Even numbers: " + evenNums);
 
-console.log("Total: " +
+console.log("Total of numbers: " +
     numbers.reduce(function (prevElement, nextElement) {
         return prevElement + nextElement;
     }),
