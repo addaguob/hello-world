@@ -699,3 +699,11 @@ console.log("Total of numbers: " +
     typeof numbers.reduce(function (prevElement, nextElement) {
         return prevElement + nextElement;
     }));
+
+console.log("Arrow functions");
+
+const hello = function () {
+    console.log("Helloo");
+}
+
+hello();
