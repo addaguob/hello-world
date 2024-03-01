@@ -701,9 +701,5 @@ console.log("Total of numbers: " +
     }));
 
 console.log("Arrow functions");
-
-const hello = function () {
-    console.log("Helloo");
-}
-
-hello();
+const greet = (myName) => console.log("Hey there! I'm " + myName + "!");
+greet("Alex");
