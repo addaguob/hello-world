@@ -677,29 +677,43 @@ comment
 const numbers = [1, 2, 3, 4];
 console.log("Numbers: " + numbers);
 
-const squares = numbers.map(function(element) {
-    return Math.pow(element, 2);
-});
-console.log("Squares: " + squares);
+// const squares = numbers.map(function(element) {
+//     return Math.pow(element, 2);
+// });
+// console.log("Squares: " + squares);
 
-const cubes = numbers.map(function (element) {
-    return Math.pow(element, 3);
-});
-console.log("Cubes: " + cubes)
+// const cubes = numbers.map(function (element) {
+//     return Math.pow(element, 3);
+// });
+// console.log("Cubes: " + cubes)
 
-const evenNums = numbers.filter(function (element) {
-    return element % 2 === 0;
-});
-console.log("Even numbers: " + evenNums);
+// const evenNums = numbers.filter(function (element) {
+//     return element % 2 === 0;
+// });
+// console.log("Even numbers: " + evenNums);
 
-console.log("Total of numbers: " +
-    numbers.reduce(function (prevElement, nextElement) {
-        return prevElement + nextElement;
-    }),
-    typeof numbers.reduce(function (prevElement, nextElement) {
-        return prevElement + nextElement;
-    }));
+// console.log("Total of numbers: " +
+//     numbers.reduce(function (prevElement, nextElement) {
+//         return prevElement + nextElement;
+//     }),
+//     typeof numbers.reduce(function (prevElement, nextElement) {
+//         return prevElement + nextElement;
+//     }));
 
-console.log("Arrow functions");
-const greet = (myName) => console.log("Hey there! I'm " + myName + "!");
-greet("Alex");
+// console.log("Arrow functions");
+// const greet = (myName) => console.log("Hey there! I'm " + myName + "!");
+// greet("Alex");
+
+// setTimeout(hello, 3000);
+
+// function hello() {
+//     console.log("Hello there!")
+// }
+// setTimeout(() => console.log("Hello after 3secs."), 3000);
+
+const doubleNum = numbers.map((element) => Math.pow(element, 2));
+console.log("Doubled: " + doubleNum);
+console.log("Below 3: " + numbers.filter((value) => value > 2));
+
+numbers.forEach((value, index, array) => array[index] = value + 2)
+console.log("Plus 1: " + numbers);
