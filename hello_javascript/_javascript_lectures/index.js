@@ -177,7 +177,7 @@ comment
 // document.getElementById("ageSubmit").onclick = function() {
 //     age = document.getElementById("ageInput").value;
 //     age = Number(age);
-    
+
 //     remarks = document.getElementById("ageRemarks");
 
 //     if (age > 99) {
@@ -185,7 +185,7 @@ comment
 //     }
 //     else if (age >= 16) {
 //         remarks.textContent = "You are old enough to drive";
-    
+
 //         if (hasLicense) {
 //             remarks.textContent = "You have your license!";
 //         }
@@ -337,7 +337,7 @@ comment
 
 // do {
 //     userName = window.prompt("Enter your name: ");
-    
+
 // } while (userName === "" || userName === null);
 
 // console.log(`Hello ${userName}`);
@@ -674,8 +674,8 @@ comment
 //     console.log("Hi")
 // }, 3000);
 
-const numbers = [1, 2, 3, 4];
-console.log("Numbers: " + numbers);
+// const numbers = [1, 2, 3, 4];
+// console.log("Numbers: " + numbers);
 
 // const squares = numbers.map(function(element) {
 //     return Math.pow(element, 2);
@@ -707,13 +707,18 @@ console.log("Numbers: " + numbers);
 // setTimeout(hello, 3000);
 
 // function hello() {
-//     console.log("Hello there!")
+//     console.log("Hello there!");
 // }
 // setTimeout(() => console.log("Hello after 3secs."), 3000);
+// const numbers = [1, 2, 3, 4];
+// console.log("Numbers: " + numbers);
+// const doubleNum = numbers.map((element) => Math.pow(element, 2));
+// console.log("Doubled: " + doubleNum);
+// console.log("Below 3: " + numbers.filter((value) => value > 2));
 
-const doubleNum = numbers.map((element) => Math.pow(element, 2));
-console.log("Doubled: " + doubleNum);
-console.log("Below 3: " + numbers.filter((value) => value > 2));
+// numbers.forEach((value, index, array) => array[index] = value + 2)
+// console.log("Plus 1: " + numbers);
 
-numbers.forEach((value, index, array) => array[index] = value + 2)
-console.log("Plus 1: " + numbers);
+console.log("object = a collection of related properties and/or methods.");
+console.log("It can represent real wrold objects (people, products, places");
+console.log("object = {key:value, function()}")
