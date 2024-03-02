@@ -783,23 +783,48 @@ comment
 // salakyan.drive();
 // salakyan.honk();
 
-class MathUtil {
-    static PI = 3.14159;
+// class MathUtil {
+//     static PI = 3.14159;
 
-    static getDiameter(radius) {
-        return radius * 2;
+//     static getDiameter(radius) {
+//         return radius * 2;
+//     }
+
+//     static getCircumference(radius) {
+//         return 2 * this.PI * radius;
+//     }
+
+//     static getArea(radius) {
+//         return this.PI * radius * radius;
+//     }
+// }
+
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getDiameter(10));
+// console.log(MathUtil.getCircumference(10));
+// console.log(MathUtil.getArea(10));
+
+class User {
+    static userCount = 0;
+
+    constructor(username) {
+        this.username = username;
+        User.userCount++;
     }
 
-    static getCircumference(radius) {
-        return 2 * this.PI * radius;
+    static getUserCount() {
+        console.log(`There are ${User.userCount} ${User.userCount > 1 ? "users" : "user"}.`)
     }
 
-    static getArea(radius) {
-        return this.PI * radius * radius;
+    sayHello() {
+        console.log(`Hello, my username is ${this.username}.`);
     }
 }
 
-console.log(MathUtil.PI);
-console.log(MathUtil.getDiameter(10));
-console.log(MathUtil.getCircumference(10));
-console.log(MathUtil.getArea(10));
+const user1 = new User("alexthunder");
+const user2 = new User("kelizha");
+
+user1.sayHello();
+user2.sayHello();
+// user2.getUserCount(); // Error, it can't access static
+User.getUserCount();
