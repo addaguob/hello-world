@@ -745,3 +745,21 @@ const person2 = {
 
 person1.motto("Kryzza");
 person2.motto("Alex");
+
+const nn = 2;
+console.log(nn);
+
+console.log("Object constructor method");
+
+function Car(make, model, year, color) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.drive = function () {
+        console.log(`You're driving the ${this.model} ${this.year}`)
+    }
+}
+
+const car1 = new Car("Ford", "Mustang", 2024, "grey");
+car1.drive();
