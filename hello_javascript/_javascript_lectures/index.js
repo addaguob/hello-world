@@ -764,21 +764,42 @@ comment
 // const car1 = new Car("Ford", "Mustang", 2024, "grey");
 // car1.drive();
 
-console.log("Class was introduced in ES6 (Summer 2015)")
-class Car {
-    constructor(make, model, year, color) {
-        this.make = make;
-        this.model = model;
-        this.year = year;
-        this.color = color;
-        this.honk = function() { console.log("Honk honk!")}
+// console.log("Class was introduced in ES6 (Summer 2015)")
+// class Car {
+//     constructor(make, model, year, color) {
+//         this.make = make;
+//         this.model = model;
+//         this.year = year;
+//         this.color = color;
+//         this.honk = function() { console.log("Honk honk!")}
+//     }
+
+//     drive() {
+//         console.log(`You are driving the ${this.model} ${this.year}`);
+//     }
+// }
+
+// const salakyan = new Car("Ford", "Mustang", 2024, "grey");
+// salakyan.drive();
+// salakyan.honk();
+
+class MathUtil {
+    static PI = 3.14159;
+
+    static getDiameter(radius) {
+        return radius * 2;
     }
 
-    drive() {
-        console.log(`You are driving the ${this.model} ${this.year}`);
+    static getCircumference(radius) {
+        return 2 * this.PI * radius;
+    }
+
+    static getArea(radius) {
+        return this.PI * radius * radius;
     }
 }
 
-const salakyan = new Car("Ford", "Mustang", 2024, "grey");
-salakyan.drive();
-salakyan.honk();
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCircumference(10));
+console.log(MathUtil.getArea(10));
