@@ -804,27 +804,57 @@ comment
 // console.log(MathUtil.getCircumference(10));
 // console.log(MathUtil.getArea(10));
 
-class User {
-    static userCount = 0;
+// class User {
+//     static userCount = 0;
 
-    constructor(username) {
-        this.username = username;
-        User.userCount++;
+//     constructor(username) {
+//         this.username = username;
+//         User.userCount++;
+//     }
+
+//     static getUserCount() {
+//         console.log(`There are ${User.userCount} ${User.userCount > 1 ? "users" : "user"}.`)
+//     }
+
+//     sayHello() {
+//         console.log(`Hello, my username is ${this.username}.`);
+//     }
+// }
+
+// const user1 = new User("alexthunder");
+// const user2 = new User("kelizha");
+
+// user1.sayHello();
+// user2.sayHello();
+// // user2.getUserCount(); // Error, it can't access static
+// User.getUserCount();
+
+console.log("Demonstrate class inheritance")
+class Animal {
+    alive = true;
+
+    eat() {
+        console.log(`This ${this.name} is eating.`);
     }
 
-    static getUserCount() {
-        console.log(`There are ${User.userCount} ${User.userCount > 1 ? "users" : "user"}.`)
-    }
-
-    sayHello() {
-        console.log(`Hello, my username is ${this.username}.`);
+    sleep() {
+        console.log(`This ${this.name} is sleeping.`);
     }
 }
 
-const user1 = new User("alexthunder");
-const user2 = new User("kelizha");
+class Fish extends Animal {
+    name = "Fish";
+}
 
-user1.sayHello();
-user2.sayHello();
-// user2.getUserCount(); // Error, it can't access static
-User.getUserCount();
+class Rabbit extends Animal {
+    name = "Rabbit";
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+
+console.log(rabbit.alive);
+rabbit.alive = false;
+console.log(rabbit.alive);
+
+fish.sleep();
