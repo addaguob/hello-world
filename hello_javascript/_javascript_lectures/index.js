@@ -844,10 +844,17 @@ class Animal {
 
 class Fish extends Animal {
     name = "Fish";
+    swim() {
+        console.log(`This ${this.name} is swimming!`);
+    }
 }
 
 class Rabbit extends Animal {
     name = "Rabbit";
+
+    run() {
+        console.log(`This ${this.name} is running!`);
+    }
 }
 
 const rabbit = new Rabbit();
@@ -858,3 +865,4 @@ rabbit.alive = false;
 console.log(rabbit.alive);
 
 fish.sleep();
+rabbit.run();
