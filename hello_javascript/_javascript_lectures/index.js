@@ -719,47 +719,66 @@ comment
 // numbers.forEach((value, index, array) => array[index] = value + 2)
 // console.log("Plus 1: " + numbers);
 
-console.log("object = a collection of related properties and/or methods.");
-console.log("It can represent real wrold objects (people, products, places");
-console.log("object = {key:value, function()}")
+// console.log("object = a collection of related properties and/or methods.");
+// console.log("It can represent real wrold objects (people, products, places");
+// console.log("object = {key:value, function()}")
 
-const person1 = {
-    firstName: "Alex",
-    lastName: "Thunder",
-    age: 35,
-    isEmployed: false,
-    motto: function (fname = "Alex") {
-        console.log(`Go ${this.firstName} and ${fname}! Go! Go!`);
+// const person1 = {
+//     firstName: "Alex",
+//     lastName: "Thunder",
+//     age: 35,
+//     isEmployed: false,
+//     motto: function (fname = "Alex") {
+//         console.log(`Go ${this.firstName} and ${fname}! Go! Go!`);
+//     }
+// }
+
+// const person2 = {
+//     firstName: "Kryzza",
+//     lastName: "Tan Man",
+//     age: 27,
+//     isEmployed: true,
+//     motto: function (fname = "Kezha") {
+//         console.log(`Go ${this.firstName} and ${fname}! Go! Go!`);
+//     }
+// }
+
+// person1.motto("Kryzza");
+// person2.motto("Alex");
+
+// const nn = 2;
+// console.log(nn);
+
+// console.log("Object constructor method");
+
+// function Car(make, model, year, color) {
+//     this.make = make;
+//     this.model = model;
+//     this.year = year;
+//     this.color = color;
+//     this.drive = function () {
+//         console.log(`You're driving the ${this.model} ${this.year}`)
+//     }
+// }
+
+// const car1 = new Car("Ford", "Mustang", 2024, "grey");
+// car1.drive();
+
+console.log("Class was introduced in ES6 (Summer 2015)")
+class Car {
+    constructor(make, model, year, color) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+        this.honk = function() { console.log("Honk honk!")}
+    }
+
+    drive() {
+        console.log(`You are driving the ${this.model} ${this.year}`);
     }
 }
 
-const person2 = {
-    firstName: "Kryzza",
-    lastName: "Tan Man",
-    age: 27,
-    isEmployed: true,
-    motto: function (fname = "Kezha") {
-        console.log(`Go ${this.firstName} and ${fname}! Go! Go!`);
-    }
-}
-
-person1.motto("Kryzza");
-person2.motto("Alex");
-
-const nn = 2;
-console.log(nn);
-
-console.log("Object constructor method");
-
-function Car(make, model, year, color) {
-    this.make = make;
-    this.model = model;
-    this.year = year;
-    this.color = color;
-    this.drive = function () {
-        console.log(`You're driving the ${this.model} ${this.year}`)
-    }
-}
-
-const car1 = new Car("Ford", "Mustang", 2024, "grey");
-car1.drive();
+const salakyan = new Car("Ford", "Mustang", 2024, "grey");
+salakyan.drive();
+salakyan.honk();
