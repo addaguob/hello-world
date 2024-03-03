@@ -907,6 +907,7 @@ class Hawk extends Animal {
     }
     fly() {
         console.log(`This ${this.name} is flying!`);
+        super.move(this.flySpeed);
     }
 }
 
