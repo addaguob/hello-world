@@ -880,6 +880,10 @@ class Animal {
         console.log(`This ${this.name} is eating.`);
     }
 
+    move(speed) {
+        console.log(`This ${this.name} moves at a speed of ${speed}mph.`)
+    }
+
     sleep() {
         console.log(`This ${this.name} is sleeping.`);
     }
@@ -892,6 +896,7 @@ class Fish extends Animal {
     }
     swim() {
         console.log(`This ${this.name} is swimming!`);
+        super.move(this.swimSpeed);
     }
 }
 
