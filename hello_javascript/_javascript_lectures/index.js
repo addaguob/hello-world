@@ -919,6 +919,7 @@ class Rabbit extends Animal {
 
     run() {
         console.log(`This ${this.name} is running!`);
+        super.move(this.runSpeed);
     }
 }
 
