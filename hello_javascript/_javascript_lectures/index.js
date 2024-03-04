@@ -867,7 +867,7 @@ comment
 // fish.sleep();
 // rabbit.run();
 
-console.log("Demonstrate super class which is parent class")
+// console.log("Demonstrate super class which is parent class")
 
 // class Animal {
     
@@ -940,29 +940,70 @@ console.log("Demonstrate super class which is parent class")
 // console.log(rabbit.runSpeed);
 // rabbit.run();
 
-class Daguob {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
+// class Daguob {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     selfIntro(hobby) {
+//         console.log(`I am ${this.name} and I like to ${hobby}!`);
+//     }
+// }
+
+// class Alex extends Daguob {
+//     constructor(name, age, hobby) {
+//         super(name, age);
+//         this.hobby = hobby;
+//     }
+
+//     sayHello() {
+//         console.log("Hello!");
+//         super.selfIntro(this.hobby);
+//     }
+// }
+
+// const alex = new Alex("Alex", 35, "study Software Engineering");
+// console.log(alex.name, alex.age, alex.hobby);
+// alex.sayHello();
+
+console.log("Setter and getter in class\n----------");
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
     }
 
-    selfIntro(hobby) {
-        console.log(`I am ${this.name} and I like to ${hobby}!`);
+    set width(newWidth) {
+        if (newWidth > 0) {
+            this._width = newWidth;
+        }
+        else {
+            console.error("Width must be a positive number.");
+        }
+    }
+    
+    set height(newHeight) {
+        if (newHeight > 0) {
+            this._height = newHeight;
+        }
+        else {
+            console.error("Height must be a postive number.")
+        }
+    }
+
+    get width() {
+        return this._width;
+    }
+
+    get height() {
+        return this._height;
     }
 }
 
-class Alex extends Daguob {
-    constructor(name, age, hobby) {
-        super(name, age);
-        this.hobby = hobby;
-    }
-
-    sayHello() {
-        console.log("Hello!");
-        super.selfIntro(this.hobby);
-    }
-}
-
-const alex = new Alex("Alex", 35, "study Software Engineering");
-console.log(alex.name, alex.age, alex.hobby);
-alex.sayHello();
+const rect = new Rectangle(3, 4);
+console.log(rect.width);
+console.log(rect.height);
+// rect.width();
+// rect.height();
