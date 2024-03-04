@@ -967,104 +967,121 @@ comment
 // console.log(alex.name, alex.age, alex.hobby);
 // alex.sayHello();
 
-console.log("Setter and getter in class\n----------");
+// console.log("Setter and getter in class\n----------");
 
-class Rectangle {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
-    }
+// class Rectangle {
+//     constructor(width, height) {
+//         this.width = width;
+//         this.height = height;
+//     }
 
-    set width(newWidth) {
-        if (newWidth > 0) {
-            this._width = newWidth;
-        }
-        else {
-            console.error("Width must be a positive number.");
-        }
-    }
+//     set width(newWidth) {
+//         if (newWidth > 0) {
+//             this._width = newWidth;
+//         }
+//         else {
+//             console.error("Width must be a positive number.");
+//         }
+//     }
     
-    set height(newHeight) {
-        if (newHeight > 0) {
-            this._height = newHeight;
-        }
-        else {
-            console.error("Height must be a postive number.")
-        }
-    }
+//     set height(newHeight) {
+//         if (newHeight > 0) {
+//             this._height = newHeight;
+//         }
+//         else {
+//             console.error("Height must be a postive number.")
+//         }
+//     }
 
-    get width() {
-        return `${this._width.toFixed(2)}cm`;
-    }
+//     get width() {
+//         return `${this._width.toFixed(2)}cm`;
+//     }
 
-    get height() {
-        return `${this._height.toFixed(2)}cm`;
-    }
+//     get height() {
+//         return `${this._height.toFixed(2)}cm`;
+//     }
 
-    get area() {
-        return `${(this._width * this._height).toFixed(2)}cm^2`;
-    }
-}
+//     get area() {
+//         return `${(this._width * this._height).toFixed(2)}cm^2`;
+//     }
+// }
 
-const rect = new Rectangle(3, 4);
-console.log(rect.width);
-console.log(rect.height);
-console.log(rect.area);
+// const rect = new Rectangle(3, 4);
+// console.log(rect.width);
+// console.log(rect.height);
+// console.log(rect.area);
 
 
-console.log("Another example on class setter/getter:")
-class Person {
-    constructor(firstName, lastName, age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-    }
+// console.log("Another example on class setter/getter:")
+// class Person {
+//     constructor(firstName, lastName, age) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
 
-    set firstName(newFirstName) {
-        if (typeof newFirstName === "string" && newFirstName.length > 0) {
-            this._firstName = newFirstName;
-        }
-        else {
-            console.error("Firstname must be a non-empty string.");
-        }
-    }
+//     set firstName(newFirstName) {
+//         if (typeof newFirstName === "string" && newFirstName.length > 0) {
+//             this._firstName = newFirstName;
+//         }
+//         else {
+//             console.error("Firstname must be a non-empty string.");
+//         }
+//     }
     
-    set lastName(newLastName) {
-        if (typeof newLastName === "string" && newLastName.length > 0) {
-            this._lastName = newLastName;
-        }
-        else {
-            console.error("Lastname must be a non-empty string.");
-        }
-    }
+//     set lastName(newLastName) {
+//         if (typeof newLastName === "string" && newLastName.length > 0) {
+//             this._lastName = newLastName;
+//         }
+//         else {
+//             console.error("Lastname must be a non-empty string.");
+//         }
+//     }
 
-    set age(newAge) {
-        if (typeof newAge === "number" && newAge > 0) {
-            this._age = newAge;
-        }
-        else {
-            console.error("Age must be a postive number.")
-        }
-    }
+//     set age(newAge) {
+//         if (typeof newAge === "number" && newAge > 0) {
+//             this._age = newAge;
+//         }
+//         else {
+//             console.error("Age must be a postive number.")
+//         }
+//     }
 
-    get firstName() {
-        return this._firstName;
-    }
-    get lastName() {
-        return this._lastName;
-    }
-    get fullName() {
-        return this._firstName + " " + this._lastName;
-    }
+//     get firstName() {
+//         return this._firstName;
+//     }
+//     get lastName() {
+//         return this._lastName;
+//     }
+//     get fullName() {
+//         return this._firstName + " " + this._lastName;
+//     }
 
-    get age() {
-        return this._age;
-    }
-}
+//     get age() {
+//         return this._age;
+//     }
+// }
 
-const person1 = new Person("Alex", "Thunder", 35);
+// const person1 = new Person("Alex", "Thunder", 35);
 
-console.log(person1.firstName);
-console.log(person1.lastName);
-console.log(person1.age);
-console.error(`I'm ${person1.fullName}. This is BroCode!`);
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// console.log(person1.age);
+// console.error(`I'm ${person1.fullName}. This is BroCode!`);
+
+console.log("Destructuring of arrays and objects:\n----------")
+
+let a = 1;
+let b = 2;
+[a, b] = [b, a];
+console.log("Swap two variables values:", a, b);
+
+let nums = [1, 2, 3, 4];
+[nums[0], nums[3]] = [nums[3], nums[0]]
+console.log("Swap two array values:", nums);
+
+console.log("Assign array elements to variables:");
+let [firstNum, secondNum, ...extraNums] = nums;
+console.log(firstNum);
+console.log(secondNum);
+console.log(extraNums);
