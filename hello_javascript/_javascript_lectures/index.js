@@ -994,16 +994,19 @@ class Rectangle {
     }
 
     get width() {
-        return this._width;
+        return `${this._width.toFixed(2)}cm`;
     }
 
     get height() {
-        return this._height;
+        return `${this._height.toFixed(2)}cm`;
+    }
+
+    get area() {
+        return `${(this._width * this._height).toFixed(2)}cm^2`;
     }
 }
 
 const rect = new Rectangle(3, 4);
 console.log(rect.width);
 console.log(rect.height);
-// rect.width();
-// rect.height();
+console.log(rect.area);
