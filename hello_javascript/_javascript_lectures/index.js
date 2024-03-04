@@ -1010,3 +1010,61 @@ const rect = new Rectangle(3, 4);
 console.log(rect.width);
 console.log(rect.height);
 console.log(rect.area);
+
+
+console.log("Another example on class setter/getter:")
+class Person {
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    set firstName(newFirstName) {
+        if (typeof newFirstName === "string" && newFirstName.length > 0) {
+            this._firstName = newFirstName;
+        }
+        else {
+            console.error("Firstname must be a non-empty string.");
+        }
+    }
+    
+    set lastName(newLastName) {
+        if (typeof newLastName === "string" && newLastName.length > 0) {
+            this._lastName = newLastName;
+        }
+        else {
+            console.error("Lastname must be a non-empty string.");
+        }
+    }
+
+    set age(newAge) {
+        if (typeof newAge === "number" && newAge > 0) {
+            this._age = newAge;
+        }
+        else {
+            console.error("Age must be a postive number.")
+        }
+    }
+
+    get firstName() {
+        return this._firstName;
+    }
+    get lastName() {
+        return this._lastName;
+    }
+    get fullName() {
+        return this._firstName + " " + this._lastName;
+    }
+
+    get age() {
+        return this._age;
+    }
+}
+
+const person1 = new Person("Alex", "Thunder", 35);
+
+console.log(person1.firstName);
+console.log(person1.lastName);
+console.log(person1.age);
+console.error(`I'm ${person1.fullName}. This is BroCode!`);
