@@ -870,7 +870,7 @@ comment
 // console.log("Demonstrate super class which is parent class")
 
 // class Animal {
-    
+
 //     constructor(name, age) {
 //         this.name = name;
 //         this.age = age;
@@ -983,7 +983,7 @@ comment
 //             console.error("Width must be a positive number.");
 //         }
 //     }
-    
+
 //     set height(newHeight) {
 //         if (newHeight > 0) {
 //             this._height = newHeight;
@@ -1028,7 +1028,7 @@ comment
 //             console.error("Firstname must be a non-empty string.");
 //         }
 //     }
-    
+
 //     set lastName(newLastName) {
 //         if (typeof newLastName === "string" && newLastName.length > 0) {
 //             this._lastName = newLastName;
@@ -1069,7 +1069,7 @@ comment
 // console.log(person1.age);
 // console.error(`I'm ${person1.fullName}. This is BroCode!`);
 
-console.log("Destructuring of arrays and objects:\n----------")
+// console.log("Destructuring of arrays and objects:\n----------")
 
 // let a = 1;
 // let b = 2;
@@ -1087,17 +1087,17 @@ console.log("Destructuring of arrays and objects:\n----------")
 // console.log(extraNums);
 
 // console.log("Example 4: Extract values from objects.")
-const person1 = {
-    firstName: "Kezha",
-    lastName: "Mahal",
-    age: 27,
-    job: "Optometrist",
-}
-const person2 = {
-    firstName: "Alex",
-    lastName: "Thunder",
-    age: 35,
-}
+// const person1 = {
+//     firstName: "Kezha",
+//     lastName: "Mahal",
+//     age: 27,
+//     job: "Optometrist",
+// }
+// const person2 = {
+//     firstName: "Alex",
+//     lastName: "Thunder",
+//     age: 35,
+// }
 
 // const { firstName, lastName, age, job = "Unemployed" } = person2;
 // console.log(firstName);
@@ -1105,13 +1105,27 @@ const person2 = {
 // console.log(age);
 // console.log(job);
 
-console.log(`Example 5: Destructuring function parameters`)
+// console.log(`Example 5: Destructuring function parameters`)
 
-function displayPerson({firstName, lastName, age, job="Self-employed"}) {
-    console.log(`name: ${firstName} ${lastName}`);
-    console.log(`age: ${age}`);
-    console.log(`job: ${job}`);
+// function displayPerson({firstName, lastName, age, job="Self-employed"}) {
+//     console.log(`name: ${firstName} ${lastName}`);
+//     console.log(`age: ${age}`);
+//     console.log(`job: ${job}`);
+// }
+
+// displayPerson(person1);
+// displayPerson(person2);
+console.log("Demo nested objects")
+const person = {
+    firstName: "Kezha",
+    lastName: "Mahal",
+    age: 27,
+    job: "Optometrist",
+    address: {
+        street: "35 Diamond",
+        city: "Quezon City",
+        country: "Philippines"
+    }
 }
 
-displayPerson(person1);
-displayPerson(person2);
+console.log(person.address.city);
