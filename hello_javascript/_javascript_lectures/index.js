@@ -1085,3 +1085,10 @@ let [firstNum, secondNum, ...extraNums] = nums;
 console.log(firstNum);
 console.log(secondNum);
 console.log(extraNums);
+
+console.log("Review ES6 (JS 2015) for/of loop")
+let numsArr = [1, 3, 5, 7];
+
+for (let num of numsArr) {
+    console.log(num);
+}
