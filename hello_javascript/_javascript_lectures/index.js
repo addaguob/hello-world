@@ -1071,22 +1071,22 @@ comment
 
 console.log("Destructuring of arrays and objects:\n----------")
 
-let a = 1;
-let b = 2;
-[a, b] = [b, a];
-console.log("Example 1: Swap two variables values.\n", a, b);
+// let a = 1;
+// let b = 2;
+// [a, b] = [b, a];
+// console.log("Example 1: Swap two variables values.\n", a, b);
 
-let nums = [1, 2, 3, 4];
-[nums[0], nums[3]] = [nums[3], nums[0]]
-console.log("Example 2:Swap two array values.\n", nums);
+// let nums = [1, 2, 3, 4];
+// [nums[0], nums[3]] = [nums[3], nums[0]]
+// console.log("Example 2:Swap two array values.\n", nums);
 
-console.log("Example 3: Assign array elements to variables.\n");
-let [firstNum, secondNum, ...extraNums] = nums;
-console.log(firstNum);
-console.log(secondNum);
-console.log(extraNums);
+// console.log("Example 3: Assign array elements to variables.\n");
+// let [firstNum, secondNum, ...extraNums] = nums;
+// console.log(firstNum);
+// console.log(secondNum);
+// console.log(extraNums);
 
-console.log("Example 4: Extract values from objects.")
+// console.log("Example 4: Extract values from objects.")
 const person1 = {
     firstName: "Kezha",
     lastName: "Mahal",
@@ -1099,8 +1099,19 @@ const person2 = {
     age: 35,
 }
 
-const { firstName, lastName, age, job = "Unemployed" } = person2;
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(job);
+// const { firstName, lastName, age, job = "Unemployed" } = person2;
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+console.log(`Example 5: Destructuring function parameters`)
+
+function displayPerson({firstName, lastName, age, job="Self-employed"}) {
+    console.log(`name: ${firstName} ${lastName}`);
+    console.log(`age: ${age}`);
+    console.log(`job: ${job}`);
+}
+
+displayPerson(person1);
+displayPerson(person2);
