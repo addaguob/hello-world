@@ -1074,21 +1074,33 @@ console.log("Destructuring of arrays and objects:\n----------")
 let a = 1;
 let b = 2;
 [a, b] = [b, a];
-console.log("Swap two variables values:", a, b);
+console.log("Example 1: Swap two variables values.\n", a, b);
 
 let nums = [1, 2, 3, 4];
 [nums[0], nums[3]] = [nums[3], nums[0]]
-console.log("Swap two array values:", nums);
+console.log("Example 2:Swap two array values.\n", nums);
 
-console.log("Assign array elements to variables:");
+console.log("Example 3: Assign array elements to variables.\n");
 let [firstNum, secondNum, ...extraNums] = nums;
 console.log(firstNum);
 console.log(secondNum);
 console.log(extraNums);
 
-console.log("Review ES6 (JS 2015) for/of loop")
-let numsArr = [1, 3, 5, 7];
-
-for (let num of numsArr) {
-    console.log(num);
+console.log("Example 4: Extract values from objects.")
+const person1 = {
+    firstName: "Kezha",
+    lastName: "Mahal",
+    age: 27,
+    job: "Optometrist",
 }
+const person2 = {
+    firstName: "Alex",
+    lastName: "Thunder",
+    age: 35,
+}
+
+const { firstName, lastName, age, job = "Unemployed" } = person2;
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(job);
