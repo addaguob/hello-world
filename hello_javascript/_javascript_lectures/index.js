@@ -1144,7 +1144,7 @@ class Person {
 }
 
 class Address {
-    constructor(street="No street", brgy="No brgy", city="No city") {
+    constructor(street, brgy, city) {
         this.street = street;
         this.brgy = brgy;
         this.city = city;
