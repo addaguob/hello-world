@@ -1166,7 +1166,10 @@ const fruits = [
 ]
 
 fruits.push({ name: "lychee", color: "white", calories: 110 });
+// for (const fruit in fruits) {
+//     console.log(fruits[fruit]);
+// }
 
-for (const fruit in fruits) {
-    console.log(fruits[fruit]);
-}
+// or
+
+fruits.forEach(fruit => console.log(fruit));
