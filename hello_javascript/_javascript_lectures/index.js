@@ -1156,3 +1156,17 @@ const alex = new Person("Alexander", 35, "Diamond", "Culiat", "Quezon City");
 console.log(alex.name);
 console.log(alex.age);
 console.log(alex.address);
+
+console.log("---------\nArray of objects\n---------");
+const fruits = [
+    {name: "apple", color: "red", calories: 95},
+    {name: "ponkan  ", color: "orange", calories: 45},
+    {name: "banana", color: "yellow", calories: 105},
+    {name: "coconut", color: "white", calories: 159},
+]
+
+fruits.push({ name: "lychee", color: "white", calories: 110 });
+
+for (const fruit in fruits) {
+    console.log(fruits[fruit]);
+}
