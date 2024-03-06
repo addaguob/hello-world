@@ -1121,6 +1121,7 @@ const person = {
     lastName: "Mahal",
     age: 27,
     job: "Optometrist",
+    hobbies: ["singing", "gaming", "reading"],
     address: {
         street: "35 Diamond",
         city: "Quezon City",
@@ -1128,4 +1129,8 @@ const person = {
     }
 }
 
-console.log(person.address.city);
+// console.log(person.address.city);
+
+for (const prop in person.hobbies) {
+    console.log(person.hobbies[prop]);
+}
