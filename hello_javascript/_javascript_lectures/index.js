@@ -1116,21 +1116,43 @@ comment
 // displayPerson(person1);
 // displayPerson(person2);
 console.log("Demo nested objects")
-const person = {
-    firstName: "Kezha",
-    lastName: "Mahal",
-    age: 27,
-    job: "Optometrist",
-    hobbies: ["singing", "gaming", "reading"],
-    address: {
-        street: "35 Diamond",
-        city: "Quezon City",
-        country: "Philippines"
+// const person = {
+//     firstName: "Kezha",
+//     lastName: "Mahal",
+//     age: 27,
+//     job: "Optometrist",
+//     hobbies: ["singing", "gaming", "reading"],
+//     address: {
+//         street: "35 Diamond",
+//         city: "Quezon City",
+//         country: "Philippines"
+//     }
+// }
+
+// // console.log(person.address.city);
+
+// for (const prop in person.hobbies) {
+//     console.log(person.hobbies[prop]);
+// }
+
+class Person {
+    constructor(name, age, ...address) {
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address);
     }
 }
 
-// console.log(person.address.city);
-
-for (const prop in person.hobbies) {
-    console.log(person.hobbies[prop]);
+class Address {
+    constructor(street="No street", brgy="No brgy", city="No city") {
+        this.street = street;
+        this.brgy = brgy;
+        this.city = city;
+    }
 }
+
+const alex = new Person("Alexander", 35, street="Diamond", city="Quezon City");
+
+console.log(alex.name);
+console.log(alex.age);
+console.log(alex.address);
