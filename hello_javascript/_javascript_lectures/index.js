@@ -1115,7 +1115,7 @@ comment
 
 // displayPerson(person1);
 // displayPerson(person2);
-console.log("Demo nested objects")
+// console.log("Demo nested objects")
 // const person = {
 //     firstName: "Kezha",
 //     lastName: "Mahal",
@@ -1135,60 +1135,68 @@ console.log("Demo nested objects")
 //     console.log(person.hobbies[prop]);
 // }
 
-class Person {
-    constructor(name, age, ...address) {
-        this.name = name;
-        this.age = age;
-        this.address = new Address(...address);
-    }
-}
+// class Person {
+//     constructor(name, age, ...address) {
+//         this.name = name;
+//         this.age = age;
+//         this.address = new Address(...address);
+//     }
+// }
 
-class Address {
-    constructor(street, brgy, city) {
-        this.street = street;
-        this.brgy = brgy;
-        this.city = city;
-    }
-}
+// class Address {
+//     constructor(street, brgy, city) {
+//         this.street = street;
+//         this.brgy = brgy;
+//         this.city = city;
+//     }
+// }
 
-const alex = new Person("Alexander", 35, "Diamond", "Culiat", "Quezon City");
+// const alex = new Person("Alexander", 35, "Diamond", "Culiat", "Quezon City");
 
-console.log(alex.name);
-console.log(alex.age);
-console.log(alex.address);
+// console.log(alex.name);
+// console.log(alex.age);
+// console.log(alex.address);
 
-console.log("---------\nArray of objects\n---------");
-const fruits = [
-    {name: "apple", color: "red", calories: 95},
-    {name: "ponkan  ", color: "orange", calories: 45},
-    {name: "banana", color: "yellow", calories: 105},
-    {name: "coconut", color: "white", calories: 159},
-]
+// console.log("---------\nArray of objects\n---------");
+// const fruits = [
+//     {name: "apple", color: "red", calories: 95},
+//     {name: "ponkan  ", color: "orange", calories: 45},
+//     {name: "banana", color: "yellow", calories: 105},
+//     {name: "coconut", color: "white", calories: 159},
+// ]
 
-fruits.push({ name: "lychee", color: "white", calories: 110 });
+// fruits.push({ name: "lychee", color: "white", calories: 110 });
 // for (const fruit in fruits) {
 //     console.log(fruits[fruit]);
 // }
 
 // or
 
-fruits.forEach(fruit => console.log(fruit.name));
+// fruits.forEach(fruit => console.log(fruit.name));
 
-const fruitNames = fruits.map(fruit => fruit.name);
-const fruitCalories = fruits.map(fruit => fruit.calories);
-console.log(fruitNames);
-console.log(fruitCalories);
+// const fruitNames = fruits.map(fruit => fruit.name);
+// const fruitCalories = fruits.map(fruit => fruit.calories);
+// console.log(fruitNames);
+// console.log(fruitCalories);
 
-const yellowFruits = fruits.filter(fruit => fruit.color === "white");
-const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
-console.log(yellowFruits);
-console.log(lowCalFruits);
+// const yellowFruits = fruits.filter(fruit => fruit.color === "white");
+// const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
+// console.log(yellowFruits);
+// console.log(lowCalFruits);
 
-const maxCalFruit = fruits.reduce(
-    (max, fruit) => fruit.calories > max.calories ? fruit : max
-);
+// const maxCalFruit = fruits.reduce(
+//     (max, fruit) => fruit.calories > max.calories ? fruit : max
+// );
 
-const minCalFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit : min);
+// const minCalFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit : min);
 
-console.log("Fruit with highest calories: " + maxCalFruit.name)
-console.log("Fruit with lowest calories: " + minCalFruit.name)
+// console.log("Fruit with highest calories: " + maxCalFruit.name)
+// console.log("Fruit with lowest calories: " + minCalFruit.name)
+const br = "-------------------------------------";
+console.log("sort() method to sort array element.");
+console.log(br);
+
+let pLanguages = ["C++", "Java", "ASM", "C" ];
+pLanguages.forEach(element => console.log(element));
+pLanguages.sort();
+pLanguages.forEach(element => console.log(element));
