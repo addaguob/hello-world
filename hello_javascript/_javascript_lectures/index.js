@@ -1183,3 +1183,12 @@ const yellowFruits = fruits.filter(fruit => fruit.color === "white");
 const lowCalFruits = fruits.filter(fruit => fruit.calories < 100);
 console.log(yellowFruits);
 console.log(lowCalFruits);
+
+const maxCalFruit = fruits.reduce(
+    (max, fruit) => fruit.calories > max.calories ? fruit : max
+);
+
+const minCalFruit = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit : min);
+
+console.log("Fruit with highest calories: " + maxCalFruit.name)
+console.log("Fruit with lowest calories: " + minCalFruit.name)
