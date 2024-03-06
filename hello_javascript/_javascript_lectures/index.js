@@ -1172,4 +1172,9 @@ fruits.push({ name: "lychee", color: "white", calories: 110 });
 
 // or
 
-fruits.forEach(fruit => console.log(fruit));
+fruits.forEach(fruit => console.log(fruit.name));
+
+const fruitNames = fruits.map(fruit => fruit.name);
+const fruitCalories = fruits.map(fruit => fruit.calories);
+console.log(fruitNames);
+console.log(fruitCalories);
