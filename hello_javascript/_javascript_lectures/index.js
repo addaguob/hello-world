@@ -1151,7 +1151,7 @@ class Address {
     }
 }
 
-const alex = new Person("Alexander", 35, street="Diamond", city="Quezon City");
+const alex = new Person("Alexander", 35, "Diamond", "Culiat", "Quezon City");
 
 console.log(alex.name);
 console.log(alex.age);
