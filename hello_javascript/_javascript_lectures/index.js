@@ -1219,3 +1219,13 @@ function displayArray(array) {
     }
     console.log(br);
 }
+
+console.log("sort() according to names (strings)")
+people.sort((a, b) => a.name.localeCompare(b.name));
+displayArray(people);
+
+const strA = "ac";
+const strB = "ab";
+
+console.log(strA.localeCompare(strB))
+console.log(strB.localeCompare(strA))
