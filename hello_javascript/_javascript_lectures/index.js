@@ -1248,7 +1248,17 @@ comment
 console.log(br, "date object exploration");
 // Date (year, month, day, hour, minute, second, ms)
 
-let date = new Date(); // Default is current date
+let date = new Date(0); 
 console.log(date);
 date = new Date("2024-06-11T12:01:00Z"); // customized
 console.log(date);
+date = new Date();
+console.log(date); // Default is current date
+
+console.log("Year:", date.getFullYear());
+console.log("Month:", date.getMonth());
+console.log("Day:", date.getDate());
+console.log("Hours:", date.getHours());
+console.log("Minutes:", date.getMinutes());
+console.log("Secs:", date.getSeconds());
+console.log("Day of the week:", date.getDay());
