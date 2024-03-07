@@ -1,6 +1,6 @@
 // console.log("I like pizza!");
 // console.log("It's really good!");
-
+const br = "-------------------------------------";
 // window.alert("I really love pizza!");
 
 // This is a comment
@@ -1192,7 +1192,7 @@ comment
 
 // console.log("Fruit with highest calories: " + maxCalFruit.name)
 // console.log("Fruit with lowest calories: " + minCalFruit.name)
-const br = "-------------------------------------";
+
 // console.log("sort() method to sort array element.");
 // console.log(br);
 
@@ -1201,31 +1201,47 @@ const br = "-------------------------------------";
 // pLanguages.sort((a, b) => a - b);
 // pLanguages.forEach(element => console.log(element));
 
-const people = [
-    {name: "Spongebob", age: 30, gpa: 3.0},
-    {name: "Patrick", age: 37, gpa: 1.5},
-    {name: "Squidward", age: 51, gpa: 2.5},
-    {name: "Sandy", age: 27, gpa: 4.0},
-]
-displayArray(people);
-people.sort((a, b) => a.age - b.age);
-displayArray(people);
-people.sort((a, b) => a.gpa - b.gpa);
-displayArray(people);
+// const people = [
+//     {name: "Spongebob", age: 30, gpa: 3.0},
+//     {name: "Patrick", age: 37, gpa: 1.5},
+//     {name: "Squidward", age: 51, gpa: 2.5},
+//     {name: "Sandy", age: 27, gpa: 4.0},
+// ]
+// displayArray(people);
+// people.sort((a, b) => a.age - b.age);
+// displayArray(people);
+// people.sort((a, b) => a.gpa - b.gpa);
+// displayArray(people);
 
-function displayArray(array) {
-    for (let val of array) {
-        console.log(val);
+// function displayArray(array) {
+//     for (let val of array) {
+//         console.log(val);
+//     }
+//     console.log(br);
+// }
+
+// console.log("sort() according to names (strings)")
+// people.sort((a, b) => a.name.localeCompare(b.name));
+// displayArray(people);
+
+// const strA = "ac";
+// const strB = "ab";
+
+// console.log(strA.localeCompare(strB))
+// console.log(strB.localeCompare(strA))
+
+
+console.log(`Fisher-Yates algorithm`);
+
+const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
+console.log(cards);
+shuffle = (cards) => {
+    for (let i = cards.length - 1; i >= 0; i--) {
+        const random = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[random]] = [cards[random], cards[i]];
     }
-    console.log(br);
-}
+};
 
-console.log("sort() according to names (strings)")
-people.sort((a, b) => a.name.localeCompare(b.name));
-displayArray(people);
-
-const strA = "ac";
-const strB = "ab";
-
-console.log(strA.localeCompare(strB))
-console.log(strB.localeCompare(strA))
+shuffle(cards);
+console.log(cards);
+    
