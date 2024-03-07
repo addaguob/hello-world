@@ -1,6 +1,6 @@
 // console.log("I like pizza!");
 // console.log("It's really good!");
-const br = "-------------------------------------";
+const br = "-------------------------------------\n";
 // window.alert("I really love pizza!");
 
 // This is a comment
@@ -1231,17 +1231,24 @@ comment
 // console.log(strB.localeCompare(strA))
 
 
-console.log(`Fisher-Yates algorithm`);
+// console.log(`Fisher-Yates algorithm`);
 
-const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
-console.log(cards);
-shuffle = (cards) => {
-    for (let i = cards.length - 1; i >= 0; i--) {
-        const random = Math.floor(Math.random() * (i + 1));
-        [cards[i], cards[random]] = [cards[random], cards[i]];
-    }
-};
+// const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K'];
+// console.log(cards);
+// shuffle = (cards) => {
+//     for (let i = cards.length - 1; i >= 0; i--) {
+//         const random = Math.floor(Math.random() * (i + 1));
+//         [cards[i], cards[random]] = [cards[random], cards[i]];
+//     }
+// };
 
-shuffle(cards);
-console.log(cards);
+// shuffle(cards);
+// console.log(cards);
     
+console.log(br, "date object exploration");
+// Date (year, month, day, hour, minute, second, ms)
+
+let date = new Date(); // Default is current date
+console.log(date);
+date = new Date("2024-06-11T12:01:00Z"); // customized
+console.log(date);
