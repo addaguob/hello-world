@@ -1198,5 +1198,16 @@ console.log(br);
 
 let pLanguages = ["C++", "Java", "ASM", "C" ];
 pLanguages.forEach(element => console.log(element));
-pLanguages.sort();
+pLanguages.sort((a, b) => a - b);
 pLanguages.forEach(element => console.log(element));
+
+const people = [
+    {name: "Spongebob", age: 30, gpa: 3.0},
+    {name: "Patrick", age: 37, gpa: 1.5},
+    {name: "Squidward", age: 51, gpa: 2.5},
+    {name: "Sandy", age: 27, gpa: 4.0},
+]
+
+people.sort((a, b) => a.age - b.age);
+
+console.log(people);
