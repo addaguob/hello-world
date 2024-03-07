@@ -1193,13 +1193,13 @@ comment
 // console.log("Fruit with highest calories: " + maxCalFruit.name)
 // console.log("Fruit with lowest calories: " + minCalFruit.name)
 const br = "-------------------------------------";
-console.log("sort() method to sort array element.");
-console.log(br);
+// console.log("sort() method to sort array element.");
+// console.log(br);
 
-let pLanguages = ["C++", "Java", "ASM", "C" ];
-pLanguages.forEach(element => console.log(element));
-pLanguages.sort((a, b) => a - b);
-pLanguages.forEach(element => console.log(element));
+// let pLanguages = ["C++", "Java", "ASM", "C" ];
+// pLanguages.forEach(element => console.log(element));
+// pLanguages.sort((a, b) => a - b);
+// pLanguages.forEach(element => console.log(element));
 
 const people = [
     {name: "Spongebob", age: 30, gpa: 3.0},
@@ -1207,7 +1207,15 @@ const people = [
     {name: "Squidward", age: 51, gpa: 2.5},
     {name: "Sandy", age: 27, gpa: 4.0},
 ]
-
+displayArray(people);
 people.sort((a, b) => a.age - b.age);
+displayArray(people);
+people.sort((a, b) => a.gpa - b.gpa);
+displayArray(people);
 
-console.log(people);
+function displayArray(array) {
+    for (let val of array) {
+        console.log(val);
+    }
+    console.log(br);
+}
