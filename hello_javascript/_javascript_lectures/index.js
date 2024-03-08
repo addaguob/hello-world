@@ -1271,3 +1271,7 @@ console.log(alex_bday);
 const kryzza_bday = new Date("1996-08-10"); 
 console.log(kryzza_bday);
 if (alex_bday < kryzza_bday) { console.log("Older") }
+
+let mNum = 3;
+mNum = mNum.toString().padStart(3, 0);
+console.log(mNum);
