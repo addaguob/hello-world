@@ -1275,3 +1275,4 @@ if (alex_bday < kryzza_bday) { console.log("Older") }
 let mNum = 3;
 mNum = mNum.toString().padStart(3, 0);
 console.log(mNum);
+console.log(this);
