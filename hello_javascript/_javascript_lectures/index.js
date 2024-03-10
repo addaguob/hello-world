@@ -1255,24 +1255,24 @@ comment
 // date = new Date();
 // console.log(date); // Default is current date
 
-// console.log("Year:", date.getFullYear());
-// console.log("Month:", date.getMonth());
-// console.log("Day:", date.getDate());
-// console.log("Hours:", date.getHours());
-// console.log("Minutes:", date.getMinutes());
-// console.log("Secs:", date.getSeconds());
-// console.log("Day of the week:", date.getDay());
+console.log("Year:", date.getFullYear());
+console.log("Month:", date.getMonth());
+console.log("Day:", date.getDate());
+console.log("Hours:", date.getHours());
+console.log("Minutes:", date.getMinutes());
+console.log("Secs:", date.getSeconds());
+console.log("Day of the week:", date.getDay());
 
-// date.setFullYear(2024);
-// console.log(date);
+date.setFullYear(2024);
+console.log(date);
 
-// const alex_bday = new Date("1988-06-11");
-// console.log(alex_bday);
-// const kryzza_bday = new Date("1996-08-10"); 
-// console.log(kryzza_bday);
-// if (alex_bday < kryzza_bday) { console.log("Older") }
+const alex_bday = new Date("1988-06-11");
+console.log(alex_bday);
+const kryzza_bday = new Date("1996-08-10"); 
+console.log(kryzza_bday);
+if (alex_bday < kryzza_bday) { console.log("Older") }
 
-// let mNum = 3;
-// mNum = mNum.toString().padStart(3, 0);
-// console.log(mNum);
-// console.log(this);
+let mNum = 3;
+mNum = mNum.toString().padStart(3, 0);
+console.log(mNum);
+console.log(this);
