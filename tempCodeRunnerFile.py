@@ -1,7 +1,10 @@
-name = "Jerum"
-age = 25
+# 30 days = 100 rel
+perfect_days = 23
 
-def pakilala():
-    print("I am", name, "and I am", age, "years old.")
-    
-pakilala()
+reliabilty = 100.0
+days_present = int(input("Enter days you are present: "))
+# if absent = 1 hr
+
+result = days_present / perfect_days * reliabilty
+
+print(f"result: {result:.2f} %")
