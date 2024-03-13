@@ -1277,44 +1277,60 @@ comment
 // console.log(mNum);
 // console.log(this);
 
-console.log("Closure is a function defined inside another function.");
-console.log("The inner function has access to the variables and scope of the outer function.");
+// console.log("Closure is a function defined inside another function.");
+// console.log("The inner function has access to the variables and scope of the outer function.");
 
-function myOuter() {
-    let msg = "Hello";
+// function myOuter() {
+//     let msg = "Hello";
 
-    function myInner() {
-        console.log(msg);
-    }
+//     function myInner() {
+//         console.log(msg);
+//     }
 
-    myInner();
+//     myInner();
+// }
+// msg = "Hey there!";
+// myOuter();
+
+// function createCounter() {
+//     let counter = 0;
+
+//     function increment() {
+//         counter++;
+//         console.log(`Counter is increased to ${counter}.`);
+//     }
+
+//     function getCounter() {
+//         return counter;
+//     }
+
+//     function resetCounter() {
+//         counter = 0;
+//     }
+
+//     return {increment, getCounter, resetCounter};
+// }
+
+// console.log(br);
+// const nCounter = createCounter();
+// nCounter.increment();
+// nCounter.increment();
+// console.log("Current count is " + nCounter.getCounter());
+// nCounter.resetCounter();
+// console.log("Current count is " + nCounter.getCounter());
+
+// setTimeout() = a function in JavaScript to schedule the execution of a function
+//  after an amount of time in milliseconds
+
+
+function startButton() {
+    console.log(`Starting...`);
+    startT = setTimeout(
+        () => console.log(`3 seconds passed.`),
+        3000
+    );
 }
-msg = "Hey there!";
-myOuter();
-
-function createCounter() {
-    let counter = 0;
-
-    function increment() {
-        counter++;
-        console.log(`Counter is increased to ${counter}.`);
-    }
-
-    function getCounter() {
-        return counter;
-    }
-
-    function resetCounter() {
-        counter = 0;
-    }
-
-    return {increment, getCounter, resetCounter};
+function clearButton() {
+    clearTimeout(startT);
+    console.log(`Clear.`);
 }
-
-console.log(br);
-const nCounter = createCounter();
-nCounter.increment();
-nCounter.increment();
-console.log("Current count is " + nCounter.getCounter());
-nCounter.resetCounter();
-console.log("Current count is " + nCounter.getCounter());
