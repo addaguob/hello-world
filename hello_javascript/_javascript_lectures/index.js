@@ -1291,4 +1291,28 @@ function myOuter() {
 }
 msg = "Hey there!";
 myOuter();
-console.log(msg);
+
+function createCounter() {
+    let counter = 0;
+
+    function increment() {
+        counter++;
+        console.log(`Counter is increased to ${counter}.`);
+    }
+
+    function getCounter() {
+        return counter;
+    }
+
+    function resetCounter() {
+        counter = 0;
+    }
+
+    return {increment, getCounter};
+}
+
+console.log(br);
+const nCounter = createCounter();
+nCounter.increment();
+nCounter.increment();
+console.log("Current count is " + nCounter.getCounter());
