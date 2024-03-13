@@ -1279,3 +1279,16 @@ comment
 
 console.log("Closure is a function defined inside another function.");
 console.log("The inner function has access to the variables and scope of the outer function.");
+
+function myOuter() {
+    let msg = "Hello";
+
+    function myInner() {
+        console.log(msg);
+    }
+
+    myInner();
+}
+msg = "Hey there!";
+myOuter();
+console.log(msg);
