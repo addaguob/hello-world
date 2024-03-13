@@ -1308,11 +1308,13 @@ function createCounter() {
         counter = 0;
     }
 
-    return {increment, getCounter};
+    return {increment, getCounter, resetCounter};
 }
 
 console.log(br);
 const nCounter = createCounter();
 nCounter.increment();
 nCounter.increment();
+console.log("Current count is " + nCounter.getCounter());
+nCounter.resetCounter();
 console.log("Current count is " + nCounter.getCounter());
