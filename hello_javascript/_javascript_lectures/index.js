@@ -1277,4 +1277,5 @@ comment
 // console.log(mNum);
 // console.log(this);
 
-console.log("Closure is a function defined inside another function.")
+console.log("Closure is a function defined inside another function.");
+console.log("The inner function has access to the variables and scope of the outer function.");
