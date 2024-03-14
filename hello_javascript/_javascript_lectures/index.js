@@ -1334,3 +1334,6 @@ function clearButton() {
     clearTimeout(startT);
     console.log(`Clear.`);
 }
+
+const myClock = document.getElementById("myClock");
+myClock.innerHTML = `Clock<br>`;
