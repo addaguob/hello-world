@@ -1323,22 +1323,22 @@ comment
 //  after an amount of time in milliseconds
 
 
-function startButton() {
-    console.log(`Starting...`);
-    startT = setTimeout(
-        () => console.log(`3 seconds passed.`),
-        3000
-    );
-}
-function clearButton() {
-    clearTimeout(startT);
-    console.log(`Clear.`);
-}
+// function startButton() {
+//     console.log(`Starting...`);
+//     startT = setTimeout(
+//         () => console.log(`3 seconds passed.`),
+//         3000
+//     );
+// }
+// function clearButton() {
+//     clearTimeout(startT);
+//     console.log(`Clear.`);
+// }
 
 // Clock app
 
 const myClock = document.getElementById("myClock");
-myClock.innerHTML = `Clock`;
+myClock.textContent = `Clock`;
 
 updateClock();
 setInterval(updateClock, 1000);
@@ -1353,4 +1353,47 @@ function updateClock() {
     const minutes = timeNow.getMinutes().toString().padStart(2, 0);
     const seconds = timeNow.getSeconds().toString().padStart(2, 0);
     myClock.textContent = `${hours}:${minutes}:${seconds}${meridiem}`;
+}
+
+// Stopwatch app
+const myStopwatch = document.getElementById("myStopwatch");
+
+let timer = null;
+let startTime = 0;
+let elapsedTime = 0;
+let isRunning = false;
+
+function startButton() {
+    if (!isRunning) {
+        startTime = Date.now() - elapsedTime;
+        timer = setInterval(updateStopwatch, 10);
+        isRunning = true;
+    }
+}
+
+function stopButton() {
+    if (isRunning) {
+        clearInterval(timer);
+        elapsedTime = Date.now() - startTime;
+        isRunning = false;
+    }
+}
+
+function resetButton() {
+    clearInterval(timer);
+    startTime = 0;
+    elapsedTime = 0;
+    isRunning = false;
+    myStopwatch.textContent = `00:00:00:00`;
+}
+
+function updateStopwatch() {
+    const currentTime = Date.now();
+    elapsedTime = currentTime - startTime;
+    let swHours = Math.floor(elapsedTime / (1000 * 60 * 60)).toString().padStart(2, 0);
+    let swMinutes = Math.floor(elapsedTime / (1000 * 60) % 60).toString().padStart(2, 0);
+    let swSeconds = Math.floor(elapsedTime / 1000 % 60).toString().padStart(2, 0);
+    let swMSeconds = Math.floor(elapsedTime % 1000 / 10).toString().padStart(2, 0);
+
+    myStopwatch.textContent = `${swHours}:${swMinutes}:${swSeconds}:${swMSeconds}`;
 }
