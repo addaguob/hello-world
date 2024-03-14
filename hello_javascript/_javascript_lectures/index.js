@@ -1396,12 +1396,31 @@ comment
 
 //     myStopwatch.textContent = `${swHours}:${swMinutes}:${swSeconds}:${swMSeconds}`;
 // }
-
-import {PI, getCircumference, getArea, getVolume, getSurfaceVolume} from "./mathUtil.js";
-console.log(PI);
-console.log(getCircumference(10));
-console.log(getArea(10));
-console.log(getVolume(10));
-console.log(getSurfaceVolume(10));
+// Import modules lesson
+// import {PI, getCircumference, getArea, getVolume, getSurfaceVolume} from "./mathUtil.js";
+// console.log(PI);
+// console.log(getCircumference(10));
+// console.log(getArea(10));
+// console.log(getVolume(10));
+// console.log(getSurfaceVolume(10));
 // Modules only work with the HTTP(s) protocol.
 // A web - page opened via the file:// protocol cannot use import / export.
+
+// Synchronous codes executes line by line consecutively in a sequential manner
+// Asynchronous codes allows multiple operations to be performed concurrently
+
+function f1(callback) {
+    setTimeout(() => {
+        console.log("Task 1");
+        callback();
+    }, 3000);
+    
+}
+
+function f2() {
+    console.log("Task 2");
+    console.log("Task 3");
+    console.log("Task 4");
+}
+
+f1(f2);
