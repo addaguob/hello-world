@@ -1346,8 +1346,11 @@ setInterval(updateClock, 1000);
 function updateClock() {
     const timeNow = new Date();
     let hours = timeNow.getHours();
-    const minutes = timeNow.getMinutes();
-    const seconds = timeNow.getSeconds();
     const meridiem = (hours >= 12) ? "PM" : "AM";
+    // console.log(hours % 12);
+    hours = hours % 12 || 12;
+    hours = hours.toString().padStart(2, 0);
+    const minutes = timeNow.getMinutes().toString().padStart(2, 0);
+    const seconds = timeNow.getSeconds().toString().padStart(2, 0);
     myClock.textContent = `${hours}:${minutes}:${seconds}${meridiem}`;
 }
