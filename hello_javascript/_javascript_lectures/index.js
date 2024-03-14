@@ -1409,18 +1409,44 @@ comment
 // Synchronous codes executes line by line consecutively in a sequential manner
 // Asynchronous codes allows multiple operations to be performed concurrently
 
-function f1(callback) {
-    setTimeout(() => {
-        console.log("Task 1");
-        callback();
-    }, 3000);
+// function f1(callback) {
+//     setTimeout(() => {
+//         setTimeout(() => {
+//             console.log("Task 1");
+//         }, 3000);
+//         callback();
+//     }, 2000);
     
+// }
+
+// function f2() {
+//     console.log("Task 2");
+//     console.log("Task 3");
+//     console.log("Task 4");
+// }
+
+// f1(f2);
+
+// Error is a object that is created to represent a problem that occurs
+
+// try {} = encloses code that might potentially cause an error
+// catch {} = catch and handle any thrown errors from try {}
+// finally { } = always executes
+
+try {
+    console.lag("Problematic line");
+    // Network errors
+    // Promise rejection
+    // Security errors
 }
 
-function f2() {
-    console.log("Task 2");
-    console.log("Task 3");
-    console.log("Task 4");
+catch (error) {
+    console.log(error);
 }
 
-f1(f2);
+finally {
+    console.log("Done.")
+    // Close files
+    // Close connections
+    // Release resources
+}
