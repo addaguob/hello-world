@@ -1,6 +1,5 @@
 // console.log("I like pizza!");
 // console.log("It's really good!");
-const br = "-------------------------------------\n";
 // window.alert("I really love pizza!");
 
 // This is a comment
@@ -1337,63 +1336,72 @@ comment
 
 // Clock app
 
-const myClock = document.getElementById("myClock");
-myClock.textContent = `Clock`;
+// const myClock = document.getElementById("myClock");
+// myClock.textContent = `Clock`;
 
-updateClock();
-setInterval(updateClock, 1000);
+// updateClock();
+// setInterval(updateClock, 1000);
 
-function updateClock() {
-    const timeNow = new Date();
-    let hours = timeNow.getHours();
-    const meridiem = (hours >= 12) ? "PM" : "AM";
-    // console.log(hours % 12);
-    hours = hours % 12 || 12;
-    hours = hours.toString().padStart(2, 0);
-    const minutes = timeNow.getMinutes().toString().padStart(2, 0);
-    const seconds = timeNow.getSeconds().toString().padStart(2, 0);
-    myClock.textContent = `${hours}:${minutes}:${seconds}${meridiem}`;
-}
+// function updateClock() {
+//     const timeNow = new Date();
+//     let hours = timeNow.getHours();
+//     const meridiem = (hours >= 12) ? "PM" : "AM";
+//     // console.log(hours % 12);
+//     hours = hours % 12 || 12;
+//     hours = hours.toString().padStart(2, 0);
+//     const minutes = timeNow.getMinutes().toString().padStart(2, 0);
+//     const seconds = timeNow.getSeconds().toString().padStart(2, 0);
+//     myClock.textContent = `${hours}:${minutes}:${seconds}${meridiem}`;
+// }
 
-// Stopwatch app
-const myStopwatch = document.getElementById("myStopwatch");
+// // Stopwatch app
+// const myStopwatch = document.getElementById("myStopwatch");
 
-let timer = null;
-let startTime = 0;
-let elapsedTime = 0;
-let isRunning = false;
+// let timer = null;
+// let startTime = 0;
+// let elapsedTime = 0;
+// let isRunning = false;
 
-function startButton() {
-    if (!isRunning) {
-        startTime = Date.now() - elapsedTime;
-        timer = setInterval(updateStopwatch, 10);
-        isRunning = true;
-    }
-}
+// function startButton() {
+//     if (!isRunning) {
+//         startTime = Date.now() - elapsedTime;
+//         timer = setInterval(updateStopwatch, 10);
+//         isRunning = true;
+//     }
+// }
 
-function stopButton() {
-    if (isRunning) {
-        clearInterval(timer);
-        elapsedTime = Date.now() - startTime;
-        isRunning = false;
-    }
-}
+// function stopButton() {
+//     if (isRunning) {
+//         clearInterval(timer);
+//         elapsedTime = Date.now() - startTime;
+//         isRunning = false;
+//     }
+// }
 
-function resetButton() {
-    clearInterval(timer);
-    startTime = 0;
-    elapsedTime = 0;
-    isRunning = false;
-    myStopwatch.textContent = `00:00:00:00`;
-}
+// function resetButton() {
+//     clearInterval(timer);
+//     startTime = 0;
+//     elapsedTime = 0;
+//     isRunning = false;
+//     myStopwatch.textContent = `00:00:00:00`;
+// }
 
-function updateStopwatch() {
-    const currentTime = Date.now();
-    elapsedTime = currentTime - startTime;
-    let swHours = Math.floor(elapsedTime / (1000 * 60 * 60)).toString().padStart(2, 0);
-    let swMinutes = Math.floor(elapsedTime / (1000 * 60) % 60).toString().padStart(2, 0);
-    let swSeconds = Math.floor(elapsedTime / 1000 % 60).toString().padStart(2, 0);
-    let swMSeconds = Math.floor(elapsedTime % 1000 / 10).toString().padStart(2, 0);
+// function updateStopwatch() {
+//     const currentTime = Date.now();
+//     elapsedTime = currentTime - startTime;
+//     let swHours = Math.floor(elapsedTime / (1000 * 60 * 60)).toString().padStart(2, 0);
+//     let swMinutes = Math.floor(elapsedTime / (1000 * 60) % 60).toString().padStart(2, 0);
+//     let swSeconds = Math.floor(elapsedTime / 1000 % 60).toString().padStart(2, 0);
+//     let swMSeconds = Math.floor(elapsedTime % 1000 / 10).toString().padStart(2, 0);
 
-    myStopwatch.textContent = `${swHours}:${swMinutes}:${swSeconds}:${swMSeconds}`;
-}
+//     myStopwatch.textContent = `${swHours}:${swMinutes}:${swSeconds}:${swMSeconds}`;
+// }
+
+import {PI, getCircumference, getArea, getVolume, getSurfaceVolume} from "./mathUtil.js";
+console.log(PI);
+console.log(getCircumference(10));
+console.log(getArea(10));
+console.log(getVolume(10));
+console.log(getSurfaceVolume(10));
+// Modules only work with the HTTP(s) protocol.
+// A web - page opened via the file:// protocol cannot use import / export.
