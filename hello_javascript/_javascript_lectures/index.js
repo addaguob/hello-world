@@ -1452,19 +1452,24 @@ finally {
     // Release resources
 }
 
-let x = 0;
+let [x, y] = [4, 2];
 
 try {
-    let x = 2 / 0;
+    x = 5;
+    y = 0;
+    if (y == 0) { 
+        throw new Error("Zero division error");
+    }
     console.log(x);
-    
+    console.log(y);
 }
 
 catch (error) {
     console.log(error)
-    
 }
 
 finally {
-    console.log(x)
+    console.log("Process complete.")
 }
+
+// It's better to use console.error than console.log to make errors obvious
