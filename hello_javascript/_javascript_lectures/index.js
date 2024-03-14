@@ -1440,6 +1440,7 @@ try {
     // Security errors
 }
 
+
 catch (error) {
     console.log(error);
 }
@@ -1449,4 +1450,21 @@ finally {
     // Close files
     // Close connections
     // Release resources
+}
+
+let x = 0;
+
+try {
+    let x = 2 / 0;
+    console.log(x);
+    
+}
+
+catch (error) {
+    console.log(error)
+    
+}
+
+finally {
+    console.log(x)
 }
