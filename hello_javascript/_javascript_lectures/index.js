@@ -1335,5 +1335,19 @@ function clearButton() {
     console.log(`Clear.`);
 }
 
+// Clock app
+
 const myClock = document.getElementById("myClock");
-myClock.innerHTML = `Clock<br>`;
+myClock.innerHTML = `Clock`;
+
+updateClock();
+setInterval(updateClock, 1000);
+
+function updateClock() {
+    const timeNow = new Date();
+    let hours = timeNow.getHours();
+    const minutes = timeNow.getMinutes();
+    const seconds = timeNow.getSeconds();
+    const meridiem = (hours >= 12) ? "PM" : "AM";
+    myClock.textContent = `${hours}:${minutes}:${seconds}${meridiem}`;
+}

@@ -32,11 +32,11 @@
 .rollResult {
     font-size: 3em;
 }
-
- body {
+*/
+body {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 94%);
-}*/
+}
 
 #myH1 {
     color: red;
