@@ -1433,43 +1433,54 @@ comment
 // catch {} = catch and handle any thrown errors from try {}
 // finally { } = always executes
 
-try {
-    console.lag("Problematic line");
-    // Network errors
-    // Promise rejection
-    // Security errors
-}
+// try {
+//     console.lag("Problematic line");
+//     // Network errors
+//     // Promise rejection
+//     // Security errors
+// }
 
 
-catch (error) {
-    console.log(error);
-}
+// catch (error) {
+//     console.log(error);
+// }
 
-finally {
-    console.log("Done.")
-    // Close files
-    // Close connections
-    // Release resources
-}
+// finally {
+//     console.log("Done.")
+//     // Close files
+//     // Close connections
+//     // Release resources
+// }
 
-let [x, y] = [4, 2];
+// let [x, y] = [4, 2];
 
-try {
-    x = 5;
-    y = 0;
-    if (y == 0) { 
-        throw new Error("Zero division error");
-    }
-    console.log(x);
-    console.log(y);
-}
+// try {
+//     x = 5;
+//     y = 0;
+//     if (y == 0) {
+//         throw new Error("Zero division error");
+//     }
+//     console.log(x);
+//     console.log(y);
+// }
 
-catch (error) {
-    console.log(error)
-}
+// catch (error) {
+//     console.log(error)
+// }
 
-finally {
-    console.log("Process complete.")
-}
+// finally {
+//     console.log("Process complete.")
+// }
 
 // It's better to use console.error than console.log to make errors obvious
+
+// DOM = Document Object Model
+// console.log(document);
+
+// Element Selectors = methods used to target and manipulate HTML elements
+
+// document.getElementById()        --Element or Null
+// document.getElementsClassName()  --HTML Collection
+// document.getElementsByTagName()  -- HTML Collection
+// document.querySelector()         --Element or Null
+// document.querySelectorAll()      --Nodelist
