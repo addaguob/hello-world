@@ -1480,12 +1480,20 @@ comment
 // Element Selectors = methods used to target and manipulate HTML elements
 
 // document.getElementById()        --Element or Null
-// document.getElementsClassName()  --HTML Collection
+// document.getElementsByClassName()  --HTML Collection
 // document.getElementsByTagName()  --HTML Collection
 // document.querySelector()         --Element or Null
 // document.querySelectorAll()      --Nodelist
 
-function iAMAnObject() {}
+// function iAMAnObject() {}
 
-console.log(iAMAnObject.name);
-console.log(Object.keys(iAMAnObject));
+// console.log(iAMAnObject.name);
+// console.log(Object.keys(iAMAnObject));
+
+const fruits = document.getElementsByClassName("fruits");
+const colors = ["red", "yellow", "blue"];
+let count = 0;
+Array.from(fruits).forEach(fruit => {
+    fruit.style.backgroundColor = colors[count];
+    count++;
+});
