@@ -1512,10 +1512,12 @@ comment
 // qElement.style.backgroundColor = "orange"
 
 // document.querySelectorAll() is static and not live
-const foods = document.querySelectorAll("li");
-foods[3].style.backgroundColor = "yellow";
-console.log(foods);
+// const foods = document.querySelectorAll("li");
+// foods[3].style.backgroundColor = "yellow";
+// console.log(foods);
 
-foods.forEach(food => {
-    food.style.backgroundColor = "yellowgreen";
-})
+// foods.forEach(food => {
+//     food.style.backgroundColor = "yellowgreen";
+// })
+
+// DOM Navigationjj
