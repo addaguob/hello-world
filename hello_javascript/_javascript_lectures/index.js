@@ -1504,5 +1504,5 @@ for (let h4Element of h4Elements) {
 }
 const liElements = document.getElementsByTagName("li");
 for (let liElement of liElements) {
-    liElement.style.backgroundColor = "purple";
+    liElement.style.backgroundColor = "lightgreen";
 }
