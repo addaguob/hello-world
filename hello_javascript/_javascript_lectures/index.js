@@ -1506,3 +1506,7 @@ const liElements = document.getElementsByTagName("li");
 for (let liElement of liElements) {
     liElement.style.backgroundColor = "lightgreen";
 }
+
+// Selects the first instance of the element class or a tag name
+const qElement = document.querySelector(".fruits");
+qElement.style.backgroundColor = "orange"
