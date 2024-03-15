@@ -1481,6 +1481,11 @@ comment
 
 // document.getElementById()        --Element or Null
 // document.getElementsClassName()  --HTML Collection
-// document.getElementsByTagName()  -- HTML Collection
+// document.getElementsByTagName()  --HTML Collection
 // document.querySelector()         --Element or Null
 // document.querySelectorAll()      --Nodelist
+
+function iAMAnObject() {}
+
+console.log(iAMAnObject.name);
+console.log(Object.keys(iAMAnObject));
