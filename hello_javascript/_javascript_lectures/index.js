@@ -1490,23 +1490,27 @@ comment
 // console.log(iAMAnObject.name);
 // console.log(Object.keys(iAMAnObject));
 
-const fruits = document.getElementsByClassName("fruits");
-const colors = ["red", "yellow", "blue"];
-let count = 0;
-Array.from(fruits).forEach(fruit => {
-    fruit.style.backgroundColor = colors[count];
-    count++;
-});
+// const fruits = document.getElementsByClassName("fruits");
+// const colors = ["red", "yellow", "blue"];
+// let count = 0;
+// Array.from(fruits).forEach(fruit => {
+//     fruit.style.backgroundColor = colors[count];
+//     count++;
+// });
 
-const h4Elements = document.getElementsByTagName("h4");
-for (let h4Element of h4Elements) {
-    h4Element.style.backgroundColor = "grey";
-}
-const liElements = document.getElementsByTagName("li");
-for (let liElement of liElements) {
-    liElement.style.backgroundColor = "lightgreen";
-}
+// const h4Elements = document.getElementsByTagName("h4");
+// for (let h4Element of h4Elements) {
+//     h4Element.style.backgroundColor = "grey";
+// }
+// const liElements = document.getElementsByTagName("li");
+// for (let liElement of liElements) {
+//     liElement.style.backgroundColor = "lightgreen";
+// }
 
-// Selects the first instance of the element class or a tag name
-const qElement = document.querySelector(".fruits");
-qElement.style.backgroundColor = "orange"
+// // Selects the first instance of the element class or a tag name
+// const qElement = document.querySelector(".fruits");
+// qElement.style.backgroundColor = "orange"
+
+// document.querySelectorAll() is static and not live
+const foods = document.querySelectorAll("li");
+foods[3].style.backgroundColor = "yellow";
