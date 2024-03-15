@@ -1497,3 +1497,12 @@ Array.from(fruits).forEach(fruit => {
     fruit.style.backgroundColor = colors[count];
     count++;
 });
+
+const h4Elements = document.getElementsByTagName("h4");
+for (let h4Element of h4Elements) {
+    h4Element.style.backgroundColor = "grey";
+}
+const liElements = document.getElementsByTagName("li");
+for (let liElement of liElements) {
+    liElement.style.backgroundColor = "purple";
+}
