@@ -1520,4 +1520,28 @@ comment
 //     food.style.backgroundColor = "yellowgreen";
 // })
 
-// DOM Navigation
+// DOM Navigation = the process of navigating through the structure of an HTML document using JavaScript.
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parentElement
+// .children
+
+// .firstElementChild
+// const element = document.getElementById("fruits");
+// const firstChild = element.firstElementChild;
+// firstChild.style.backgroundColor = "yellow";
+
+const uElements = document.querySelectorAll("ul");
+uElements.forEach(uElement => {
+    const firstChild = uElement.firstElementChild;
+    firstChild.style.backgroundColor = "yellow";
+})
+
+// .lastElementChild
+
+
+
+
+ 
