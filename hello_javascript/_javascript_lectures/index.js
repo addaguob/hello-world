@@ -1520,4 +1520,4 @@ comment
 //     food.style.backgroundColor = "yellowgreen";
 // })
 
-// DOM Navigationjj
+// DOM Navigation
