@@ -1545,5 +1545,8 @@ uElements.forEach(uElement => {
     const lastChild = uElement.lastElementChild;
     lastChild.style.backgroundColor = "yellow";
 })
+const element = document.getElementById("carrots");
+const nextSibling = element.nextElementSibling;
+nextSibling.style.backgroundColor = "yellowgreen";
 
  
