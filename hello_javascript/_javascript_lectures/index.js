@@ -1533,15 +1533,17 @@ comment
 // const firstChild = element.firstElementChild;
 // firstChild.style.backgroundColor = "yellow";
 
-const uElements = document.querySelectorAll("ul");
-uElements.forEach(uElement => {
-    const firstChild = uElement.firstElementChild;
-    firstChild.style.backgroundColor = "yellow";
-})
+// const uElements = document.querySelectorAll("ul");
+// uElements.forEach(uElement => {
+//     const firstChild = uElement.firstElementChild;
+//     firstChild.style.backgroundColor = "yellow";
+// })
 
 // .lastElementChild
-
-
-
+const uElements = document.querySelectorAll("ul");
+uElements.forEach(uElement => {
+    const lastChild = uElement.lastElementChild;
+    lastChild.style.backgroundColor = "yellow";
+})
 
  
