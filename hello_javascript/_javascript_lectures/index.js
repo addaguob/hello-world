@@ -1550,10 +1550,15 @@ comment
 // nextSibling.style.backgroundColor = "yellowgreen";
 
 // .nextElementSibling
-const element = document.getElementById("vegetables");
-const nextElementSibling = element.nextElementSibling;
-nextElementSibling.style.backgroundColor = "yellowgreen";
+// const element = document.getElementById("vegetables");
+// const nextElementSibling = element.nextElementSibling;
+// nextElementSibling.style.backgroundColor = "yellowgreen";
 
-// .previousElementSibling
-const previousElementSibling = element.previousElementSibling;
-previousElementSibling.style.backgroundColor = "yellow";
+// // .previousElementSibling
+// const previousElementSibling = element.previousElementSibling;
+// previousElementSibling.style.backgroundColor = "yellow";
+
+// .parentElement
+const element = document.getElementById("carrots");
+const parent = element.parentElement;
+parent.style.backgroundColor = "orange";
