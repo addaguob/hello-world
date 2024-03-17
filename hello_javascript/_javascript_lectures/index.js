@@ -1540,13 +1540,16 @@ comment
 // })
 
 // .lastElementChild
-const uElements = document.querySelectorAll("ul");
-uElements.forEach(uElement => {
-    const lastChild = uElement.lastElementChild;
-    lastChild.style.backgroundColor = "yellow";
-})
-const element = document.getElementById("carrots");
-const nextSibling = element.nextElementSibling;
-nextSibling.style.backgroundColor = "yellowgreen";
+// const uElements = document.querySelectorAll("ul");
+// uElements.forEach(uElement => {
+//     const lastChild = uElement.lastElementChild;
+//     lastChild.style.backgroundColor = "yellow";
+// })
+// const element = document.getElementById("carrots");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "yellowgreen";
 
- 
+// .nextElementSibling
+const element = document.getElementById("vegetables");
+const nextElementSibling = element.nextElementSibling;
+nextElementSibling.style.backgroundColor = "yellowgreen";
