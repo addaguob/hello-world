@@ -1553,3 +1553,7 @@ comment
 const element = document.getElementById("vegetables");
 const nextElementSibling = element.nextElementSibling;
 nextElementSibling.style.backgroundColor = "yellowgreen";
+
+// .previousElementSibling
+const previousElementSibling = element.previousElementSibling;
+previousElementSibling.style.backgroundColor = "yellow";
