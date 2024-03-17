@@ -1559,6 +1559,16 @@ comment
 // previousElementSibling.style.backgroundColor = "yellow";
 
 // .parentElement
-const element = document.getElementById("carrots");
-const parent = element.parentElement;
-parent.style.backgroundColor = "orange";
+// const element = document.getElementById("carrots");
+// const parent = element.parentElement;
+// parent.style.backgroundColor = "orange";
+
+// .parentElement
+const element = document.getElementById("vegetables");
+const children = element.children;
+const colors = ["red", "blue", "green"];
+let i = 0;
+Array.from(children).forEach(child => {
+    child.style.backgroundColor = colors[i];
+    i++
+});
