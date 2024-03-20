@@ -1563,7 +1563,7 @@ comment
 // const parent = element.parentElement;
 // parent.style.backgroundColor = "orange";
 
-// .parentElement
+// .childElement
 const element = document.getElementById("vegetables");
 const children = element.children;
 const colors = ["red", "blue", "green"];
