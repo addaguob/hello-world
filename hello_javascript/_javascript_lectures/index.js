@@ -1564,11 +1564,33 @@ comment
 // parent.style.backgroundColor = "orange";
 
 // .childElement
-const element = document.getElementById("vegetables");
-const children = element.children;
-const colors = ["red", "blue", "green"];
-let i = 0;
-Array.from(children).forEach(child => {
-    child.style.backgroundColor = colors[i];
-    i++
-});
+// const element = document.getElementById("vegetables");
+// const children = element.children;
+// const colors = ["red", "blue", "green"];
+// let i = 0;
+// Array.from(children).forEach(child => {
+//     child.style.backgroundColor = colors[i];
+//     i++
+// });
+
+// Add and change HTML
+
+// Step 1: Create the element
+const newH1 = document.createElement("h1");
+
+// Step 2: Add attributes and properties
+newH1.textContent = "I like pizza!";
+newH1.id = "myH1";
+newH1.style.color = "tomato";
+newH1.style.textAlign = "center";
+
+// Step 3: Append element to DOM
+// document.body.prepend(newH1);
+// document.body.append(newH1);
+// document.getElementById("box1").prepend(newH1);
+// document.getElementById("box1").append(newH1);
+const box2 = document.getElementById("box2");
+document.body.insertBefore(newH1, box3);
+
+// Remove element
+
