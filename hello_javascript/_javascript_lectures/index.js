@@ -1595,11 +1595,13 @@ newListItem.style.backgroundColor = "lightgreen";
 // document.body.prepend(newListItem);
 // document.getElementById("box1").append(newH1);
 // document.getElementById("box1").prepend(newH1);
-document.getElementById("fruits").prepend(newListItem);
+// document.getElementById("fruits").prepend(newListItem);
 // const box3 = document.getElementById("box3");
 // document.body.insertBefore(newH1, box3);
 // const boxes = document.querySelectorAll(".box");
 // document.body.insertBefore(newH1, boxes[3])
+const orange = document.getElementById("banana");
+document.getElementById("fruits").insertBefore(newListItem, orange);
 
 // Remove element
 // document.body.removeChild(newH1);
