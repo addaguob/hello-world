@@ -1606,3 +1606,4 @@ document.getElementById("fruits").insertBefore(newListItem, orange);
 // Remove element
 // document.body.removeChild(newH1);
 // document.getElementById("box1").removeChild(newH1);
+
