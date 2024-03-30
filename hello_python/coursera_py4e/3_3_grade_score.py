@@ -3,7 +3,7 @@ score = float(score)
 
 grade = ""
 
-if 0.0 <= score > 1.0:
+if 0.0 <= score <= 1.0:
     if score >= 0.9:
         grade = 'A';
     elif score >= 0.8:
