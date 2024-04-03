@@ -1577,17 +1577,17 @@ comment
 
 // Step 1: Create the element
 // const newH1 = document.createElement("h1");
-const newListItem = document.createElement("li");
+// const newListItem = document.createElement("li");
 
 // Step 2: Add attributes and properties
 // newH1.textContent = "I like pizza!";
 // newH1.id = "myH1";
 // newH1.style.color = "tomato";
 // newH1.style.textAlign = "center";
-newListItem.textContent = "coconut";
-newListItem.id = "coconut";
-newListItem.style.fontWeight = "bold";
-newListItem.style.backgroundColor = "lightgreen";
+// newListItem.textContent = "coconut";
+// newListItem.id = "coconut";
+// newListItem.style.fontWeight = "bold";
+// newListItem.style.backgroundColor = "lightgreen";
 
 // Step 3: Append element to DOM
 // document.body.append(newH1);
@@ -1600,8 +1600,8 @@ newListItem.style.backgroundColor = "lightgreen";
 // document.body.insertBefore(newH1, box3);
 // const boxes = document.querySelectorAll(".box");
 // document.body.insertBefore(newH1, boxes[3])
-const orange = document.getElementById("banana");
-document.getElementById("fruits").insertBefore(newListItem, orange);
+// const orange = document.getElementById("banana");
+// document.getElementById("fruits").insertBefore(newListItem, orange);
 
 // Remove element
 // document.body.removeChild(newH1);
