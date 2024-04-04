@@ -1623,3 +1623,13 @@ idBox.addEventListener("click", (event) => {
     event.target.style.backgroundColor = "tomato";
     event.target.textContent = "OUCH! 🤕";
 });
+
+idBox.addEventListener("mouseover", (event) => {
+    event.target.style.backgroundColor = "yellow";
+    event.target.textContent = "Don't do it! 😒";
+});
+
+idBox.addEventListener("mouseout", (event) => {
+    event.target.style.backgroundColor = "lightgreen";
+    event.target.textContent = "Click Me! 😀";
+});
