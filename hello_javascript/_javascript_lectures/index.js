@@ -1617,7 +1617,7 @@ comment
 // eventListener = listen for specific events to create interactive web page
 
 
-const idBox = document.getElementById("myBox");
+const idBox = document.getElementById("idBox");
 
 function changeColor(event) {
     console.log(event);
