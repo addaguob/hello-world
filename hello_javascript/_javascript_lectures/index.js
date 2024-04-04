@@ -1619,8 +1619,7 @@ comment
 
 const idBox = document.getElementById("idBox");
 
-function changeColor(event) {
-    console.log(event);
-}
-
-idBox.addEventListener("click", changeColor);
+idBox.addEventListener("click", function(event) {
+    event.target.style.backgroundColor = "tomato";
+    event.target.textContent = "OUCH! 🤕";
+});

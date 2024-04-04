@@ -153,9 +153,19 @@ img {
 
 #idBox {
     background-color: lightgreen;
-    width: 300px;
-    height: 300px;
-    font-size: 4.5rem;
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#idBox2 {
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    font-size: 3rem;
     font-weight: bold;
     display: flex;
     align-items: center;
