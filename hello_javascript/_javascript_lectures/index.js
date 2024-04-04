@@ -1608,9 +1608,19 @@ comment
 // document.body.removeChild(newH1);
 // document.getElementById("box1").removeChild(newH1);
 
+// console.table("Hello world")
+// console.table(["Audi", "Volvo", "Ford"]);
+// console.table({ firstname: "John", lastname: "Doe" });
+
+
 // Mouse Events
 // eventListener = listen for specific events to create interactive web page
 
-console.table("Hello world")
-console.table(["Audi", "Volvo", "Ford"]);
-console.table({ firstname: "John", lastname: "Doe" });
+
+const idBox = document.getElementById("myBox");
+
+function changeColor(event) {
+    console.log(event);
+}
+
+idBox.addEventListener("click", changeColor);
