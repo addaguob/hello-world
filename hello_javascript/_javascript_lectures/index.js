@@ -1614,12 +1614,12 @@ comment
 
 
 // Mouse Events
-// eventListener = listen for specific events to create interactive web page
+// eventListener = listen for specific events to create interactive web page. Parameters are (event, callback/anonymous function/arrowFunction)
 
 
 const idBox = document.getElementById("idBox");
 
-idBox.addEventListener("click", function(event) {
+idBox.addEventListener("click", (event) => {
     event.target.style.backgroundColor = "tomato";
     event.target.textContent = "OUCH! 🤕";
 });
