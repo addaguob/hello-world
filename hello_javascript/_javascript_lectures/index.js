@@ -1600,6 +1600,7 @@ comment
 // document.body.insertBefore(newH1, box3);
 // const boxes = document.querySelectorAll(".box");
 // document.body.insertBefore(newH1, boxes[3])
+
 // const orange = document.getElementById("banana");
 // document.getElementById("fruits").insertBefore(newListItem, orange);
 
@@ -1607,3 +1608,9 @@ comment
 // document.body.removeChild(newH1);
 // document.getElementById("box1").removeChild(newH1);
 
+// Mouse Events
+// eventListener = listen for specific events to create interactive web page
+
+console.table("Hello world")
+console.table(["Audi", "Volvo", "Ford"]);
+console.table({ firstname: "John", lastname: "Doe" });
