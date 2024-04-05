@@ -1,122 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harvard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
+
 <body>
-    <!-- <h1 id="myH1">Press F12 for Console</h1> -->
-    
-    <!-- <div id="container">
-        <h1>Dice Roller</h1>
-        <label> Number of Dice:</label>
-        <input type="number" id="numOfDice" value="1" min="1" max="6">
-        <button onclick="rollDice()">Roll Dice</button>
-        <div id="diceResult"></div>
-        <div id="diceImages"></div>
-    </div> -->
-    <!-- <form>
-        <h1>Temperature conversion</h1>
-        <input type="number" id="textBox" value="0"><br>
 
-        <input type="radio" id="toFarhenheit" name="unit">
-        <label for="toFarhenheit">Celsius ➡️ Farhenheit</label><br>
-        <input type="radio" id="toCelsius" name="unit">
-        <label for="toCelsius">Farhenheit ➡️ Celsius</label><br>
-        <button type="button" onclick="convert()">submit</button>
-        <p id="result"></p>
-    </form> -->
-    <!-- <input type="checkbox" id="myCheckbox">
-    <label for="myCheckbox">Subscribe</label><br><br>
+    <h1>JavaScript Assignments</h1>
+    <h2>Logical AND Assignment</h2>
+    <h3>The &&= Operator</h3>
+    <p>If the first value is true, the second value is assigned.</p>
 
-    <input id="visaBtn" name="card" type="radio">
-    <label for="visaBtn">Visa</label><br>
-    <input id="mastercardBtn" name="card" type="radio">
-    <label for="mastercardBtn">MasterCard</label><br>
-    <input id="paypalBtn" name="card" type="radio">
-    <label for="paypalBtn">PayPal</label><br><br>
-    <button id="mySubmit" type="submit">Submit</button>
-    <p id="submitResult"></p>
-    <p id="paymentResult"></p> -->
-    <!-- <label id="countLabel">0</label><br>
-    <div id="btnContainer">
-        <button class="buttons" id="decreaseBtn">-</button>
-        <button class="buttons" id="resetBtn">reset</button>
-        <button class="buttons" id="increaseBtn">+</button>
-    </div><br>
-    <div>
-        <button id="rollButton">Roll</button><br>
-        <label class="rollResult" id="rollResult1"></label>
-        <label class="rollResult" id="rollResult2"></label>
-        <label class="rollResult" id="rollResult3"></label><br>
-    </div>
-    <div>
-        <label id="ageLabel">Enter you age:</label>
-        <input id="ageInput" type="text">
-        <button id="ageSubmit" type="submit">Submit</button>
-        <p id="ageRemarks"></p>
-    </div> -->
-    <!-- <div>
-        <label id="myClock"></label>
-    </div>
-    <div>
-        <button onclick="startButton()">Start</button>
-        <button onclick="stopButton()">Stop</button>
-        <button onclick="resetButton()">Reset</button>
-    </div>
-    <div>
-        <label id="myStopwatch">00:00:00:00</label>
-    </div> -->
-    <!-- <div class="fruits">Apple</div>
-    <div class="fruits">Orange</div>
-    <div class="fruits">Apple</div> -->
-    <!-- <h4>Root Vegetables</h4>
-    <ul>
-        <li>Beets</li>
-        <li>Carrots</li>
-        <li>Potatoes</li>
-    </ul>
-    <h4>Non-Root Vegetables</h4>
-    <ul>
-        <li>Broccoli</li>
-        <li>Celery</li>
-        <li>Onions</li>
-    </ul> -->
-    <!-- <ul id="fruits">
-        <li id="apple">apple</li>
-        <li id="orange">orange</li>
-        <li id="banana">banana</li>
-    </ul>
-    <ul id="vegetables">
-        <li id="carrots">carrots</li>
-        <li>onions</li>
-        <li>potatoes</li>
-    </ul>
-    <ul id="desserts">
-        <li>cake</li>
-        <li>pie</li>
-        <li>ice cream</li>
-    </ul> -->
-    <!-- <div id="box1" class="box">
-        <p>Box1</p>
-        <p>Box1.2</p>
-    </div>
-    <div id="box2" class="box">
-        <p>Box2</p>
-    </div>
-    <div id="box3" class="box">
-        <p>Box3</p>
-    </div>
-    <div id="box4" class="box">
-        <p>Box4</p>
-    </div> -->
-    <div id="idBox">
-        Click Me 😀
-    </div>     
-    <script type="module" src="index.js">
+    <p id="demo"></p>
+
+    <script>
+        let x = 100;
+        x &&= 5;
+        document.getElementById("demo").innerHTML = "Value of x is: " + x;
     </script>
-    <!-- <script type="module" src="index.js"></script> -->
+
 </body>
+
 </html>
