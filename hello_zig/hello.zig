@@ -15,12 +15,12 @@ pub fn main() void {
 // Success
 // Save the following text as test_pass.zig, and run zig test test_pass.zig; you should read All 1 tests passed. in your terminal.
 
-const std = @import("std");
-const expect = std.testing.expect;
+// const std = @import("std");
+// const expect = std.testing.expect;
 
-test "always succeeds" {
-    try expect(true);
-}
+// test "always succeeds" {
+//     try expect(true);
+// }
 
 
 // Failure
