@@ -8,7 +8,7 @@
 
 // Use zig run main.zig to build and run it. In this example, Hello, World! will be written to stderr, and is assumed to never fail.
 
-FOUND 'INVALID BYTES'
+// FOUND 'INVALID BYTES'
 // Make sure your main.zig file is UTF-8 encoded as the Zig compiler does not currently support other encodings. To re-encode your file as UTF-8, run zig fmt main.zig and reopen the file in your editor.
 
 
