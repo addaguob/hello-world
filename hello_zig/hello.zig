@@ -45,7 +45,7 @@ test "always succeeds" {
 // 0 passed; 0 skipped; 1 failed.
 
 
-Assignment
+// Assignment
 Value assignment has the following syntax: (const|var) identifier[: type] = value.
 
 const indicates that identifier is a constant that stores an immutable value.
