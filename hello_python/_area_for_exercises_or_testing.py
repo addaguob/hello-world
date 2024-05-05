@@ -1,10 +1,31 @@
 # # These are codes for little experiments
 # import random
 # import time
+def meow(n: int) -> str:
+    """
+    Meow n times.
 
-sent = "I am Alex"
-for i in range(len(sent)):
-    print(sent[i])
+    :param n: Number of times to meow
+    :type n: int
+    :raise TypeError: If n is not an int
+    :return: A string of n meows, one per line
+    :rtype: str
+    """
+    return "meow\n" * n
+
+
+def main():
+    num: int = int(input("Number: "))
+    meows: str = meow(num)
+    print(meows, end="")
+
+
+main()
+# 43
+
+# sent = "I am Alex"
+# for i in range(len(sent)):
+#     print(sent[i])
 
 # def swing_trading_email(file_input, file_output):
 #     with open(file_input, 'r') as trade_file:
