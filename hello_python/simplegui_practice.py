@@ -16,3 +16,4 @@ while True:
     if event == "Convert to CSV":
         sg.popup_error("Oops!", title="Feature not yet implemented")
 window.close()
+
