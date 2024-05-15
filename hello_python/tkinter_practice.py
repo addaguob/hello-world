@@ -1,11 +1,13 @@
-import tkinter
+import tkinter as tk
 from tkinter.constants import *
 
-tk = tkinter.Tk()
-frame = tkinter.Frame(tk, relief=RIDGE, borderwidth=2)
+root = tk.Tk()
+photo = tk.PhotoImage(file="Lexda_icon.png")
+root.iconphoto(False, photo)
+frame = root.Frame(root, relief=RIDGE, borderwidth=2)
 frame.pack(fill=BOTH, expand=1)
-label = tkinter.Label(frame, text="Hello, World")
+label = root.Label(frame, text="Hello, World")
 label.pack(fill=X, expand=1)
-button = tkinter.Button(frame, text="Exit", command=tk.destroy)
+button = root.Button(frame, text="Exit", command=root.destroy)
 button.pack(side=BOTTOM)
-tk.mainloop()
+root.mainloop()
