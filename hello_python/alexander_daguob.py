@@ -30,9 +30,6 @@ class FavColors:
     CRIMSON = "#DC143C"
     SALMON = "#FA8072"
     ROSE =  "#F08784"
-    DEEPPINK = "#FF1493"
-    HOTPINK = "#FF69B4"
-    PINK = "#FFC0CB"
     
     ORANGE = "#FFA500"
     DARKORANGE = "FF8C00"
@@ -45,22 +42,37 @@ class FavColors:
     GOLD = "#FFD700"
     DARKKHAKI = "#BDB76B"
     KHAKI = "#F0E68C"
+    PEACHPUFF = "#FFDAB9"
     
-    GREEN = "#22B14C"
-    BLUE = "#0023F5"
-    PURPLE = VIOLET = "#732BF5"
-    LAVENDER = "#EA3FF7"
-    LIGHT_BLUE = "#D7EAFF"
-    ICE_BLUE_LIGHT = "#C4D5E8"
+    GREEN = "#008000"
+    DARKGREEN = "#006400"
+    SEAGREEN = "#2E8B57"
+    LIMEGREEN = "#32CD32"
+    OLIVE = "#808000"  # Gold-green
+    LIME = "##00FF00"  # Neon-lightgreen
+    YELLOWGREEN = "#9ACD32"
+    GREENYELLOW = "#ADFF2F"
+        
+    BLUE = "#0000FF"
+    DARKBLUE = "#00008B"
+    NAVY = "#000080"
+    DODGERBLUE = "#1E90FF"
+    ROYALBLUE = "#4169E1"
+    DEEPSKYBLUE = "#00BFFF"
+
+    INDIGO = "#4B0082"
+    PURPLE = "#800080"
+    VIOLET = "#EE82EE"
+    LAVENDER = "#E6E6FA"
+    FUCHSIA = MAGENTA = "#FF00FF"
+    DEEPPINK = "#FF1493"
+    HOTPINK = "#FF69B4"
+    PINK = "#FFC0CB"
     
     # Other basic colors
     MAROON = "#800000"
-    OLIVE = "#808000"
-    LIME = "##00FF00"  # Neon-lightgreen
-    AQUA = "#00FFFF"
+    AQUA = CYAN = "#00FFFF"
     TEAL = "#008080"
-    NAVY = "#000080"
-    FUCHSIA = MAGENTA = "#FF00FF"
 
     
 from time import sleep
