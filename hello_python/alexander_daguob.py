@@ -1,24 +1,28 @@
 # Hi, I'm Alexander Daguob. Below are my favorites!
 
-# fave colors derived from Paint App
-class FavColors:
+# fave colors derived from https://en.wikipedia.org/wiki/Web_colors
+class WebColors:
     # White colors
     WHITE = "#FFFFFF"
     SNOW = "#FFFAFA"
-    IVORY = "#FFFFF0" # Faint yellow
-    AZURE = "#F0FFFF" # Faint blue green
-    HONEYDEW = "#F0FFF0" # Faint green
-    BIEGE = "#F5F5DC" # Faint yellow brown
-    MISTYROSE = "#FFE4E1" # Faint rose
+    IVORY = "#FFFFF0" # Faint yellow-green
+    BIEGE = "#F5F5DC" # Faint yellow-brown
+    SEASHELL = "#FFF5EE" # Faint orange-brown
+    AZURE = "#F0FFFF" # Faint blue-green
+    HONEYDEW = "#F0FFF0" # Faint-green
+    MISTYROSE = "#FFE4E1" # Faint-rose
     
     # Black and grey colors
     BLACK = "#000000"
     DARKSLATEGRAY = "#2F4F4F"
     SLATEGRAY = "#708090"
-    DIMGRAY = "#696969"
-    GREY = "#808080"
+    DIMGRAY = "#696969"  # Descending gray family
+    GRAY = GREY = "#808080"  # ↓
+    DARKGRAY = "#A9A9A9"
+    SILVER = "#C0C0C0"
+    LIGHTGRAY = "#D3D3D3"
+    GAINSBORO = "#DCDCDC"
     
-    OFF_WHITE = "#F0F0F0"
     ROSE =  "#F08784"
     PINK = "EA3680"
     RED = "#EB3324"
