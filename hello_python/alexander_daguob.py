@@ -1,11 +1,27 @@
 # Hi, I'm Alexander Daguob. Below are my favorites!
 
 # fave colors derived from Paint App
-class Color:
+class FavColors:
+    # White colors
     WHITE = "#FFFFFF"
+    SNOW = "#FFFAFA"
+    IVORY = "#FFFFF0" # Faint yellow
+    AZURE = "#F0FFFF" # Faint blue green
+    HONEYDEW = "#F0FFF0" # Faint green
+    BIEGE = "#F5F5DC" # Faint yellow brown
+    MISTYROSE = "#FFE4E1" # Faint rose
+    
+    # Black and grey colors
+    BLACK = "#000000"
+    DARKSLATEGRAY = "#2F4F4F"
+    SLATEGRAY = "#708090"
+    DIMGRAY = "#696969"
+    GREY = "#808080"
+    
     OFF_WHITE = "#F0F0F0"
     ROSE =  "#F08784"
-    RED = "#ED1C24"
+    PINK = "EA3680"
+    RED = "#EB3324"
     ORANGE = "#FF7F27"
     YELLOW = "#FFF200"
     GREEN = "#22B14C"
@@ -14,11 +30,7 @@ class Color:
     LAVENDER = "#EA3FF7"
     LIGHT_BLUE = "#D7EAFF"
     ICE_BLUE_LIGHT = "#C4D5E8"
-    ICE_BLUE_DARK = "#9DABBA"
-    BLUE_GREY = "#9BA9B8"
-    BLACK = "#000000"
-    LIGHT_GREY = "#C3C3C3"
-    GREY = "#7F7F7F"
+
     
 from time import sleep
 

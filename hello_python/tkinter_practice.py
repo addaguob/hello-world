@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter.constants import *
 
+
 root = tk.Tk()
 photo = tk.PhotoImage(file="Lexda_icon.png")
 root.iconphoto(False, photo)
