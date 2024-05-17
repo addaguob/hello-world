@@ -1,7 +1,7 @@
 # Hi, I'm Alexander Daguob. Below are my favorites!
 
 # fave colors derived from https://en.wikipedia.org/wiki/Web_colors
-class WebColors:
+class FavColors:
     # White colors
     WHITE = "#FFFFFF"
     SNOW = "#FFFAFA"
@@ -23,17 +23,44 @@ class WebColors:
     LIGHTGRAY = "#D3D3D3"
     GAINSBORO = "#DCDCDC"
     
+    # Now, ROY-G-BIV of rainbow:
+    RED = "#FF0000"
+    DARKRED = "#8B0000"
+    FIREBRICK = "#B22222"
+    CRIMSON = "#DC143C"
+    SALMON = "#FA8072"
     ROSE =  "#F08784"
-    PINK = "EA3680"
-    RED = "#EB3324"
-    ORANGE = "#FF7F27"
-    YELLOW = "#FFF200"
+    DEEPPINK = "#FF1493"
+    HOTPINK = "#FF69B4"
+    PINK = "#FFC0CB"
+    
+    ORANGE = "#FFA500"
+    DARKORANGE = "FF8C00"
+    ORANGERED = "#FF4500"
+    TOMATO = "#FF6347"
+    CORAL = "#FF7F50"
+    
+    YELLOW = "#FFFF00"
+    LIGHTYELLOW = "#FFFFE0"
+    GOLD = "#FFD700"
+    DARKKHAKI = "#BDB76B"
+    KHAKI = "#F0E68C"
+    
     GREEN = "#22B14C"
     BLUE = "#0023F5"
     PURPLE = VIOLET = "#732BF5"
     LAVENDER = "#EA3FF7"
     LIGHT_BLUE = "#D7EAFF"
     ICE_BLUE_LIGHT = "#C4D5E8"
+    
+    # Other basic colors
+    MAROON = "#800000"
+    OLIVE = "#808000"
+    LIME = "##00FF00"  # Neon-lightgreen
+    AQUA = "#00FFFF"
+    TEAL = "#008080"
+    NAVY = "#000080"
+    FUCHSIA = MAGENTA = "#FF00FF"
 
     
 from time import sleep
