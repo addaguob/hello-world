@@ -21,4 +21,4 @@ wait.seconds(1)
 button = tk.Button(frame, text="Exit", command=root.destroy)
 button.pack(side=BOTTOM)
 
-root.
+root.update()
