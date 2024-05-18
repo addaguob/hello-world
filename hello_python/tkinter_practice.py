@@ -1,23 +1,30 @@
-import tkinter as tk
-from tkinter.constants import *
-from alexander_daguob import FavColors as color, Wait as wait
+# import tkinter as tk
+# from tkinter.constants import *
+# from alexander_daguob import FavColors as color, Wait as wait
 
 
-root = tk.Tk()
-photo = tk.PhotoImage(file="Lexda_icon.png")
-root.iconphoto(False, photo)
-frame = tk.Frame(root, relief=RIDGE, borderwidth=2)
-frame.pack(fill=BOTH, expand=1)
+# root = tk.Tk()
+# photo = tk.PhotoImage(file="Lexda_icon.png")
+# root.iconphoto(False, photo)
+# frame = tk.Frame(root, relief=RIDGE, borderwidth=2)
+# frame.pack(fill=BOTH, expand=1)
 
-label = tk.Label(frame, text="Hello, World", bg=color.KHAKI)
-label.pack(fill=X, expand=1)
+# label = tk.Label(frame, text="Hello, World", bg=color.KHAKI)
+# label.pack(fill=X, expand=1)
 
-label2 = tk.Label(frame, text="Alexander is here!", bg=color.HONEYDEW)
-label2.pack(fill=X, expand=1)
+# label2 = tk.Label(frame, text="Alexander is here!", bg=color.HONEYDEW)
+# label2.pack(fill=X, expand=1)
 
-wait.seconds(1)
-button = tk.Button(frame, text="Exit", command=root.destroy)
-button.pack(side=BOTTOM)
+# wait.seconds(1)
+# button = tk.Button(frame, text="Exit", command=root.destroy)
+# button.pack(side=BOTTOM)
 
-root.mainloop()
-root.update()
+# root.mainloop()
+# root.update()
+
+from tkinter import PanedWindow, Button                               # get a widget object
+pwindow = PanedWindow(height=100, width=200, bg="#FFC0CB")
+pwindow.pack()
+widget = Button(None, text='Hello GUI world!', padx=10, pady=10)           # make one
+widget.pack()                                           # arrange it
+widget.mainloop()
