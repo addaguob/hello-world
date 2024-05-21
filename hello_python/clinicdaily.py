@@ -1,4 +1,5 @@
 
+# patient's info
 name = input("Name: ")
 age = input("Age: ")
 address = input("Contact No: ")
@@ -15,10 +16,15 @@ sales_staff = input("Sales Staff: ")
 doctor = input("Doctor: ")
 
 
-# sheet
+# sheet/page
+
+# header
+clinic_logo_path = ""
+date = ""
+doctor_in_charge = ""
+sales_personnel = []
 
 # table, row per patient (px)
-
 job_order = 0
 px_name = ""
 amount = 0
@@ -27,9 +33,6 @@ balance = amount - deposit
 frame = ""
 lens = ""
 staff = ""
-
-# header
-
 
 # footer
 stocks = 0
