@@ -26,3 +26,14 @@ deposit = 0
 balance = amount - deposit
 frame = ""
 lens = ""
+staff = ""
+
+# header
+
+
+# footer
+stocks = 0
+sold_items = 0
+added_items = 0
+checked_by = ""
+date_checked = ""
