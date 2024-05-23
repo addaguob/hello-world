@@ -1,5 +1,6 @@
 
 # patient's info
+import json
 name = input("Name: ")
 age = input("Age: ")
 address = input("Contact No: ")
@@ -40,3 +41,32 @@ sold_items = 0
 added_items = 0
 checked_by = ""
 date_checked = ""
+
+
+px = {
+    "name": "John",
+    "age": 30,
+    "married": True,
+    "divorced": False,
+    "children": ("Ann", "Billy"),
+    "pets": None,
+    "cars": [
+        {"model": "BMW 230", "mpg": 27.5},
+        {"model": "Ford Edge", "mpg": 24.1}
+    ]
+}
+
+print(json.dumps(px))
+
+lenses = [
+    Ord - Ordinary
+    SV - Single Vision lens
+    MC - Multi-coated
+    BB - Blue Blocker
+    BTS - Blue blocker Transition
+    KK - Kryptok
+    TRG - Transition Gray
+    Prog - Progressive lens
+    Own F - Own Frame
+    F. Only - Frame Only
+]
