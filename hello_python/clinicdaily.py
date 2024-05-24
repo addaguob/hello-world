@@ -2,12 +2,13 @@
 import json
 
 # patient's info
-
-# name = input("Name: ")
-# age = input("Age: ")
-# address = input("Contact No: ")
-# contact_no = input("Occupation: ")
-# date = input("Date: ")
+import json
+name = input("Name: ")
+age = input("Age: ")
+address = input("Contact No: ")
+contact_no = input("Occupation: ")
+occupation = input("Occupation: ")
+date = input("Date: ")
 
 # frames = input("Frames: ")
 # lens = input("Lens: ")
