@@ -5,7 +5,7 @@ name = input("Name: ")
 age = input("Age: ")
 address = input("Address: ")
 contact_no= input("Contact No: ")
-contact_no = input("Occupation: ")
+occupation = input("Occupation: ")
 date = input("Date: ")
 
 frames = input("Frames: ")
