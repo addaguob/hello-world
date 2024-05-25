@@ -32,5 +32,16 @@ void main() {
   int num = -10;
   print(num.isEven);
   print(num.abs());
+
   print(fname.length); // fname = 'Alex'
+  print(age.runtimeType); // type
+
+  // String interpolation rather than + operator
+  String greeting = "Hello";
+  greeting = greeting + ", World!"; // not recommended
+  // braces not necessary if var is only string
+  greeting = "${greeting} Hello Alex!";
+  greeting = "Hi $fname and world!";
+  greeting = "$fname has ${fname.length} letters.";
+  print(greeting);
 }
