@@ -91,4 +91,10 @@ Dart!""";
 
   // String myPesos; // Error: Non-null can't be used
   // print(myPesos);
+
+  // null safety
+  print(myCents.length); // can still print access length method
+  myCents = null; // now let's see
+  print(myCents?.length); // prints null as null using '?'
+  print(myCents?.length ?? 0); // print 0 instead of 'null'
 }
