@@ -75,4 +75,11 @@ Dart!""";
 
   //const is compiletime constant
   //const myClock2 = DateTime.now(); //error
+
+  // Optional variables: String/int/bool and null
+  int? myInt = null; // int myInt = null; // error
+  print(myInt);
+  myInt = 143;
+  print(myInt);
+
 }
