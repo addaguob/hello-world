@@ -54,4 +54,18 @@ void main() {
   I am \nlearning
 Dart!""";
   print(greeting);
+
+  // var, final, const (type inference system)
+  var myVar = 1; // auto identify as int type
+  //myVar = "abc"; // not dynamic
+  myVar = 2; // but can be reassigned with same type
+  print(myVar);
+
+  final myVar2 = 2.5;
+  // myVar2 = 3.5; // error
+  print(myVar2);
+
+  const myVar3 = "abc";
+  // myVar3 = "def"; // error
+  print(myVar3);
 }
