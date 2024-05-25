@@ -107,4 +107,9 @@ Dart!""";
   } else {
     print('Minor');
   }
+
+  // C-like syntax with && and || though non-zero is not true
+  if (age >= 18 && age < 20) {
+    print("Teenager");
+  }
 }
