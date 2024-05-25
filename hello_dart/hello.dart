@@ -68,4 +68,11 @@ Dart!""";
   const myVar3 = "abc";
   // myVar3 = "def"; // error
   print(myVar3);
+
+  // final is runtime constant
+  final myClock = DateTime.now();
+  print(myClock);
+
+  //const is compiletime constant
+  //const myClock2 = DateTime.now(); //error
 }
