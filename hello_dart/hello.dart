@@ -44,8 +44,14 @@ void main() {
   greeting = "Hi $fname and world!";
   greeting = "$fname has ${fname.length} letters.";
   print(greeting);
-  
+
   // Use dollar as string
   num = 10;
   print("I have \$$num. Okay.");
+
+  // Assign multi-line string value
+  greeting = """Hi, my name is Alex!
+  I am learning
+  Dart!""";
+  print(greeting);
 }
