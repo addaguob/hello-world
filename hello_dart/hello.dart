@@ -118,7 +118,13 @@ Dart!""";
   greeting = "Hi!";
   if (greeting == "Hi!") {
     print("Hello");
+    greeting = '';
+  }
+
+  // if isEmpty, isNotEmpty
+  if (greeting.isEmpty) {
+    print("Empty greeting");
   }
 }
 
-// 1h28
+// 1h29m18
