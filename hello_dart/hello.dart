@@ -27,4 +27,10 @@ void main() {
   print(age);
   age = "Thirty-five";
   print(age);
+
+  // number type variable methods
+  int num = -10;
+  print(num.isEven);
+  print(num.abs());
+  print(fname.length); // fname = 'Alex'
 }
