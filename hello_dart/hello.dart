@@ -97,4 +97,6 @@ Dart!""";
   myCents = null; // now let's see
   print(myCents?.length); // prints null as null using '?'
   print(myCents?.length ?? 0); // print 0 instead of 'null'
+  // print(myCents!.length); // '!' means myCents can't be null, no compiletime error but there is runtime error
+  // myCents = myCents?.length ?? "Nothing"; // doesn't work
 }
