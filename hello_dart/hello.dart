@@ -109,6 +109,7 @@ Dart!""";
   }
 
   // C-like syntax with && and || though non-zero is not true
+  // if (age) print('Age is non-zero'); // error
   if (age >= 18 && age < 20) {
     print("Teenager");
   }
