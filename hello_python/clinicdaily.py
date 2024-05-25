@@ -2,7 +2,6 @@
 import json
 
 # patient's info
-import json
 name = input("Name: ")
 age = input("Age: ")
 address = input("Contact No: ")
