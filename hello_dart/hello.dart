@@ -113,4 +113,12 @@ Dart!""";
   if (age >= 18 && age < 20) {
     print("Teenager");
   }
+
+  // String can be compared using ==
+  greeting = "Hi!";
+  if (greeting == "Hi!") {
+    print("Hello");
+  }
 }
+
+// 1h28
