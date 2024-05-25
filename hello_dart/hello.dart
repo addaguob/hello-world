@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 void main() {
   print("Hello world");
   print(3);
@@ -78,8 +80,15 @@ Dart!""";
 
   // Optional variables: String/int/bool and null
   int? myInt = null; // int myInt = null; // error
-  print(myInt);
+  print(myInt); // although it's redundant, since null is auto assigned
   myInt = 143;
   print(myInt);
 
+  String? myCents; // null is auto assigned
+  print(myCents);
+  myCents = "25 cents";
+  print(myCents);
+
+  // String myPesos; // Error: Non-null can't be used
+  // print(myPesos);
 }
