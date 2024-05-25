@@ -51,7 +51,7 @@ void main() {
 
   // Assign multi-line string value
   greeting = """Hi, my name is Alex!
-  I am learning
-  Dart!""";
+  I am \nlearning
+Dart!""";
   print(greeting);
 }
