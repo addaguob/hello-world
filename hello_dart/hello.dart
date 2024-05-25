@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 void main() {
   print("Hello world");
   print(3);
@@ -99,4 +97,14 @@ Dart!""";
   print(myCents?.length ?? 0); // print 0 instead of 'null'
   // print(myCents!.length); // '!' means myCents can't be null, no compiletime error but there is runtime error
   // myCents = myCents?.length ?? "Nothing"; // doesn't work
+
+  // Control flow with If statements
+  age = 19;
+  if (age >= 60) {
+    print('Old Adult');
+  } else if (age >= 18) {
+    print('Adult');
+  } else {
+    print('Minor');
+  }
 }
