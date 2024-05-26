@@ -152,9 +152,13 @@ Dart!""";
 
   // Loops
   // For-loop
-  for (int i = 1; i <= 10; i++) {
-    print("Hello, world $i");
+  for (int i = 0; i < 10; i++) {
+    print("Hello, world ${i + 1}");
   }
+
+  // 0 is the start, try with substring
+  greeting = "Hello world";
+  print(greeting.substring(0, 5));
 
   // 1h46m38s
 }
