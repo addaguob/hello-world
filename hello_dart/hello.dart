@@ -12,42 +12,42 @@ void main() {
   print('3' * 3);
 
   // variables
-  int n1 = 143;
-  double n2 = 41.5;
-  print(n1 + n2);
+  int myInt = 143;
+  double myDouble = 41.5;
+  print(myInt + myDouble);
 
-  String fname = "Alex";
-  print(fname);
+  String myName = "Alex";
+  print(myName);
 
   bool isMarried = false;
   isMarried = true;
   print(isMarried);
 
-  dynamic age = 35;
-  print(age);
-  age = "Thirty-five";
-  print(age);
+  dynamic dynAge = 35;
+  print(dynAge);
+  dynAge = "Thirty-five";
+  print(dynAge);
 
   // number type variable methods
-  int num = -10;
-  print(num.isEven);
-  print(num.abs());
+  int iNum = -10;
+  print(iNum.isEven);
+  print(iNum.abs());
 
-  print(fname.length); // fname = 'Alex'
-  print(age.runtimeType); // type
+  print(myName.length); // myName = 'Alex'
+  print(dynAge.runtimeType); // type
 
   // String interpolation rather than + operator
   String greeting = "Hello";
   greeting = greeting + ", World!"; // not recommended
   // braces not necessary if var is only string
   greeting = "${greeting} Hello Alex!";
-  greeting = "Hi $fname and world!";
-  greeting = "$fname has ${fname.length} letters.";
+  greeting = "Hi $myName and world!";
+  greeting = "$myName has ${myName.length} letters.";
   print(greeting);
 
   // Use dollar as string
-  num = 10;
-  print("I have \$$num. Okay.");
+  iNum = 10;
+  print("I have \$$iNum. Okay.");
 
   // Assign multi-line string value
   greeting = """Hi, my name is Alex!
@@ -61,13 +61,13 @@ Dart!""";
   myVar = 2; // but can be reassigned with same type
   print(myVar);
 
-  final myVar2 = 2.5;
-  // myVar2 = 3.5; // error
-  print(myVar2);
+  final myFinDouble = 2.5;
+  // myFinDouble = 3.5; // error
+  print(myFinDouble);
 
-  const myVar3 = "abc";
-  // myVar3 = "def"; // error
-  print(myVar3);
+  const myConst = "abc";
+  // myConst = "def"; // error
+  print(myConst);
 
   // final is runtime constant
   final myClock = DateTime.now();
@@ -77,41 +77,41 @@ Dart!""";
   //const myClock2 = DateTime.now(); //error
 
   // Optional variables: String/int/bool and null
-  int? myInt = null; // int myInt = null; // error
-  print(myInt); // although it's redundant, since null is auto assigned
-  myInt = 143;
-  print(myInt);
+  int? myOpInt = null; // int myOpInt = null; // error
+  print(myOpInt); // although it's redundant, since null is auto assigned
+  myOpInt = 143;
+  print(myOpInt);
 
-  String? myCents; // null is auto assigned
-  print(myCents);
-  myCents = "25 cents";
-  print(myCents);
+  String? myStrCents; // null is auto assigned
+  print(myStrCents);
+  myStrCents = "25 cents";
+  print(myStrCents);
 
   // String myPesos; // Error: Non-null can't be used
   // print(myPesos);
 
   // null safety
-  print(myCents.length); // can still print access length method
-  myCents = null; // now let's see
-  print(myCents?.length); // prints null as null using '?'
-  print(myCents?.length ?? 0); // print 0 instead of 'null'
-  // print(myCents!.length); // '!' means myCents can't be null, no compiletime error but there is runtime error
-  // myCents = myCents?.length ?? "Nothing"; // doesn't work
+  print(myStrCents.length); // can still print access length method
+  myStrCents = null; // now let's see
+  print(myStrCents?.length); // prints null as null using '?'
+  print(myStrCents?.length ?? 0); // print 0 instead of 'null'
+  // print(myStrCents!.length); // '!' means myStrCents can't be null, no compiletime error but there is runtime error
+  // myStrCents = myStrCents?.length ?? "Nothing"; // doesn't work
 
   // Control flow with If statements
-  age = 19;
-  if (age >= 60) {
+  dynAge = 19;
+  if (dynAge >= 60) {
     print('Old Adult');
-  } else if (age >= 18) {
+  } else if (dynAge >= 18) {
     print('Adult');
   } else {
     print('Minor');
   }
 
   // C-like syntax with && and || though non-zero is not true
-  // if (age) print('Age is non-zero'); // error
-  if (age >= 18 && age < 20) {
-    print("Teenager");
+  // if (dynAge) print('dynAge is non-zero'); // error
+  if (dynAge >= 18 && dynAge < 20) {
+    print("TeendynAger");
   }
 
   // String can be compared using ==
@@ -124,7 +124,24 @@ Dart!""";
   // if isEmpty, isNotEmpty
   if (greeting.isEmpty) {
     print("Empty greeting");
+    greeting = 'Hey there!';
   }
-}
 
-// 1h29m18
+  // Ternary and string startsWith, endsWith
+  String reply = greeting.startsWith('H') ? 'Hi there!' : 'What?';
+  print(reply);
+  print(reply.endsWith('ello!') ? "Alright!" : "Hello!");
+
+  // Switch statement
+  greeting = "Hey!";
+  switch (greeting) {
+    case "Hello":
+      reply = "Hi";
+    case "Hi":
+      reply = "Hello";
+    default:
+      reply = "Er--what?";
+  }
+  print(reply);
+  // 1h34m04
+}
