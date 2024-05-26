@@ -140,6 +140,7 @@ Dart!""";
       reply = "Hi!"; // No break statement like in C
     case "Hi!":
       reply = "Hello!";
+      // == and 'when' in introduced in Dart 3.0+
     case "Yow!" when dynAge == 20: // when is like && in C
       reply = "Hi, 20-year-old dude!";
     case "Yow!":
