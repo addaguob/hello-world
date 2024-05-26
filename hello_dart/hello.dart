@@ -133,13 +133,18 @@ Dart!""";
   print(reply.endsWith('ello!') ? "Alright!" : "Hello!");
 
   // Switch statement
-  greeting = "Hey!";
+  greeting = "Yow!";
+  dynAge = 20;
   switch (greeting) {
-    case "Hello":
-      reply = "Hi"; // No break statement like in C
-    case "Hi":
-      reply = "Hello";
-    default:
+    case "Hello!":
+      reply = "Hi!"; // No break statement like in C
+    case "Hi!":
+      reply = "Hello!";
+    case "Yow!" when dynAge == 20: // when is like && in C
+      reply = "Hi, 20-year-old dude!";
+    case "Yow!":
+      break; // needed if there's no statement to serve as brake
+    default: // but break stops before the rest of the cases
       reply = "Er--what?";
   }
   print(reply);
