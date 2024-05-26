@@ -136,7 +136,7 @@ Dart!""";
   greeting = "Hey!";
   switch (greeting) {
     case "Hello":
-      reply = "Hi";
+      reply = "Hi"; // No break statement like in C
     case "Hi":
       reply = "Hello";
     default:
