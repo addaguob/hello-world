@@ -160,5 +160,16 @@ Dart!""";
   greeting = "Hello world";
   print(greeting.substring(0, 5));
 
+  for (int i = 0; i < greeting.length; i++) {
+    print(greeting[i]);
+  }
+
+  // While loop
+  myInt = 1;
+  while (myInt <= 5) {
+    print(myInt);
+    myInt++;
+  }
+
   // 1h46m38s
 }
