@@ -269,5 +269,8 @@ Dart!""";
   final theName = printTheName();
   print(theName);
 
+  // Void arrow function
+  void printThree() => print("Three");
+  printThree();
   // 2 44 46
 }
