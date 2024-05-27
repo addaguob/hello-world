@@ -1,26 +1,48 @@
 # # These are codes for little experiments
+
+class Body:
+    eyes = 100
+    def __init__(self):
+        self.eyes = 102
+        Body.eyes = self.eyes
+        self.hair_color = 'brown'
+    
+    def getEyes():
+        return Body.eyes
+    def showEyes(self):
+        return self.eyes
+    
+    
+print(Body.getEyes())
+Body.eyes = 101
+print(Body.getEyes())
+
+mine = Body()
+print(mine.showEyes())
+
+
 # import random
 # import time
-def meow(n: int) -> str:
-    """
-    Meow n times.
+# def meow(n: int) -> str:
+#     """
+#     Meow n times.
 
-    :param n: Number of times to meow
-    :type n: int
-    :raise TypeError: If n is not an int
-    :return: A string of n meows, one per line
-    :rtype: str
-    """
-    return "meow\n" * n
-
-
-def main():
-    num: int = int(input("Number: "))
-    meows: str = meow(num)
-    print(meows, end="")
+#     :param n: Number of times to meow
+#     :type n: int
+#     :raise TypeError: If n is not an int
+#     :return: A string of n meows, one per line
+#     :rtype: str
+#     """
+#     return "meow\n" * n
 
 
-main()
+# def main():
+#     num: int = int(input("Number: "))
+#     meows: str = meow(num)
+#     print(meows, end="")
+
+
+# main()
 
 # 43
 
