@@ -189,18 +189,21 @@ Dart!""";
     print(myName); // executing its block
   }
 
-  String greetName(String name) {
+  // Positional parameters 'name' and 'greeting'
+  greeting = "Hey there";
+  String greetName(String name, String greeting) {
     // returns a string
-    return "Hello $name";
+    return "$greeting $name";
   }
 
+  // Positional function types and return types
   (int, String) currentWallet() {
     return (200, "Pesos");
   }
 
   printName();
-  print(greetName("Paul"));
-  print(greetName(myName));
+  print(greetName("Paul", "Bless you"));
+  print(greetName(myName, greeting));
   print(currentWallet().toString());
   // $1 and $ 2 are getters
   print("I have ${currentWallet().$1} ${currentWallet().$2}");
