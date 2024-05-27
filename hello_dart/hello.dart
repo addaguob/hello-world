@@ -217,5 +217,14 @@ Dart!""";
   }
 
   printGreeting(name: "Kelly", age: 27, greeting: "Congrats!");
+
+  // Positional function arguments first before required args
+
+  void doGreeting(int? age, bool isMarried,
+      {required String name, required String greeting}) {
+    print("$name, $age years of age, greets, '$greeting'");
+  }
+
+  doGreeting(35, false, name: "Lex", greeting: "Kamusta");
   // 2 37 32
 }
