@@ -242,7 +242,8 @@ Dart!""";
   }
 
   final ageColor = showAgeColor();
-  print("Ian's age is ${ageColor.age} and his fave color is ${ageColor.color}.");
+  print(
+      "Ian's age is ${ageColor.age} and his fave color is ${ageColor.color}.");
 
   // Function as argument/parameter
   Function showName() {
@@ -257,12 +258,16 @@ Dart!""";
     iNum = 101;
     print(iNum);
   }()); // () means to call that anonymous function right away
-  () {  // removed print to see if 'null' is not printed
+  () {
+    // removed print to see if 'null' is not printed
     iNum = 102;
     print(iNum);
   }();
-  
-  
-  
+
+  // Arrow function like in JavaScript
+  String printTheName() => "Alexander";
+  final theName = printTheName();
+  print(theName);
+
   // 2 44 46
 }
