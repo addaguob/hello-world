@@ -281,6 +281,11 @@ Dart!""";
   another_cookie.shape = "Rectangle";
   print("There are ${cookie.shape} and ${another_cookie.shape} shapes.");
 
+  // Class without objects are re-instantiated
+  print(Cookie().size);
+  Cookie().size = 14.7; // not really changing size
+  print(Cookie().size); // still 15.2
+
   // 03 03 24
 }
 
