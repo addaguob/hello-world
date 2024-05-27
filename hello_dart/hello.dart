@@ -272,5 +272,25 @@ Dart!""";
   // Void arrow function
   void printThree() => print("Three");
   printThree();
-  // 2 44 46
+
+  // Classes, PascalCase in namingClasses
+  print(Cookie());
+
+
+  // 2 41 46
+}
+
+// Classes, PascalCase in namingClasses
+class Cookie {
+  // poperties = variables of a class
+  String shape = 'Circle';
+  double size = 15.2; // cm
+  // methods = functions of a class
+  void baking() {
+    print("Baking has started...");
+  }
+
+  bool isCooling() {
+    return false;
+  }
 }
