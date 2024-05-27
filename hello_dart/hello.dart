@@ -189,9 +189,9 @@ Dart!""";
     print(myName); // executing its block
   }
 
-  String greetName() {
+  String greetName(String name) {
     // returns a string
-    return "Hello $myName";
+    return "Hello $name";
   }
 
   (int, String) currentWallet() {
@@ -199,9 +199,11 @@ Dart!""";
   }
 
   printName();
-  print(greetName());
-  print("I have ${currentWallet().$1} ${currentWallet().$2}");
+  print(greetName("Paul"));
+  print(greetName(myName));
   print(currentWallet().toString());
+  // $1 and $ 2 are getters
+  print("I have ${currentWallet().$1} ${currentWallet().$2}");
 
   // 2 13 32
 }
