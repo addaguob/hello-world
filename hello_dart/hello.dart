@@ -183,5 +183,25 @@ Dart!""";
     i++;
   } while (i < greeting.length);
 
-  // 2 02 11
+  // Functions
+  void printName() {
+    // void function returns nothing after
+    print(myName); // executing its block
+  }
+
+  String greetName() {
+    // returns a string
+    return "Hello $myName";
+  }
+
+  (int, String) currentWallet() {
+    return (200, "Pesos");
+  }
+
+  printName();
+  print(greetName());
+  print("I have ${currentWallet().$1} ${currentWallet().$2}");
+  print(currentWallet().toString());
+
+  // 2 13 32
 }
