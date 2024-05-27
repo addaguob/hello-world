@@ -167,9 +167,21 @@ Dart!""";
   // While loop
   myInt = 1;
   while (myInt <= 5) {
+    if (myInt == 2 || myInt == 3) {
+      myInt++;
+      continue;
+    }
     print(myInt);
     myInt++;
   }
 
-  // 1h46m38s
+  // Do-while loop
+  greeting = "Hello";
+  int i = 0;
+  do {
+    print(greeting[i]);
+    i++;
+  } while (i < greeting.length);
+
+  // 2 02 11
 }
