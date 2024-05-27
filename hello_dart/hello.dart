@@ -243,5 +243,19 @@ Dart!""";
 
   final ageColor = showAgeColor();
   print("Ian's age is ${ageColor.age} and his fave color is ${ageColor.color}.");
+
+  // Function as argument/parameter
+  Function showName() {
+    return () {
+      print("Show name: Alex");
+    };
+  }
+
+  final nameAlex = showName();
+  print(nameAlex());
+  print(() {
+    iNum = 101;
+    print(iNum);
+  }());
   // 2 44 46
 }
