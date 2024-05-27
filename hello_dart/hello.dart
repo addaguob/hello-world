@@ -252,10 +252,17 @@ Dart!""";
   }
 
   final nameAlex = showName();
-  print(nameAlex());
+  nameAlex(); // it prints but also prints the returned null value
   print(() {
     iNum = 101;
     print(iNum);
-  }());
+  }()); // () means to call that anonymous function right away
+  () {  // removed print to see if 'null' is not printed
+    iNum = 102;
+    print(iNum);
+  }();
+  
+  
+  
   // 2 44 46
 }
