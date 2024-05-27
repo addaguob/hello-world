@@ -275,9 +275,13 @@ Dart!""";
 
   // Classes, PascalCase in namingClasses
   Cookie cookie = Cookie();
+  final another_cookie = Cookie(); // another technique
   cookie.baking();
+  another_cookie.baking();
+  another_cookie.shape = "Rectangle";
+  print("There are ${cookie.shape} and ${another_cookie.shape} shapes.");
 
-  // 2 59 24
+  // 03 03 24
 }
 
 // Classes, PascalCase in namingClasses
