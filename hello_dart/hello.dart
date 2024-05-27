@@ -205,5 +205,14 @@ Dart!""";
   // $1 and $ 2 are getters
   print("I have ${currentWallet().$1} ${currentWallet().$2}");
 
-  // 2 13 32
+  // Required function parameters
+  void printGreeting(
+      {required String name, required int age, required String greeting}) {
+    // this is because with just 'String name', 'name' will have implicit value of null and it's not 'String?
+    // 'required' will assure a non-null value is passed
+    print("$name, $age years of age, greets, '$greeting'");
+  }
+
+  printGreeting(name: "Kelly", age: 27, greeting: "Congrats!");
+  // 2 37 32
 }
