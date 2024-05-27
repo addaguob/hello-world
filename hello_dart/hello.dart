@@ -226,5 +226,22 @@ Dart!""";
   }
 
   doGreeting(35, false, name: "Lex", greeting: "Kamusta");
-  // 2 37 32
+
+  // Function type and packed variable
+  (int, String) getAgeName() {
+    return (12, "Cyprian");
+  }
+
+  (int, String) ageName = getAgeName();
+  print(ageName);
+  print("${ageName.$2} is ${ageName.$1}");
+
+  // Function return types as variable properties
+  ({int age, String color}) showAgeColor() {
+    return (age: 12, color: "White");
+  }
+
+  final ageColor = showAgeColor();
+  print("Ian's age is ${ageColor.age} and his fave color is ${ageColor.color}.");
+  // 2 44 46
 }
