@@ -274,10 +274,10 @@ Dart!""";
   printThree();
 
   // Classes, PascalCase in namingClasses
-  print(Cookie());
+  Cookie cookie = Cookie();
+  cookie.baking();
 
-
-  // 2 41 46
+  // 2 59 24
 }
 
 // Classes, PascalCase in namingClasses
