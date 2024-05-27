@@ -227,7 +227,7 @@ Dart!""";
 
   doGreeting(35, false, name: "Lex", greeting: "Kamusta");
 
-  // Function type and packed variable
+  // Function return data type and packed variable
   (int, String) getAgeName() {
     return (12, "Cyprian");
   }
@@ -273,20 +273,24 @@ Dart!""";
   void printThree() => print("Three");
   printThree();
 
-  // Classes, PascalCase in namingClasses
-  Cookie cookie = Cookie();
-  final another_cookie = Cookie(); // another technique
-  cookie.baking();
-  another_cookie.baking();
-  another_cookie.shape = "Rectangle";
-  print("There are ${cookie.shape} and ${another_cookie.shape} shapes.");
+  // // Classes, PascalCase in namingClasses
+  // Cookie cookie = Cookie();
+  // final another_cookie = Cookie(); // another technique
+  // cookie.baking();
+  // another_cookie.baking();
+  // another_cookie.shape = "Rectangle";
+  // print("There are ${cookie.shape} and ${another_cookie.shape} shapes.");
 
-  // Class without objects are re-instantiated
-  print(Cookie().size);
-  Cookie().size = 14.7; // not really changing size
-  print(Cookie().size); // still 15.2
+  // // Class without objects are re-instantiated
+  // print(Cookie().size);
+  // Cookie().size = 14.7; // not really changing size
+  // print(Cookie().size); // still 15.2
 
-  // 03 03 24
+  // Class constructor
+  final cookie1 = Cookie('Square', 17);
+  print("My cookie is ${cookie1.shape} with size of a ${cookie1.size} cm");
+
+  // 03 11 20
 }
 
 // Classes, PascalCase in namingClasses
@@ -294,6 +298,13 @@ class Cookie {
   // poperties = variables of a class
   String shape = 'Circle';
   double size = 15.2; // cm
+  // Constructor
+  Cookie(this.shape, this.size) {
+    print(this);
+    print('Cookie constructor called');
+    baking();
+  }
+
   // methods = functions of a class
   void baking() {
     print("Baking has started...");
