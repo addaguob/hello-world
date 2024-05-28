@@ -289,18 +289,18 @@ Dart!""";
   // Class constructor
   final cookie1 = Cookie('Square', 17);
   // final cookie1 = new Cookie('Square', 17); // new not required
-  print("My cookie is ${cookie1.shape} with size of a ${cookie1.size} cm");
+  print("My cookie is ${cookie1.shape} with size of a ${cookie1.size_cm} cm");
 
 }
 
 // Classes, PascalCase in namingClasses
 class Cookie {
   // poperties = variables of a class
-  String shape = 'Circle';
-  double size = 15.2; // cm
+  String shape; // can be not optional (String?)
+  double size_cm; // because there is constructor
 
   // Constructor
-  Cookie(this.shape, this.size) {
+  Cookie(this.shape, this.size_cm) {
     print(this);
     print('Cookie constructor called');
     baking();
