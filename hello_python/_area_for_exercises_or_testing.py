@@ -1,24 +1,21 @@
 # # These are codes for little experiments
 
-class Body:
-    eyes = 100
-    def __init__(self):
-        self.eyes = 102
-        Body.eyes = self.eyes
-        self.hair_color = 'brown'
+class Head:
+    def __init__(self, eyes):
+        self.eyes = eyes
     
-    def getEyes():
-        return Body.eyes
-    def showEyes(self):
-        return self.eyes
+    @property
+    def eyes(self):
+        return self._eyes
+    
+    @eyes.setter
+    def eyes(self, eyes):
+        self._eyes = eyes
+        
     
     
-print(Body.getEyes())
-Body.eyes = 101
-print(Body.getEyes())
-
-mine = Body()
-print(mine.showEyes())
+mine = Head(2)
+print(mine.eyes)
 
 
 # import random
