@@ -309,6 +309,14 @@ class Cookie {
     baking();
   }
 
+  // Getter
+  int get height => _height;
+
+  //Setter
+  set setHeight(int h) { // convention: set<PropertyName>
+    _height = h;
+  }
+
   // methods = functions of a class
   void baking() {
     print("Baking has started...");
