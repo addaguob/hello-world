@@ -290,7 +290,7 @@ Dart!""";
   final cookie1 = Cookie('Square', 17);
   // final cookie1 = new Cookie('Square', 17); // new not required
   print("My cookie is ${cookie1.shape} with size of a ${cookie1.size_cm} cm");
-
+  print(cookie1._height); // not really private if in the same file
 }
 
 // Classes, PascalCase in namingClasses
@@ -298,6 +298,9 @@ class Cookie {
   // poperties = variables of a class
   String shape; // can be not optional (String?)
   double size_cm; // because there is constructor
+
+  int _height = 0; // private variable is private to a file
+  // so separate Class to another file
 
   // Constructor
   Cookie(this.shape, this.size_cm) {
@@ -315,4 +318,4 @@ class Cookie {
     return false;
   }
 }
-// 03 19 00
+// 03 22 00
