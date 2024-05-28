@@ -290,7 +290,6 @@ Dart!""";
   final cookie1 = Cookie('Square', 17);
   print("My cookie is ${cookie1.shape} with size of a ${cookie1.size} cm");
 
-  // 03 13 00
 }
 
 // Classes, PascalCase in namingClasses
@@ -298,6 +297,7 @@ class Cookie {
   // poperties = variables of a class
   String shape = 'Circle';
   double size = 15.2; // cm
+
   // Constructor
   Cookie(this.shape, this.size) {
     print(this);
@@ -314,3 +314,4 @@ class Cookie {
     return false;
   }
 }
+// 03 19 00
