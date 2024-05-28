@@ -288,6 +288,7 @@ Dart!""";
 
   // Class constructor
   final cookie1 = Cookie('Square', 17);
+  // final cookie1 = new Cookie('Square', 17); // new not required
   print("My cookie is ${cookie1.shape} with size of a ${cookie1.size} cm");
 
 }
