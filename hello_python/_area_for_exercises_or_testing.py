@@ -13,7 +13,6 @@ class Head:
         self._eyes = eyes
         
     
-    
 mine = Head(2)
 print(mine.eyes)
 
