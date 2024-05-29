@@ -307,11 +307,14 @@ Dart!""";
   Vehicle truck = Car();
   print((truck as Car).noOfWheels); // to access that of Car
   // demo @override
-  car.accelerate();
+  car.accelerate(); // 5 of Supervehicle + 10 of Vehicle
   print(car.speed);
 
 
+
 } // 04 00 00
+
+
 
 // Grandfather class so to speak
 class Supervehicle {
@@ -327,13 +330,17 @@ class Vehicle extends Supervehicle {
   bool isEngineWorking = false;
 
   @override
-  void accelerate() { // can be different type but same name
-    speed += 10;
+  void accelerate() {
+    // can be different type but same name
+    speed += 15;
   }
 }
 
 // can't inherit multiple Superclasses
-class Car extends Vehicle {
+class Car extends Vehicle implements Supervehicle {
+  // Implements speed of Supervehicle
+  @override
+  int speed = 5;
   // Child class / sub class
   int noOfWheels = 4;
   void printSpecs() {
