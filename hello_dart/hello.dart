@@ -291,6 +291,13 @@ Dart!""";
   // final cookie1 = new Cookie('Square', 17); // new not required
   print("My cookie is ${cookie1.shape} with size of a ${cookie1.size_cm} cm");
   print(cookie1._height); // not really private if in the same file
+
+  // Static variables and functions
+  final consVar = Constants();
+  // print(consVar.greet); // doesn't work for static
+  print(Constants.greet); // static usage without obj instantiation
+  print(consVar.bye);
+
 }
 
 // Classes, PascalCase in namingClasses
@@ -299,9 +306,6 @@ class Cookie {
   String shape; // can be not optional (String?)
   double size_cm; // because there is constructor
 
-  int _height = 0; // private variable is private to a file
-  // so separate Class to another file
-
   // Constructor
   Cookie(this.shape, this.size_cm) {
     print(this);
@@ -309,11 +313,15 @@ class Cookie {
     baking();
   }
 
+  int _height = 0; // private variable is private to a file
+  // so separate Class to another file
+
   // Getter
   int get height => _height;
 
   //Setter
-  set setHeight(int h) { // convention: set<PropertyName>
+  set setHeight(int h) {
+    // convention: set<PropertyName>
     _height = h;
   }
 
@@ -325,5 +333,11 @@ class Cookie {
   bool isCooling() {
     return false;
   }
+}
+
+  // Demo for Static variables
+class Constants {
+  static String greet = 'Hello, how are you?';
+  String bye = 'Bye!';
 }
 // 03 33 00
