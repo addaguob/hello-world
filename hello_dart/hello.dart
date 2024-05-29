@@ -297,7 +297,6 @@ Dart!""";
   // print(consVar.greet); // doesn't work for static
   print(Constants.greet); // static usage without obj instantiation
   print(consVar.bye);
-
 }
 
 // Classes, PascalCase in namingClasses
@@ -335,8 +334,11 @@ class Cookie {
   }
 }
 
-  // Demo for Static variables
+// Demo for Static variables
 class Constants {
+  Constants() { // not called with Constants.greet from main()
+    print("Constants constructor called...");
+  }
   static String greet = 'Hello, how are you?';
   String bye = 'Bye!';
 }
