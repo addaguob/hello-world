@@ -297,6 +297,36 @@ Dart!""";
   // print(consVar.greet); // doesn't work for static
   print(Constants.greet); // static usage without obj instantiation
   print(consVar.bye);
+  print(Constants.giveInt());
+
+  // Class Inheritance in Object Oriented Progrmaming
+  Car car = Car();
+  print(car.isEngineWorking);
+  print(car.noOfWheels);
+
+
+
+
+
+} // 03 49 00
+
+// Inheritance Demo
+class Vehicle {
+  // Parent class / Super class
+  int speed = 10;
+  bool isEngineWorking = false;
+
+  void accelerate() {
+    speed += 10;
+  }
+}
+
+class Car extends Vehicle {
+  // Child class / sub class
+  int noOfWheels = 4;
+  void printSpecs() {
+    print(noOfWheels);
+  }
 }
 
 // Classes, PascalCase in namingClasses
@@ -336,10 +366,16 @@ class Cookie {
 
 // Demo for Static variables
 class Constants {
-  Constants() { // not called with Constants.greet from main()
+  Constants() {
+    // not called with Constants.greet from main()
     print("Constants constructor called...");
   }
+  // Static is good for not allocating more memories with obj creation
+  // but just for accessing some helpful methods and properties
   static String greet = 'Hello, how are you?';
   String bye = 'Bye!';
+
+  static int giveInt() {
+    return 10;
+  }
 }
-// 03 33 00
