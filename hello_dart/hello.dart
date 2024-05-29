@@ -299,22 +299,64 @@ Dart!""";
   print(consVar.bye);
   print(Constants.giveInt());
 
-  // Class Inheritance in Object Oriented Progrmaming
+  // Object Oriented Progrmaming 4 pillars:
+  // Inheritance, Abstraction, Polymorphism and Encapsulation
+
+  // OOP Inheritance using 'extends'
   Car car = Car();
   print(car.isEngineWorking);
   print(car.noOfWheels);
-  // Vehicle type but Car object
+  // Vehicle type but Car object / demo: extends, implements
   Vehicle truck = Car();
   print((truck as Car).noOfWheels); // to access that of Car
   // demo @override
   car.accelerate(); // 5 of Supervehicle + 10 of Vehicle
   print(car.speed);
 
+  // OOP Abstraction hides implementation details
+  final lilMachObject = lilMachine();
+  lilMachObject.engineStart();
+  final smallMachObject = smallMachine();
+  // OOP Polymorphism allows methods in many forms
+  smallMachObject.engineStart();
+  // OOP Encapsulation - data protection
+  final me = _Person();
+  me._getName(); // not private within the same file
+}
+// 04 26 00
 
+// For Encapsulation
+class _Person {
+  String _name = 'Alex'; // underscore signifies private data
+  void _getName() {
+    print(_name);
+  }
+}
 
-} // 04 00 00
+// Abtract allows function call with no block
+abstract class Machine {
+  int cores = 2;
+  void engineStart();
+}
 
+// Unlike 'extends', 'implements' forces override on all methods/properties
+class smallMachine implements Machine {
+  @override
+  int cores = 4;
 
+  @override
+  void engineStart() {
+    print("New version of engine starting...");
+  }
+}
+
+// Fill in what abstract Class needs
+class lilMachine extends Machine {
+  @override
+  void engineStart() {
+    print("Starting engine with ${cores} cores...");
+  }
+}
 
 // Grandfather class so to speak
 class Supervehicle {
@@ -340,7 +382,7 @@ class Vehicle extends Supervehicle {
 class Car extends Vehicle implements Supervehicle {
   // Implements speed of Supervehicle
   @override
-  int speed = 5;
+  int speed = 5; // means re-define the speed
   // Child class / sub class
   int noOfWheels = 4;
   void printSpecs() {
