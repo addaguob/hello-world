@@ -303,11 +303,11 @@ Dart!""";
   Car car = Car();
   print(car.isEngineWorking);
   print(car.noOfWheels);
+  // Vehicle type but Car object
+  Vehicle truck = Car();
+  print((truck as Car).noOfWheels); // to access that of Car
 
-
-
-
-
+  
 } // 03 49 00
 
 // Inheritance Demo
