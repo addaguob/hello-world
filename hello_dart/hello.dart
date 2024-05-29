@@ -311,7 +311,7 @@ Dart!""";
   print(car.speed);
 
 
-} // 03 58 00
+} // 04 00 00
 
 // Grandfather class so to speak
 class Supervehicle {
@@ -326,10 +326,10 @@ class Vehicle extends Supervehicle {
   // Parent class / Super class
   bool isEngineWorking = false;
 
-  // @override
-  // void accelerate() {
-  //   speed += 10;
-  // }
+  @override
+  void accelerate() { // can be different type but same name
+    speed += 10;
+  }
 }
 
 // can't inherit multiple Superclasses
