@@ -360,8 +360,15 @@ Dart!""";
   // end of OOP
 
   // Lists
+  List list = [10, "twenty", false]; // dynamic list
+  print(list);
+  print(list.runtimeType);
+  print(list[0]); // print one element from list like array in C
+  print(myName[0]); // same with String element
 }
-// currently at 04 36 00 in youtube.com/watch?v=CzRQ9mnmh44
+//
+// currently at 04 43 00 in youtube.com/watch?v=CzRQ9mnmh44
+//
 // ----------Classes demo and exploration----------
 
 // Mixin demo: man is carnivore and some irrational animal
