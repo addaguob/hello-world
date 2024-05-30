@@ -365,6 +365,8 @@ Dart!""";
   print(list.runtimeType);
   print(list[0]); // print one element from list like array in C
   print(myName[0]); // same with String element
+  List<int> grades = [80, 85, 90]; // <int> is called generics
+  print(grades);
 }
 //
 // currently at 04 43 00 in youtube.com/watch?v=CzRQ9mnmh44
