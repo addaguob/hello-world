@@ -1,5 +1,6 @@
 void main() {
   print("Hello world");
+  print("Hello, Dart!");
   print(3);
   // Singe-line comment
 
@@ -314,6 +315,7 @@ Dart!""";
   print(car.speed);
 
   // OOP Abstraction hides implementation details
+  // final bigMachObject = Machine(); // can't be instantiated
   final lilMachObject = lilMachine();
   lilMachObject.engineStart();
   final smallMachObject = smallMachine();
@@ -326,9 +328,10 @@ Dart!""";
   // Mixin (mixes in properties of another Class)
   final alex = Man();
   alex.eatingFeature();
+
+  // Class Modifiers: sealed class, final class, base class, interface class
   alex.carnivoreStatus(); // Sealed class demo
-  // Man extends Animal with Carnivore_feature
-  final pj = Man();
+  final pj = Man(); // mixin: Man extends Animal with Carnivore_feature
   pj.rationalAnimal();
   pj.eatingFeature();
   // Sealed class for sub-types
@@ -336,12 +339,30 @@ Dart!""";
   switch (cowpet) {
     case Man():
       print("human");
+      cowpet.eatingFeature();
     case Cow():
       print("cow");
       cowpet.eatingFeature();
   }
+  // sealed class can't be instantiated like abstract class
+  // final class can be constructed/instantiated
+  // final class like sealed class can't be implemented or extended
+  // outside its root library unless inside the same library
+  // base class can't be implemented but can be extended
+  // base class when extended, its constructor gets called
+  // interface class is reverse of base class,
+  // interface class can be implemented but not extended
+  // interface class can be implemented outside the library
+  // interface class can be constructed (so called not a proper interface)
+  // abstract interface class cannot be constructed, with the addition of abstract keyword, interface class is a true/proper interface that cannot be constructed
+  // mixin class <className> can be combined for later mix with 'with' keyword
+  // normal non-mixin class can use 'with' before Dart 3.0, but now, only mixin <className> can be extended using 'with'
+  // end of OOP
+
+  // Lists
 }
-// 04 36 00
+// currently at 04 36 00 in youtube.com/watch?v=CzRQ9mnmh44
+// ----------Classes demo and exploration----------
 
 // Mixin demo: man is carnivore and some irrational animal
 mixin Carnivore_Feature {
