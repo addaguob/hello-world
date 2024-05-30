@@ -374,9 +374,13 @@ Dart!""";
   final pupil = Pupil('Lex Thunder');
   // it's like Pupil<String>('Lex Thunder');
   print(pupil.name);
+  // List of objects vs list of dynamic elements:
+  // List of class Objects are non-nullable, everything is object except null
+  List<Object> iLy = [143, "I love you", true];
+  print(iLy);
 }
 //
-// currently at 04 49 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 04 50 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 // ----------Classes demo and exploration----------
 
@@ -386,9 +390,13 @@ class Student<String> {
   Student(this.name);
 }
 
-class Pupil<T> { // T can infer int, double, String, bool
+class Pupil<T> {
+  // T can infer int, double, String, bool
   final T name; // rather than 'dynamic' keyword
   Pupil(this.name);
+  void setName(T name) {
+    print('New name: $name');
+  }
 }
 
 // Mixin demo: man is carnivore and some irrational animal
