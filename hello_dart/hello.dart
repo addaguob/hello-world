@@ -367,11 +367,29 @@ Dart!""";
   print(myName[0]); // same with String element
   List<int> grades = [80, 85, 90]; // <int> is called generics
   print(grades);
+  // more on generics, see: Class with generics
+  final student = Student<String>('Alex Thunder');
+  print(student.name);
+  // to use dynamic generics, use <T>
+  final pupil = Pupil('Lex Thunder');
+  // it's like Pupil<String>('Lex Thunder');
+  print(pupil.name);
 }
 //
-// currently at 04 43 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 04 49 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 // ----------Classes demo and exploration----------
+
+// Class with generics demo
+class Student<String> {
+  final String name;
+  Student(this.name);
+}
+
+class Pupil<T> { // T can infer int, double, String, bool
+  final T name; // rather than 'dynamic' keyword
+  Pupil(this.name);
+}
 
 // Mixin demo: man is carnivore and some irrational animal
 mixin Carnivore_Feature {
