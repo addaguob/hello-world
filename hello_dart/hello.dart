@@ -265,8 +265,8 @@ Dart!""";
   }();
 
   // Arrow function like in JavaScript
-  String printTheName() => "Alexander";
-  final theName = printTheName();
+  String printTheName(int theAge) => "Alexander is $theAge years old.";
+  final theName = printTheName(15);
   print(theName);
 
   // Void arrow function
@@ -321,11 +321,24 @@ Dart!""";
   smallMachObject.engineStart();
   // OOP Encapsulation - data protection
   final me = _Person();
-  me._getName(); // not private within the same file
+  me._getName(); // not really private within the same file
+
+  // Mixin (mixes in properties of another Class)
+  final alex = Animal();
+  alex.eatingFeature();
 }
 // 04 26 00
 
-// For Encapsulation
+// Mixin demo: man is carnivore and some irrational animal
+mixin Carnivore_Feature {
+  bool isCarnivore = true;
+}
+
+class Animal with Carnivore_Feature {
+  void eatingFeature() => isCarnivore ? print("Can eat meat") : print("Vegitarian");
+}
+
+// For Encapsulation notes
 class _Person {
   String _name = 'Alex'; // underscore signifies private data
   void _getName() {
