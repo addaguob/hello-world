@@ -324,18 +324,51 @@ Dart!""";
   me._getName(); // not really private within the same file
 
   // Mixin (mixes in properties of another Class)
-  final alex = Animal();
+  final alex = Man();
   alex.eatingFeature();
+  alex.carnivoreStatus(); // Sealed class demo
+  // Man extends Animal with Carnivore_feature
+  final pj = Man();
+  pj.rationalAnimal();
+  pj.eatingFeature();
+  // Sealed class for sub-types
+  Animal cowpet = Cow();
+  switch (cowpet) {
+    case Man():
+      print("human");
+    case Cow():
+      print("cow");
+      cowpet.eatingFeature();
+  }
 }
-// 04 26 00
+// 04 36 00
 
 // Mixin demo: man is carnivore and some irrational animal
 mixin Carnivore_Feature {
   bool isCarnivore = true;
 }
 
-class Animal with Carnivore_Feature {
-  void eatingFeature() => isCarnivore ? print("Can eat meat") : print("Vegitarian");
+// Sealed class cannot be instantiated.
+// Also can't be inherited/implemented outside it's file
+sealed class Animal with Carnivore_Feature {
+  void eatingFeature() =>
+      isCarnivore ? print("Can eat meat") : print("Vegitarian");
+}
+
+class Man extends Animal {
+  void carnivoreStatus() => print("Is it carnivore? $isCarnivore");
+  void rationalAnimal() => print("Man is a rational animal.");
+}
+
+class Cow implements Animal {
+  @override
+  bool isCarnivore = false;
+
+  @override
+  void eatingFeature() {
+    isCarnivore ? print("Rarely ears meat") : print("Not a carnivore");
+    print("Eats grass or plants.");
+  }
 }
 
 // For Encapsulation notes
