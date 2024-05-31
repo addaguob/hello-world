@@ -396,7 +396,8 @@ Dart!""";
   print(studentGrades);
   // Map keys and values display using for-loop
   for (int i = 0; i < studentGrades.length; i++) {
-    print("${studentGrades.keys.toList()[i]} = ${studentGrades.values.toList()[i]}");
+    print(
+        "${studentGrades.keys.toList()[i]} = ${studentGrades.values.toList()[i]}");
   }
   // Map keys and values display using forEach method
   studentGrades.forEach((key, value) => print("$key has a grade of $value"));
@@ -417,12 +418,39 @@ Dart!""";
     },
   ];
   students.map((e) => print(e)).toList();
-  students.map((e) => e.forEach((k, v) => print("key $k has value of $v"))).toList();
-  
+  students
+      .map((e) => e.forEach((k, v) => print("key $k has value of $v")))
+      .toList();
+
+  // Enums
+  final student1 = EnrollStudent("Ven", Course.BSIT);
+  final student2 = EnrollStudent("Richard", Course.BSCS);
+  student1.showCourse();
+  student2.showCourse();
+} // endmain
+//
+// currently at 05 55 00 in youtube.com/watch?v=CzRQ9mnmh44
+//
+
+enum Course { BSCS, BSCoE, BSIT }
+
+class EnrollStudent {
+  final String name;
+  final Course course;
+
+  EnrollStudent(this.name, this.course);
+
+  void showCourse() {
+    switch (course) {
+      case Course.BSCS:
+        print("BS Computer Science");
+      case Course.BSCoE:
+        print("BS Computer Engineering");
+      case Course.BSIT:
+        print("BS Information Technology");
+    }
+  }
 }
-//
-// currently at 05 50 00 in youtube.com/watch?v=CzRQ9mnmh44
-//
 // ----------Classes demo and exploration----------
 
 // Class with generics demo
