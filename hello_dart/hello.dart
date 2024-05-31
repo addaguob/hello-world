@@ -384,9 +384,13 @@ Dart!""";
   print("$iLy ejects $removedObj");
   print(iLy.contains(true) ? "It has trueness." : "There's falseness");
   print(iLy.join('...'));
+
+  // Set is like List but without duplicates
+  Set<Object> mySet = [1, 1, '4', 3.0, 3, false].toSet();
+  mySet.forEach((element) => print("$element is ${element.runtimeType}"));
 }
 //
-// currently at 04 53 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 05 30 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 // ----------Classes demo and exploration----------
 
