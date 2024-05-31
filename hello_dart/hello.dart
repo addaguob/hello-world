@@ -430,7 +430,14 @@ Dart!""";
 
   // Exception Handling
   print(10 ~/ 3);
-  print(10 ~/ 0);
+  print(10 / 0);
+  try {
+    print(10 ~/ 0);
+  } catch (error) {
+    print(error);
+  } finally {
+    print("Just proceed to printing the name:");
+  }
   print("SWE Alex");
 } // endmain
 //
