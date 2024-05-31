@@ -389,12 +389,18 @@ Dart!""";
   Set<Object> mySet = [1, 1, '4', 3.0, 3, false].toSet();
   mySet.forEach((element) => print("$element is ${element.runtimeType}"));
 
-  // Map is like Python's dictionary
+  // Map is like Python's dictionary with <key, value> pairs
   Map<String, double> studentGrades = {"Ale": 85.5, "Lex": 87.25, "Xel": 90.75};
   print(studentGrades);
+  // Map keys and values display using for-loop
+  for (int i = 0; i < studentGrades.length; i++) {
+    print("${studentGrades.keys.toList()[i]} = ${studentGrades.values.toList()[i]}");
+  }
+  // Map keys and values display using forEach method
+  studentGrades.forEach((key, value) => print("$key has a grade of $value"));
 }
 //
-// currently at 05 30 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 05 38 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 // ----------Classes demo and exploration----------
 
