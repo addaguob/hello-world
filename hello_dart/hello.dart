@@ -374,13 +374,19 @@ Dart!""";
   final pupil = Pupil('Lex Thunder');
   // it's like Pupil<String>('Lex Thunder');
   print(pupil.name);
+  print("This is ${pupil.toString()}");
   // List of objects vs list of dynamic elements:
   // List of class Objects are non-nullable, everything is object except null
   List<Object> iLy = [143, "I love you", true];
+  iLy.insert(2, [2, 4, 6]);
   print(iLy);
+  final removedObj = iLy.removeAt(0);
+  print("$iLy ejects $removedObj");
+  print(iLy.contains(true) ? "It has trueness." : "There's falseness");
+  print(iLy.join('...'));
 }
 //
-// currently at 04 50 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 04 53 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 // ----------Classes demo and exploration----------
 
