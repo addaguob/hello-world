@@ -433,8 +433,10 @@ Dart!""";
   print(10 / 0);
   try {
     print(10 ~/ 0);
-  } catch (error) {
+  } on FormatException catch (error) {
     print(error);
+  } catch (e) {
+    print("An unknown error occured. Try 'on Exception' instead.");
   } finally {
     print("Just proceed to printing the name:");
   }
