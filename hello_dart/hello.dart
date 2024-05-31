@@ -428,12 +428,17 @@ Dart!""";
   student1.showCourse();
   student2.showCourse();
 
+  // Exception Handling
+  print(10 ~/ 3);
+  print(10 ~/ 0);
+  print("SWE Alex");
 } // endmain
 //
 // currently at 05 55 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 
-enum Course { // can also implement a Class
+enum Course {
+  // can also implement a Class
   BSCS(24000),
   BSCoE(27000),
   BSIT(21000);
