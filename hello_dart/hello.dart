@@ -388,6 +388,10 @@ Dart!""";
   // Set is like List but without duplicates
   Set<Object> mySet = [1, 1, '4', 3.0, 3, false].toSet();
   mySet.forEach((element) => print("$element is ${element.runtimeType}"));
+
+  // Map is like Python's dictionary
+  Map<String, double> studentGrades = {"Ale": 85.5, "Lex": 87.25, "Xel": 90.75};
+  print(studentGrades);
 }
 //
 // currently at 05 30 00 in youtube.com/watch?v=CzRQ9mnmh44
