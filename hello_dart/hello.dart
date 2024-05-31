@@ -427,12 +427,20 @@ Dart!""";
   final student2 = EnrollStudent("Richard", Course.BSCS);
   student1.showCourse();
   student2.showCourse();
+
 } // endmain
 //
 // currently at 05 55 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 
-enum Course { BSCS, BSCoE, BSIT }
+enum Course { // can also implement a Class
+  BSCS(24000),
+  BSCoE(27000),
+  BSIT(21000);
+
+  final int tuition_php;
+  const Course(this.tuition_php);
+}
 
 class EnrollStudent {
   final String name;
@@ -441,14 +449,7 @@ class EnrollStudent {
   EnrollStudent(this.name, this.course);
 
   void showCourse() {
-    switch (course) {
-      case Course.BSCS:
-        print("BS Computer Science");
-      case Course.BSCoE:
-        print("BS Computer Engineering");
-      case Course.BSIT:
-        print("BS Information Technology");
-    }
+    print("${course.name} costs P${course.tuition_php}");
   }
 }
 // ----------Classes demo and exploration----------
