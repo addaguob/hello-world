@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 void main() {
   print("Hello world");
   print("Hello, Dart!");
@@ -398,9 +400,28 @@ Dart!""";
   }
   // Map keys and values display using forEach method
   studentGrades.forEach((key, value) => print("$key has a grade of $value"));
+
+  // List of Maps
+  List<Map<String, double>> students = [
+    {
+      "English": 85.25,
+      "Filipino": 82.50,
+    },
+    {
+      "English": 88.25,
+      "Filipino": 87.50,
+    },
+    {
+      "English": 83.25,
+      "Filipino": 84.50,
+    },
+  ];
+  students.map((e) => print(e)).toList();
+  students.map((e) => e.forEach((k, v) => print("key $k has value of $v"))).toList();
+  
 }
 //
-// currently at 05 38 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 05 50 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 // ----------Classes demo and exploration----------
 
