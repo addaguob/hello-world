@@ -440,10 +440,14 @@ Dart!""";
   } finally {
     print("Just proceed to printing the name:");
   }
-  print("SWE Alex");
+  print("SWE Alex"); // use Exception handling when fetching external files
+
+  // Futures like Promises in JavaScript
+  // allows asynchronous programming, executing tasks concurrently without blocking the current execution
+
 } // endmain
 //
-// currently at 05 55 00 in youtube.com/watch?v=CzRQ9mnmh44
+// currently at 06 20 00 in youtube.com/watch?v=CzRQ9mnmh44
 //
 
 enum Course {
