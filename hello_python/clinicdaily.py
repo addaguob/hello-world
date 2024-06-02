@@ -84,11 +84,11 @@ px = {
     "occupation": "Computer Engineer",
     "date": "2024-05-25",
     "frames": "ED9500",
-    "lens": "Prog MC" 
+    "lens": "Prog MC", 
     "total_amount": 2000,
     "deposit": 2000, 
-    "balance": 0
-    "sales_staff": "Ate Bless"
+    "balance": 0,
+    "sales_staff": "Ate Bless",
     "doctor": "Dr. Kryzza"
 }
 
