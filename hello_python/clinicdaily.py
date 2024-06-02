@@ -3,8 +3,12 @@ import socket
 import json
 import pandas as pd
 
-df = pd.read_csv("http://127.0.0.1:8000/lex.csv")
-print(df.to_string())
+try:
+    df = pd.read_csv("http://127.0.0.1:8000/lex.csv")
+    print(df.to_string())
+except (Exception):
+    print("Can't connect and read.")
+    
 
 # importing socket module
 # getting the hostname by socket.gethostname() method
@@ -14,6 +18,16 @@ ip_address = socket.gethostbyname(hostname)
 # printing the hostname and ip_address
 print(f"Hostname: {hostname}")
 print(f"IP Address: {ip_address}")
+
+from datetime import datetime
+from pytz import timezone
+
+try:
+    time_now = datetime.now(timezone('Asia/Manila'))
+    print("Time in Asia/Manila is {}".format(time_now))
+except Exception:
+    print(Exception)
+    
 # patient's info
 # name = input("Name: ")
 # age = input("Age: ")
@@ -58,30 +72,31 @@ print(f"IP Address: {ip_address}")
 # date_checked = ""
 
 
-# px = {
-#     "name": "John",
-#     "age": 30,
-#     "married": True,
-#     "divorced": False,
-#     "children": ("Ann", "Billy"),
-#     "pets": None,
-#     "cars": [
-#         {"model": "BMW 230", "mpg": 27.5},
-#         {"model": "Ford Edge", "mpg": 24.1}
-#     ]
-# }
+px = {
+    "name": "John",
+    "age": 30,
+    "married": True,
+    "divorced": False,
+    "children": ("Ann", "Billy"),
+    "pets": None,
+    "cars": [
+        {"model": "BMW 230", "mpg": 27.5},
+        {"model": "Ford Edge", "mpg": 24.1}
+    ]
+}
 
-# print(json.dumps(px))
-# print()
-# print(px)
+print(json.dumps(px))
+print()
+print(px)
 
-# try:
-#     output_filename = "print_px_not_json.txt"
-#     with open(output_filename, "w") as file:
-#         file.write(str(px))
-# except FileExistsError:
-#     with open("02_" + output_filename, "w") as file:
-#         file.write(str(px))
+try:
+    output_filename = "print_px_not_json.txt"
+    with open(output_filename, "w") as file:
+        json.dump(px, file, indent=4)
+except FileExistsError:
+    with open("02_" + output_filename, "w") as file:
+        json.dump(px, file, indent=4)
+
 frames = [
     "Contact Lens",
     "#Own F.",
@@ -91,21 +106,22 @@ frames = [
     "ED9150",
     "ED9150",
     "ED9500",
-    "PE9150",
     "PE990",
+    "PE9150",
     ]
-# lenses = [
-#     {"Ord" : "Ordinary"},
-#     {"SV" : "Single Vision lens"},
-#     {"MC" : "Multi-coated"},
-#     {"BB" : "Blue Blocker"},
-#     {"BTS" : "Blue blocker Transition"},
-#     {"KK" : "Kryptok"},
-#     {"TRG" : "Transition Gray"},
-#     {"Prog" : "Progressive lens"},
-#     {"Own F" : "Own Frame"},
-#     {"F. Only" : "Frame Only"}
-# ]
+
+lenses = [
+    {"Ord" : "Ordinary"},
+    {"SV" : "Single Vision lens"},
+    {"MC" : "Multi-coated"},
+    {"BB" : "Blue Blocker"},
+    {"BTS" : "Blue blocker Transition"},
+    {"KK" : "Kryptok"},
+    {"TRG" : "Transition Gray"},
+    {"Prog" : "Progressive lens"},
+    {"Own F" : "Own Frame"},
+    {"F. Only" : "Frame Only"}
+]
 
 '''
 Development Stages
