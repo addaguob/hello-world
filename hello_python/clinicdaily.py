@@ -128,7 +128,7 @@ lenses = [
     {"F. Only" : "Frame Only"}
 ]
 
-# Employee account creation, world's compromised passwords top 10 accdg to security researchers
+# Employee account creation, world's compromised passwords top 13 accdg to security researchers
 compromised_passw = {
     1: "12345",
     2: "admin",
@@ -140,6 +140,9 @@ compromised_passw = {
     8: "123",
     9: "Aa123456",
     10: "1234567890",
+    11: "iloveyou",
+    12: "qwertyuiop",
+    13: "P@ssw0rd",
 }
 '''
 Development Stages
