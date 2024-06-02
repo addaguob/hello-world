@@ -1,3 +1,5 @@
+# Backbone 
+
 
 import socket
 import json
@@ -73,21 +75,22 @@ except Exception:
 
 
 px = {
-    "name": "John",
-    "age": 30,
-    "married": True,
-    "divorced": False,
-    "children": ("Ann", "Billy"),
-    "pets": None,
-    "cars": [
-        {"model": "BMW 230", "mpg": 27.5},
-        {"model": "Ford Edge", "mpg": 24.1}
-    ]
+    "name": "Alex",
+    "age": 45,
+    "address": "Marikina Heights",
+    "contact_no": "09162127281",
+    "occupation": "Computer Engineer",
+    "date": "2024-05-25",
+    "frames": "ED9500",
+    "lens": "Prog MC" 
+    "total_amount": 2000,
+    "deposit": 2000, 
+    "balance": 0
+    "sales_staff": "Ate Bless"
+    "doctor": "Dr. Kryzza"
 }
 
 print(json.dumps(px))
-print()
-print(px)
 
 try:
     output_filename = "print_px_not_json.txt"
