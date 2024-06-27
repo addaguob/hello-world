@@ -4,11 +4,10 @@ def bfunc():
     print("bpy.bfunc called")
 
 
-from ..adir import apy
-from ..adir.apy import afunc
-
+from adir import apy
 def afunc_via_b():
-    print("bpy.afunc_via_b:", afunc())
+    print("bpy.afunc_via_b: ", end="")
+    apy.afunc()
     
 if __name__ == "__main__":
     bfunc()
