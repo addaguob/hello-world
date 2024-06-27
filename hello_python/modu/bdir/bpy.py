@@ -13,4 +13,3 @@ def afunc_via_b():
 if __name__ == "__main__":
     bfunc()
     afunc_via_b()
-import this
