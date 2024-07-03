@@ -1,0 +1,27 @@
+# Getting started...
+
+mkdir myproject
+cd myproject
+
+git init 
+Initialized empty Git repository in /Users/user/myproject/.git/
+
+git status
+
+ls
+myproject.py
+
+# Stage all new, modified, and deleted files. Use the shorthand command:
+git add -A
+
+# or
+git add myproject.py
+
+# Commit the changes to the current repository with message
+git commit -m "Created myproject.py"
+
+# clear files after adding them to .gitignore:
+git rm --cached <filename/foldername> -r       
+
+# example, after creating a virtual environment called 'venv' which is also a directory and adding it to .gitignore:
+git rm --cached venv -r       
