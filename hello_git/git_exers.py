@@ -32,6 +32,11 @@ git commit -m "Create myproject.py"
 # We are working in our local repository, and we do not want to disturb or possibly wreck the main project.
 # Create new branch
 git branch myproject_new_feature
+git checkout myproject_new_feature
+
+# or create if not existing the branch using checkout -b
+git checkout -b emergency-fix
+Switched to a new branch 'emergency-fix'
 
 git checkout myproject_new_feature
 # Now we have moved our current workspace from the master branch, to the new branch
