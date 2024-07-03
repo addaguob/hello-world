@@ -33,15 +33,22 @@ git commit -m "Create myproject.py"
 # Create new branch
 git branch myproject_new_feature
 git checkout myproject_new_feature
+# Now we have moved our current workspace from the master branch, to the new branch
 
 # or create if not existing the branch using checkout -b
+# sample:
 git checkout -b emergency-fix
 Switched to a new branch 'emergency-fix'
 
-git checkout myproject_new_feature
-# Now we have moved our current workspace from the master branch, to the new branch
+# We have the emergency fix ready, and so let's merge the master and emergency-fix branches.
+# First, we need to change to the master branch:
+git checkout master
+Switched to branch 'master'
 
-
+# As master and emergency-fix are essentially the same now, we can delete emergency-fix, as it is no longer needed:
+git branch -d emergency-fix
+Deleted branch emergency-fix (was dfa79db).
+    
 # clear files after adding them to .gitignore:
 git rm --cached <filename/foldername> -r       
 
