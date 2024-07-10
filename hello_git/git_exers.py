@@ -49,8 +49,31 @@ Switched to branch 'master'
 git branch -d emergency-fix
 Deleted branch emergency-fix (was dfa79db).
     
-# clear files after adding them to .gitignore:
+    
+"""clear files after adding them to .gitignore:"""
 git rm --cached <filename/foldername> -r       
 
 # example, after creating a virtual environment called 'venv' which is also a directory and adding it to .gitignore:
 git rm --cached venv -r       
+
+
+""".gitignore not working?"""
+# Sometimes git does not exclude files/folders added .gitignore especially if you had commited them before. Here is how to fix it. I am ignoring node_modules from Angular project as an example
+
+# 1. Update .gitignore with the folder/file name you want to ignore. You can use anyone of the formats mentioned below(prefer format1)
+
+### Format1  ###
+node_modules/
+node/
+
+### Format2  ###
+**/frontend/node_modules/**
+**/frontend/node/**
+
+# 2. Commit all the changes to git. Exclude the folder/files you don't want commit, in my case node_modules
+# 3. Execute the following command to clear the cache
+git rm - r --cached .
+# 4. Execute git status command and it should output node_modules and sub directories marked for deletion
+# 5. Now execute
+git add .
+git commit - m "fixed untracked files" 
