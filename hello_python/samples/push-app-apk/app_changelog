@@ -1,1 +1,6 @@
-Changelogs:\n\n- Update version checker and changelog overlay\n- Implement Braden risk management\n- Update patients client_storage to page session\n- Clean print repr in debugging\n- Complete tooltips for Braden page view
+Changelogs:
+- Implement Pressure Injury Management
+- Update version checker and changelog overlay
+- Implement Braden risk management
+- Update patients client_storage to page session
+- Clean print repr in debugging
