@@ -1,0 +1,1 @@
+Changelogs:\n\n- Update version checker and changelog overlay\n- Implement Braden risk management\n- Update patients client_storage to page session\n- Clean print repr in debugging\n- Complete tooltips for Braden page view
