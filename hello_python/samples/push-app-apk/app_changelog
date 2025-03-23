@@ -1,6 +1,6 @@
 Changelogs:
 - Implement Pressure Injury Management
+- Handle exiting dashboard and login page
 - Update version checker and changelog overlay
 - Implement Braden risk management
-- Update patients client_storage to page session
-- Clean print repr in debugging
+- Fix Braden scale and new patient routing
