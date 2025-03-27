@@ -1,6 +1,10 @@
 Changelogs:
+- Fix temp storage of pressure injury for push tool
+- Fix scrollable existing patients DataTable
+- Add patient's name in PUSHGraph component
 - Implement Pressure Injury Management
-- Handle exiting dashboard and login page
-- Update version checker and changelog overlay
-- Implement Braden risk management
-- Fix Braden scale and new patient routing
+
+For version 0.1.35:
+- Implement server-side database API
+- Migrate SQLite3 database to MySQL
+- Separate UI for admin and staff users
