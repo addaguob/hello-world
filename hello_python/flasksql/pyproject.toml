@@ -1,0 +1,10 @@
+[project]
+name = "flasksql"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.0",
+    "mysql-connector-python>=9.2.0",
+]
