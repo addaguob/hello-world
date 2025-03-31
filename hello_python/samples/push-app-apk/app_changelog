@@ -1,8 +1,9 @@
 Changelogs:
+- Prepare new server flask app jsonified MySQL
+- Archive server flask app SQLAlchemy
+- Add new line to AppBar clock
 - Fix temp storage of pressure injury for push tool
 - Fix scrollable existing patients DataTable
-- Add patient's name in PUSHGraph component
-- Implement Pressure Injury Management
 
 For version 0.1.35:
 - Implement server-side database API
