@@ -1,4 +1,5 @@
 Changelogs:
+- Change AppBar text to row of texts
 - Prepare new server flask app jsonified MySQL
 - Archive server flask app SQLAlchemy
 - Add new line to AppBar clock
