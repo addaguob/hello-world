@@ -1,13 +1,8 @@
 Changelogs:
+- Fix android app exiting event
+- Modify bottom navigation bar
 - Remove cached form data
-- Change AppBar text to row of texts
-- Prepare new server flask app jsonified MySQL
-- Archive server flask app SQLAlchemy
-- Add new line to AppBar clock
-- Fix temp storage of pressure injury for push tool
-- Fix scrollable existing patients DataTable
 
 For version 0.1.35:
 - Implement server-side database API
-- Migrate SQLite3 database to MySQL
 - Separate UI for admin and staff users
