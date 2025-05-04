@@ -223,10 +223,92 @@ Now continue with lesson 1.2.
 
   5. Move on to lesson 1.2.3 to understand what is happening.
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Lesson 1.2.3: ON OPERATORS AND MOTIONS
 
 
+  Many commands that change text are made from an operator and a motion.
+  The format for a delete command with the  d  delete operator is as follows:
+
+        d   motion
+
+  Where:
+    d      - is the delete operator.
+    motion - is what the operator will operate on (listed below).
+
+  A short list of motions:
+    w - until the start of the next word, EXCLUDING its first character.
+    e - to the end of the current word, INCLUDING the last character.
+    $ - to the end of the line, INCLUDING the last character.
+
+  Thus typing  de  will delete from the cursor to the end of the word.
+
+NOTE:  Pressing just the motion while in Normal mode without an operator will
+       move the cursor as specified.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Lesson 1.2.4: USING A COUNT FOR A MOTION
+
+
+   ** Typing a number before a motion repeats it that many times. **
+
+  1. Move the cursor to the start of the line below marked --->.
+
+  2. Type  2w  to move the cursor two words forward.
+
+  3. Type  3e  to move the cursor to the end of the third word forward.
+
+  4. Type  0  (zero) to move to the start of the line.
+
+  5. Repeat steps 2 and 3 with different numbers.
+
+---> This is just a line with words you can move around in.
+
+  6. Move on to lesson 1.2.5.
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Lesson 1.2.5: USING A COUNT TO DELETE MORE
+
+
+   ** Typing a number with an operator repeats it that many times. **
+
+  In the combination of the delete operator and a motion mentioned above you
+  insert a count before the motion to delete more:
+         d   number   motion
+
+  1. Move the cursor to the first UPPER CASE word in the line marked --->.
+
+  2. Type  d2w  to delete the two UPPER CASE words.
+
+  3. Repeat steps 1 and 2 with a different count to delete the consecutive
+     UPPER CASE words with one command.
+
+--->  this ABC DE line FGHI JK LMN OP of words is Q RS TUV cleaned up.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                         Lesson 1.2.6: OPERATING ON LINES
+
+
+                   ** Type  dd   to delete a whole line. **
+
+  Due to the frequency of whole line deletion, the designers of Vi decided
+  it would be easier to simply type two d's to delete a line.
+
+  1. Move the cursor to the second line in the phrase below.
+  2. Type  dd  to delete the line.
+  3. Now move to the fourth line.
+  4. Type   2dd   to delete two lines.
+
+--->  1)  Roses are red,
+--->  2)  Mud is fun,
+--->  3)  Violets are blue,
+--->  4)  I have a car,
+--->  5)  Clocks tell time,
+--->  6)  Sugar is sweet
+--->  7)  And so are you.
+
+Doubling to operate on a line also works for operators mentioned below.
+
 
 
