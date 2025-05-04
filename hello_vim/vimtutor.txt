@@ -1,0 +1,161 @@
+===============================================================================
+=    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7      =
+===============================================================================
+=                              C H A P T E R   ONE                            =
+===============================================================================
+
+     Vim is a very powerful editor that has many commands, too many to
+     explain in a tutor such as this.  This tutor is designed to describe
+     enough of the commands that you will be able to easily use Vim as
+     an all-purpose editor.
+     The approximate time required to complete the tutor is 30 minutes,
+     depending upon how much time is spent with experimentation.
+
+     ATTENTION:
+     The commands in the lessons will modify the text.  Make a copy of this
+     file to practice on (if you started "vimtutor" this is already a copy).
+
+     It is important to remember that this tutor is set up to teach by
+     use.  That means that you need to execute the commands to learn them
+     properly.  If you only read the text, you will forget the commands!
+     Now, make sure that your Caps-Lock key is NOT depressed and press
+     the   j   key enough times to move the cursor so that lesson 1.1.1
+     completely fills the screen.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Lesson 1.1.1:  MOVING THE CURSOR
+
+
+   ** To move the cursor, press the h,j,k,l keys as indicated. **
+             ^
+             k              Hint:  The h key is at the left and moves left.
+       < h       l >               The l key is at the right and moves right.
+             j                     The j key looks like a down arrow.
+             v
+  1. Move the cursor around the screen until you are comfortable.
+
+  2. Hold down the down key (j) until it repeats.
+     Now you know how to move to the next lesson.
+
+  3. Using the down key, move to lesson 1.1.2.
+
+NOTE: If you are ever unsure about something you typed, press <ESC> to place
+      you in Normal mode.  Then retype the command you wanted.
+
+NOTE: The cursor keys should also work.  But using hjkl you will be able to
+      move around much faster, once you get used to it.  Really!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                            Lesson 1.1.2: EXITING VIM
+
+
+  !! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+  1. Press the <ESC> key (to make sure you are in Normal mode).
+
+  2. Type:      :q! <ENTER>.
+     This exits the editor, DISCARDING any changes you have made.
+
+  3. Get back here by executing the command that got you into this tutor. That
+     might be:  vimtutor <ENTER>
+
+  4. If you have these steps memorized and are confident, execute steps
+     1 through 3 to exit and re-enter the editor.
+
+NOTE:  :q! <ENTER>  discards any changes you made.  In a few lessons you
+       will learn how to save the changes to a file.
+
+  5. Move the cursor down to lesson 1.1.3.
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Lesson 1.1.3: TEXT EDITING - DELETION
+
+
+           ** Press  x  to delete the character under the cursor. **
+
+  1. Move the cursor to the line below marked --->.
+
+  2. To fix the errors, move the cursor until it is on top of the
+     character to be deleted.
+
+  3. Press the  x  key to delete the unwanted character.
+
+  4. Repeat steps 2 through 4 until the sentence is correct.
+
+---> The ccow jumpedd ovverr thhe mooon.
+
+  5. Now that the line is correct, go on to lesson 1.1.4.
+
+NOTE: As you go through this tutor, do not try to memorize, learn by usage.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                      Lesson 1.1.4: TEXT EDITING - INSERTION
+
+
+                        ** Press  i  to insert text. **
+
+  1. Move the cursor to the first line below marked --->.
+
+  2. To make the first line the same as the second, move the cursor on top
+     of the character BEFORE which the text is to be inserted.
+  3. Press  i  and type in the necessary additions.
+
+  4. As each error is fixed press <ESC> to return to Normal mode.
+     Repeat steps 2 through 4 to correct the sentence.
+
+---> There is text misng this .
+---> There is some text missing from this line.
+
+  5. When you are comfortable inserting text move to lesson 1.1.5.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Lesson 1.1.5: TEXT EDITING - APPENDING
+
+
+                        ** Press  A  to append text. **
+
+  1. Move the cursor to the first line below marked --->.
+     It does not matter on what character the cursor is in that line.
+
+  2. Press  A  and type in the necessary additions.
+
+  3. As the text has been appended press <ESC> to return to Normal mode.
+
+  4. Move the cursor to the second line marked ---> and repeat
+     steps 2 and 3 to correct this sentence.
+
+---> There is some text missing from this line.
+     There is some text missing from this line.
+---> There is also some text missig here.
+     There is also some text missing here.
+
+  5. When you are comfortable appending text move to lesson 1.1.6.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     Lesson 1.1.6: EDITING A FILE
+
+                    ** Use  :wq  to save a file and exit. **
+
+  !! NOTE: Before executing any of the steps below, read this entire lesson!!
+
+  1.  If you have access to another terminal, do the following there.
+      Otherwise, exit this tutor as you did in lesson 1.1.2:  :q!
+
+  2. At the shell prompt type this command:  vim file.txt <ENTER>
+     'vim' is the command to start the Vim editor, 'file.txt' is the name of
+     the file you wish to edit.  Use the name of a file that you can change.
+
+  3. Insert and delete text as you learned in the previous lessons.
+
+  4. Save the file with changes and exit Vim with:  :wq <ENTER>
+
+  5. If you have quit vimtutor in step 1 restart the vimtutor and move down to
+     the following summary.
+
+  6. After reading the above steps and understanding them: do it.
+
+
