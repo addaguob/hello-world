@@ -1,16 +1,31 @@
 # # These are codes for little experiments
-import time
 
-print("INFO: logged in", end="")
-time.sleep(1)
+def decorator_func(func):
+    def wrapper(str):
+        print("Something is happening before the function is called.")
+        str += "! Nice to meet you!"
+        func(str)
+        print("Something is happening after the function is called.")
+    return wrapper
 
-print("...", end="")
-time.sleep(1)
 
-d = {"a": 1, "b": 2, "c": 3}
-dd = {"new_"+k: v*2 for k, v in d.items()}
-print(dd)
-print("Done.")
+@decorator_func
+def say_hello(name):
+    print(f"Hello {name}")
+
+say_hello("Alex")
+# import time
+
+# print("INFO: logged in", end="")
+# time.sleep(1)
+
+# print("...", end="")
+# time.sleep(1)
+
+# d = {"a": 1, "b": 2, "c": 3}
+# dd = {"new_"+k: v*2 for k, v in d.items()}
+# print(dd)
+# print("Done.")
 # def merge_sort(arr):
 #     # https://towardsdev.com/algorithms-in-python-2c0c791ef6af
 #     if len(arr) > 1:
