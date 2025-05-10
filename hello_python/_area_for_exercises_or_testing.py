@@ -1,17 +1,22 @@
 # # These are codes for little experiments
 
-def decorator_func(func):
-    def wrapper(name, **greeting):
-        print("Something is happening before the function is called.")
-        name += "! Nice to meet you!"
-        if greeting == {}:
-            greeting = {"another_greeting": ""}
-        func(name, **{each_greeting: greeting[each_greeting]+" " for each_greeting in greeting})
-        print("Something is happening after the function is called.")
-    return wrapper
+def decorator_arg(arg):
+    def decorator_func(func):
+        print(arg + " is accessed by decorator_func")
+        def wrapper_func(name, **greeting):
+            print("Something is happening before the function is called.")
+            print(arg + " is accessed by wrapper_func")
+            name += "! Nice to meet you!"
+            if greeting == {}:
+                greeting = {"another_greeting": ""}
+            func(name, **{each_greeting: greeting[each_greeting]+" " for each_greeting in greeting})
+            print("Something is happening after the function is called.")
+            print()
+        return wrapper_func
+    return decorator_func
 
 
-@decorator_func
+@decorator_arg("Decorator arg")
 def greet(name, greeting="Hi", another_greeting=""):
     print(f"{greeting}{another_greeting}{name}")
 
