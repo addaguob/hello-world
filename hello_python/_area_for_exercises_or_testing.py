@@ -1,19 +1,23 @@
 # # These are codes for little experiments
 
 def decorator_func(func):
-    def wrapper(str):
+    def wrapper(name, **greeting):
         print("Something is happening before the function is called.")
-        str += "! Nice to meet you!"
-        func(str)
+        name += "! Nice to meet you!"
+        if greeting == {}:
+            greeting = {"another_greeting": ""}
+        func(name, **{each_greeting: greeting[each_greeting]+" " for each_greeting in greeting})
         print("Something is happening after the function is called.")
     return wrapper
 
 
 @decorator_func
-def say_hello(name):
-    print(f"Hello {name}")
+def greet(name, greeting="Hi", another_greeting=""):
+    print(f"{greeting}{another_greeting}{name}")
 
-say_hello("Alex")
+greet1 = greet("Alex", greeting="Kamusta")
+greet2 = greet("Paul")
+greet3 = greet("Jerum", greeting="Yow", another_greeting="lovely")
 # import time
 
 # print("INFO: logged in", end="")
